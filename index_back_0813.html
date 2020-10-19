@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>pactbit</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="pactbit">
+	<meta name="description" content="글로벌 암호화폐거래소">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<link rel="shortcut icon" href="images/front/global/common/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<link rel="stylesheet" href="css/front/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<script type="text/javascript" src="js/front/jquery.mCustomScrollbar.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="global_header cd-auto-hide-header">
+		<div class="inner">
+			<h1><a href="index.html"><img src="images/front/global/common/logo.png" alt="planbit" /></a></h1>
+			<nav class="gnb">
+				<ul class="mainMenu">
+					<li><a href="about.html">거래소 소개</a></li>
+					<li><a href="trade.html">거래소</a></li>
+					<li><a href="banking.html">입출금</a></li>
+					<li><a href="wallet.html">지갑관리</a></li>
+					<li><a href="trend.html">코인동향</a></li>
+					<li>
+						<a href="sm_services.html">부가서비스</a>
+						<ul class="subMenu">
+							<li><a href="sm_services.html">자동거래</a></li>
+							<li><a href="trust.html">Trust신청</a></li>
+							<li><a href="lending.html">렌딩</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="notice.html">고객센터</a>
+						<ul class="subMenu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="install_hts.html">HTS 설치방법</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="commission_guide.html">수수료 및 입출금한도</a></li>
+							<li><a href="market_cap.html">Market Cap</a></li>
+							<li><a href="certificate.html">인증자료제출</a></li>
+							<li><a href="coin_list.html">암호화폐정보</a></li>
+							<li><a href="api.html">API</a></li>
+							<li><a href="franchising.html">가맹점 안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="certification_center.html">마이페이지</a>
+						<ul class="subMenu">
+							<li><a href="certification_center.html">인증센터</a></li>
+							<li><a href="member_info.html">회원정보</a></li>
+							<li><a href="connectinfo.html">접속정보</a></li>
+							<li><a href="transaction_details.html">내 거래내역</a></li>
+							<li><a href="inquiry.html">1:1문의</a></li>
+							<li><a href="point_change.html">포인트 전환</a></li>
+						</ul>
+					</li>
+					<li><a href="lucky_box.html">이벤트</a></li>
+				</ul>
+			</nav>
+			<div class="right">
+				<a href="#n" class="btn_menu_mobile"><i class="xi-bars"></i></a>
+				<div class="top_menu_wrap">
+					<svg width="15" height="9">
+						<polygon points="7,0 15,9 0,9" style="fill:rgba(255,255,255,1)"></polygon>
+					</svg>
+					<!-- 로그아웃
+					<ul class="top_menu js-signin-modal-trigger">
+						<li><a href="#" class="top_menu_box cd-popup-trigger">로그인</a></li>
+						<li><a href="sign_up.html" class="top_menu_box">회원가입</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					 -->
+					<!-- 로그인 -->
+					
+					<ul class="top_menu">
+						<li><a href="member_info.html">홍길동님<strong>[Mypage]</strong></a></li>
+						<li><a href="message.html"><i class="xi-note-o"></i> 쪽지함<span class="msNum">2</span></a></li>
+						<li><a href="sign_up.html"><i class="xi-power-off"></i> 로그아웃</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div class="main_container">
+	<section class="sec01">
+		<div class="inner">
+			<div class="text_box">
+				<em class="slogan">Planbit Open!</em>
+				<p class="desc">지금 가입하시면 특별한 혜택이 주어집니다.</p>
+			</div>
+			<ul class="login_box">
+				<li class="loginForm"><input type="email" placeholder="이메일" /></li>
+				<li class="loginForm"><input type="password" placeholder="비밀번호" /></li>
+				<li class="loginBtn"><a href=""><i class="xi-touch"></i> 시작하기</a></li>
+				<a href="#n" class="find_pw">비밀번호 찾기</a>
+			</ul>
+			<ul class="coin_list tab5">
+				<li>
+					<div class="title">
+						<h4><img src="images/front/ko/coin/btc.png"> BTC</h4>
+						<span class="trading">315.013802</span>
+					</div>
+					<div class="status">
+						<em>14,600,000</em>
+						<p class="down">700,000(-4.58%)</p>
+					</div>
+				</li>
+				<li>
+					<div class="title">
+						<h4><img src="images/front/ko/coin/eth.png"> ETH</h4>
+						<span class="trading">2,238.638450</span>
+					</div>
+					<div class="status">
+						<em>14,600,000</em>
+						<p class="up">700,000(+4.58%)</p>
+					</div>
+				</li>
+				<li>
+					<div class="title">
+						<h4><img src="images/front/ko/coin/xrp.png"> BCH</h4>
+						<span class="trading">1,863.346526</span>
+					</div>
+					<div class="status">
+						<em>14,600,000</em>
+						<p class="normal">700,000(-4.58%)</p>
+					</div>
+				</li>
+				<li>
+					<div class="title">
+						<h4><img src="images/front/ko/coin/bch.png"> XRP</h4>
+						<span class="trading">106,896.404113</span>
+					</div>
+					<div class="status">
+						<em>14,600,000</em>
+						<p class="down">700,000(-4.58%)</p>
+					</div>
+				</li>
+				<li>
+					<div class="title">
+						<h4><img src="images/front/ko/coin/qtum.png"> QTUM</h4>
+						<span class="trading">2,771.490638</span>
+					</div>
+					<div class="status">
+						<em>14,600,000</em>
+						<p class="down">700,000(-4.58%)</p>
+					</div>
+				</li>
+				
+				<li>
+					<div class="title">
+						<h4><img src="images/front/ko/coin/sgc.png"> SGC</h4>
+						<span class="trading">0</span>
+					</div>
+					<div class="status">
+						<em>14,600,000</em>
+						<p class="down">700,000(-4.58%)</p>
+					</div>
+				</li>
+				<li>
+					<div class="title">
+						<h4><img src="images/front/ko/coin/btg.png"> BTG</h4>
+						<span class="trading">2,831.437633</span>
+					</div>
+					<div class="status">
+						<em>14,600,000</em>
+						<p class="up">700,000(+4.58%)</p>
+					</div>
+				</li>
+				<li>
+					<div class="title">
+						<h4><img src="images/front/ko/coin/dash.png"> DASH</h4>
+						<span class="trading">3,303.365676</span>
+					</div>
+					<div class="status">
+						<em>14,600,000</em>
+						<p class="normal">700,000(-4.58%)</p>
+					</div>
+				</li>
+				<li>
+					<div class="title">
+						<h4><img src="images/front/ko/coin/ltc.png"> LTC</h4>
+						<span class="trading">6,845.708103</span>
+					</div>
+					<div class="status">
+						<em>14,600,000</em>
+						<p class="down">700,000(-4.58%)</p>
+					</div>
+				</li>
+				<li>
+					<div class="title">
+						<h4><img src="images/front/ko/coin/secret.png"> 0</h4>
+						<span class="trading">2,771.490638</span>
+					</div>
+					<div class="status">
+						<em>14,600,000</em>
+						<p class="down">700,000(-4.58%)</p>
+					</div>
+				</li>			
+				
+						
+				<li class="standby">
+					<div class="title">
+						<h4><img src="images/front/ko/coin/hdac.png"> HDAC</h4>
+						<span class="trading">상장대기중</span>
+					</div>
+					<div class="status">
+						<em>0</em>
+						<p class="normal"></p>
+					</div>
+				</li>
+				<li class="standby">
+					<div class="title">
+						<h4><img src="images/front/ko/coin/aba.png"> ABA</h4>
+						<span class="trading">상장대기중</span>
+					</div>
+					<div class="status">
+						<em>0</em>
+						<p class="normal"></p>
+					</div>
+				</li>					
+			</ul>
+		</div>
+	</section>
+	<section class="sec02">
+		<div class="notice_box">
+			<div class="inner">
+				<a href="" class="prev"></a>
+				<p><a href="notice.html"><span>공지</span>실명확인 입출금서비스 시행 안내 / Coinone’s plans for the implementation of real-name accounts</a></p>
+				<a href="" class="next"></a>
+			</div>
+		</div>
+		<div class="feature_box">
+			<div class="inner">
+				<img src="images/front/ko/main/security_img.png" alt="" />
+				<div class="text_box">
+					<em>고객님의 자산을 <strong>투명하고 안전하게</strong> 지키기 위한 시스템</em>
+					<ul class="feature_list">
+						<li class="item01"><h4>금융보안</h4><p>국내 금융 보안 적용</p></li>
+						<li class="item02"><h4>자산분리</h4><p>회원 자산과 거래소<br/>자산 분리</p></li>
+						<li class="item03"><h4>2-Factor 인증</h4><p>구글 OPT, SMS 본인인증을 통한 2-Factor</p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="support_box">
+			<h3>Support</h3>
+			<div class="inner">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="images/front/ko/main/support01.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="images/front/ko/main/support02.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="images/front/ko/main/support03.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="images/front/ko/main/support04.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="images/front/ko/main/support05.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="images/front/ko/main/support06.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="images/front/ko/main/support08.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="images/front/ko/main/support09.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="images/front/ko/main/support10.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="images/front/ko/main/support11.jpg" alt="" /></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				<link rel="stylesheet" type="text/css" href="css/front/swiper.min.css" media="all" />
+				<script type="text/javascript" src="js/front/swiper.min.js"></script>
+				<script>
+					var swiper = new Swiper('.swiper-container', {
+						slidesPerView: 4,
+						spaceBetween: 0,
+						slidesPerGroup: 4,
+						loop: true,
+						loopFillGroupWithBlank: true,
+						speed: 1000,
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+						autoplay: {
+							delay: 4000,
+						},
+						breakpoints: {
+							1024: {
+								slidesPerView: 4,
+								spaceBetween: 00,
+								slidesPerGroup: 4,
+							},
+							768: {
+								slidesPerView: 3,
+								spaceBetween: 0,
+								slidesPerGroup: 3,
+							},
+							320: {
+								slidesPerView: 2,
+								spaceBetween: 0,
+								slidesPerGroup: 2,
+							}
+						}
+					});
+				</script>				
+			</div>
+		</div>
+	</section>
+</div>
+
+	<footer>
+		<div class="inner">
+			<div class="foot_info">
+				<div class="foot_logo_wrap">
+					<img src="images/front/global/common/logo_gray.png" alt="planbit" />
+				</div>
+				<ul class="info">
+					<li><strong>(주)팩트비트</strong></li>
+					<li>주소 : <strong>서울 강남구 언주로</strong></li>
+					<li>대표 : <strong>홍길동</strong></li>
+					<li>사업자등록번호 : <strong>123-44-56789</strong></li>
+					<li>고객센터 : <strong>1234-5678</strong></li>
+					<li>Email : <strong>help@pactbit.io</strong></li>
+					<li>운영시간 : <strong>10:00 ~ 17:00(주말 및 공휴일 제외)</strong></li>
+				</ul>
+				<ul class="cert_mark">
+					<li>
+						<img src="images/front/global/common/img_ios.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_google.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_ssl.png">
+					</li>
+				</ul>
+			</div>
+			<p class="copy">Copyright ⓒ 2018 pactbit. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+<a href="#0" class="cd-top js-cd-top">Top</a>
+<!-- 로그인 -->
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<a href="#0" class="cd-popup-close img-replace"></a>
+		<h3><img src="images/front/global/common/logo.png" alt="pactbit" /></h3>
+		<ul class="formBox">
+			<li><input type="email" placeholder="이메일을 입력해 주세요." /></li>
+			<li><input type="password" placeholder="비밀번호를 입력해 주세요."></li>
+		</ul>
+		<div class="formOp">
+			<span class="saveId"><input type="checkbox" id="saveId" class="iCheck" /><label for="saveId">ID저장</label></span>
+			<span class="findPw"><a href="#">비밀번호찾기</a></span>
+		</div>
+		<a href="#" class="submit">로그인</a>
+	</div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+</body>
+</html>
+
+
+<!--
+<script>
+	//쿠키값 가져오기 함수
+	function notice_getCookie( name ){
+		var nameOfCookie = name + "=";
+		var x = 0;
+		while ( x <= document.cookie.length ){
+			var y = (x+nameOfCookie.length);
+			if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+				if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+				endOfCookie = document.cookie.length;
+				return unescape( document.cookie.substring( y, endOfCookie ) );
+			}
+			x = document.cookie.indexOf( " ", x ) + 1;
+			if ( x == 0 )
+			break;
+		}
+	return "";
+	}
+
+	window.onload = function(){
+		//첫번째 팝업창(pop1) 띄우는 스크립트
+		if ( notice_getCookie( "pop1" ) != "done" ){
+		//첫번째 레이어 보이기
+			document.getElementById("layer1").style.display = "block";
+		}
+		//두번째 팝업창(pop2) 띄우는 스크립트
+		if ( notice_getCookie( "pop2" ) != "done" ){
+		//두번째 레이어 보이기
+			document.getElementById("layer2").style.display = "block";
+		}
+		//세번째 팝업창(pop3) 띄우는 스크립트
+		if ( notice_getCookie( "pop3" ) != "done" ){
+		//세번째 레이어 보이기
+			document.getElementById("layer3").style.display = "block";
+		}
+	}
+
+	function notice_setCookie( name, value, expiredays ){
+		var todayDate = new Date();
+		todayDate.setDate( todayDate.getDate() + expiredays );
+		document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+	}
+
+	function notice_closeWin(pNo){
+		var obj = document.getElementById("layer"+pNo);
+		var chk = document.getElementsByName("popCheck");
+		obj.style.display = "none";
+		//쿠키값 저장
+		notice_setCookie( "pop"+pNo, "done" , 1);
+	}
+
+	function layerX(obj){
+		obj.parentNode.style.display = 'none';
+	}
+</script>
+-->
+
+<!--
+<div class="layerPop_wrap">
+	<div class="layerPop_inner">
+		 유의사항 팝업 
+		<div id="layer1" class="popupBox pop0531">
+			<div class="layerInner">
+				<div class="txtBox">
+					<h2>스타그램 에어드랍 공지</h2>
+					<h4>에어드랍 두번째 이벤트!</h4>
+					<p>빙고뮤직코인에 이어 스타그램 에어드랍받기<strong>7, 8, 9 이벤트</strong></p>
+					<a href="https://youtu.be/-7J4VK8qx-E" target="_blank" class="popBtn">https://youtu.be/-7J4VK8qx-E</a>
+					<div class="popNoti">
+						<p>스타그램코인(SGC)의 송금 일정 및 빙고뮤직 이벤트 관련/빙고뮤직코인(BMC) 에어드랍 배포 일정은 공지사항을 참고해 주시기 바랍니다.</p>
+					</div>
+				</div>
+				<input type="checkbox" name="popCheck" id="pop01" onClick="notice_closeWin(1);" /><label for="pop01">오늘 하루 창 열지않기</label><a href="#" onClick="layerX(this);" class="popClose">[닫기]</a>
+			</div>
+		</div>
+		
+		<div id="layer3" class="popupBox w460">
+			<div class="layerInner">
+				<div class="txtBox">
+					<img src="images/front/ko/popup/popup0418.png" alt="" />
+					<div class="popCover">
+						<div class="popFormBox">
+							<h4>이벤트참여</h4>
+							<ul>
+								<li><label for="popEmail">이메일</label><input type="email" name="popEmail" placeholder="이메일을 입력하세요." style="background-color: #f2f2f2;"></li>
+								<li><label for="popName">이름</label><input type="text" name="popName" placeholder="실명을 입력하세요." style="background-color: #f2f2f2;"></li>
+								<li><label for="popPhone">전화번호</label><input type="number" name="popPhone" placeholder="전화번호를 입력하세요."></li>
+							</ul>
+						</div>
+						<div class="btnWrap">
+							<a href="#n" class="btnJoin">참여하기</a>
+						</div>
+					</div>
+				</div>
+				<input type="checkbox" name="popCheck" id="pop03" onClick="setCookiePop(3);" /><label for="pop03">오늘 하루 창 열지않기</label><a href="#" onClick="layerX(this);" class="popClose">[닫기]</a>
+			</div>
+		</div>
+		
+		<div id="layer2" class="popupBox">
+			<div class="layerInner">
+				<div class="txtBox">
+					<img src="images/front/ko/popup/popup0319.jpg" alt="" />
+				</div>
+				<input type="checkbox" name="popCheck" id="pop02" onClick="notice_closeWin(2);" /><label for="pop02">오늘 하루 창 열지않기</label><a href="#" onClick="layerX(this);" class="popClose">[닫기]</a>
+			</div>
+		</div>
+		
+		<div id="layer4" class="popupBox">
+			<div class="layerInner">
+				<div class="txtBox">
+					<img src="images/front/ko/popup/popup0319.jpg" alt="" />
+				</div>
+				<input type="checkbox" name="popCheck" id="pop04" onClick="notice_closeWin(4);" /><label for="pop04">오늘 하루 창 열지않기</label><a href="#" onClick="layerX(this);" class="popClose">[닫기]</a>
+			</div>
+		</div>
+		
+		
+	</div>
+</div>
+-->
+
+
+
+
+

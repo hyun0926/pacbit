@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>pactbit</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="pactbit">
+	<meta name="description" content="글로벌 암호화폐거래소">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<link rel="shortcut icon" href="images/front/global/common/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<link rel="stylesheet" href="css/front/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<script type="text/javascript" src="js/front/jquery.mCustomScrollbar.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="global_header cd-auto-hide-header">
+		<div class="inner">
+			<h1><a href="index.html"><img src="images/front/global/common/logo.png" alt="planbit" /></a></h1>
+			<nav class="gnb">
+				<ul class="mainMenu">
+					<li><a href="about.html">거래소 소개</a></li>
+					<li><a href="trade.html">거래소</a></li>
+					<li><a href="banking.html">입출금</a></li>
+					<li><a href="wallet.html">지갑관리</a></li>
+					<li><a href="trend.html">코인동향</a></li>
+					<li>
+						<a href="sm_services.html">부가서비스</a>
+						<ul class="subMenu">
+							<li><a href="sm_services.html">자동거래</a></li>
+							<li><a href="trust.html">Trust신청</a></li>
+							<li><a href="lending.html">렌딩</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="notice.html">고객센터</a>
+						<ul class="subMenu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="install_hts.html">HTS 설치방법</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="commission_guide.html">수수료 및 입출금한도</a></li>
+							<li><a href="market_cap.html">Market Cap</a></li>
+							<li><a href="certificate.html">인증자료제출</a></li>
+							<li><a href="coin_list.html">암호화폐정보</a></li>
+							<li><a href="api.html">API</a></li>
+							<li><a href="franchising.html">가맹점 안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="certification_center.html">마이페이지</a>
+						<ul class="subMenu">
+							<li><a href="certification_center.html">인증센터</a></li>
+							<li><a href="member_info.html">회원정보</a></li>
+							<li><a href="connectinfo.html">접속정보</a></li>
+							<li><a href="transaction_details.html">내 거래내역</a></li>
+							<li><a href="inquiry.html">1:1문의</a></li>
+							<li><a href="point_change.html">포인트 전환</a></li>
+						</ul>
+					</li>
+					<li><a href="lucky_box.html">이벤트</a></li>
+				</ul>
+			</nav>
+			<div class="right">
+				<a href="#n" class="btn_menu_mobile"><i class="xi-bars"></i></a>
+				<div class="top_menu_wrap">
+					<svg width="15" height="9">
+						<polygon points="7,0 15,9 0,9" style="fill:rgba(255,255,255,1)"></polygon>
+					</svg>
+					<!-- 로그아웃
+					<ul class="top_menu js-signin-modal-trigger">
+						<li><a href="#" class="top_menu_box cd-popup-trigger">로그인</a></li>
+						<li><a href="sign_up.html" class="top_menu_box">회원가입</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					 -->
+					<!-- 로그인 -->
+					
+					<ul class="top_menu">
+						<li><a href="member_info.html">홍길동님<strong>[Mypage]</strong></a></li>
+						<li><a href="message.html"><i class="xi-note-o"></i> 쪽지함<span class="msNum">2</span></a></li>
+						<li><a href="sign_up.html"><i class="xi-power-off"></i> 로그아웃</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div class="container coin_list">
+	<!--<aside id="content-md" class="coinList">
+		<ul>
+			<li><a href="#n" class="coin-01"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-02"><img src="images/front/ko/coin/bch.png" alt=""> BCH</a></li>
+			<li><a href="#n" class="coin-03"><img src="images/front/ko/coin/eth.png" alt=""> ETH</a></li>
+			<li><a href="#n" class="coin-04"><img src="images/front/ko/coin/etc.png" alt=""> ETC</a></li>
+			<li><a href="#n" class="coin-05"><img src="images/front/ko/coin/xrp.png" alt=""> XRP</a></li>
+			<li><a href="#n" class="coin-06"><img src="images/front/ko/coin/iota.png" alt=""> IOTA</a></li>
+			<li><a href="#n" class="coin-07"><img src="images/front/ko/coin/qtum.png" alt=""> QTUM</a></li>
+			<li><a href="#n" class="coin-08"><img src="images/front/ko/coin/omg.png" alt=""> OMG</a></li>
+			<li><a href="#n" class="coin-09"><img src="images/front/ko/coin/snt.png" alt=""> SNT</a></li>
+			<li><a href="#n" class="coin-10"><img src="images/front/ko/coin/ada.png" alt=""> ADA</a></li>
+			<li><a href="#n" class="coin-11"><img src="images/front/ko/coin/sgc.png" alt=""> SGC</a></li>
+			<li><a href="#n" class="coin-12"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-13"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-14"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-15"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-16"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-17"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-18"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-19"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-20"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-21"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-22"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-23"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-24"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-25"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-26"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-27"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-28"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-29"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-30"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-31"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-32"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-33"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-34"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-35"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-36"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-37"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-38"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-39"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-40"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-41"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-42"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-43"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-44"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-45"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-46"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-47"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-48"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-49"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+			<li><a href="#n" class="coin-50"><img src="images/front/ko/coin/btc.png" alt=""> BTC</a></li>
+		</ul>
+	</aside>-->
+	<div class="contents">
+		<h3>암호화폐정보</h3>
+		<ul class="inlineStyle category tab-6">
+			<li><a href="#" class="current">ADMT</a></li>
+			<li><a href="#">Bitcoin</a></li>
+			<li><a href="#">Ethereum</a></li>
+			<li><a href="#">Bitcoin Cash</a></li>
+			<li><a href="#">Ripple</a></li>
+			<li><a href="#">QTUM</a></li>
+			<li><a href="#">Bitcoin Gold</a></li>
+			<li><a href="#">Dash</a></li>
+			<li><a href="#">Light Coin</a></li>
+			<li><a href="#">Stargram Coin</a></li>
+			<li><a href="#">Secret Coin</a></li>
+			<li><a href="#">HDAC</a></li>
+			<li><a href="#">Vista Coin</a></li>
+			<li><a href="#">Bitcoin SV</a></li>
+			<li><a href="#">Tron</a></li>
+			<li><a href="#">Stellar</a></li>
+			<li><a href="#">Waves</a></li>
+			<li><a href="#">Polymath</a></li>
+			<li><a href="#">Omisego</a></li>
+			<li><a href="#">Mithril</a></li>
+			<li><a href="#">Icon</a></li>
+			<li><a href="#">NEM(XEM)</a></li>
+		</ul>
+		<h4 class="belitStyle">Bitcoin Cash</h4>
+		<table class="normal_table tb-th__bgColor tb-th__left">
+			<colgroup>
+				<col width="15%" />
+				<col width="63%" />
+				<col width="22%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>최초발행</th>
+					<td>2017년 08월 01일</td>
+					<td class="center" rowspan="6"><p class="symbolTit">Bitcoin Cash(bch)</p><img src="images/front/global/coin/big_bch.png" alt="" /></td>
+				</tr>
+				<tr>
+					<th>발행방식</th>
+					<td>PoW (* proof-of-work, working proof) * Proof-of-work, working proof method:</td>
+				</tr>
+				<tr>
+					<th>시가총액</th>
+					<td>147.3조원(18.03.18 기준)</td>
+				</tr>
+				<tr>
+					<th>현재 총 발행량</th>
+					<td>16,793,187 BTC (2018년 1월 10일 기준)</td>
+				</tr>
+				<tr>
+					<th>최대 발행량</th>
+					<td>21,000,000 BTC</td>
+				</tr>
+				<tr>
+					<th>공식 웹 사이트</th>
+					<td><a href="https://bitcoin.org/ko/" target="_blank" class="btnLink">https://bitcoin.org/ko/</a></td>
+				</tr>
+			</thead>
+		</table>
+		<h5>코인소개</h5>
+		<div class="coin_info">
+			<p>비트코인은 블록체인 기술을 기반으로 만들어진 세계 최초의 온라인 암호화폐입니다. 
+비트코인은 화폐를 관리하는 중앙 권력이나 중간 상인이 없이, 사용자의 의해 P2P 네트워크 기술을 이용 및 작동하는 최초의 분권화된 P2P 지불망으로, 쉬운 접근성, 익명성과, 안정성의 장점을 토대로 통화 화폐 이후 비트코인이 대안 화폐로 주목을 받기 시작했으며, 현재 꾸준히 증가하고 있는 사용자 수와 함께 비트코인의 성장세도 아주 빠르게 성장하고 있어, 2018년 1월 기준 거래 중인 모든 비트코인의 가치는 시가총액 253조 3천억원을 뛰어 넘었고, 매일 수백억 달러의 비트코인 거래가 이루어지고 있습니다.</p>
+		</div>
+		<h5>코인특징</h5>
+		<div class="coin_info">
+			<p>비트코인 거래는 즉시성이 적용되어 국경 환율등 관계없이 어디서든 즉시 거래 가능
+비트코인 거래는 안전성이 보장되어 사용자들에게 사기 또는 사기성 지불거부에 대한 피해 감소
+비트코인 거래는 익명성이 적용되어 신분에 대한 강한 보안이 되며, 사용자 자신의 코인을 백업과 인크립션으로 보호가 가능
+비트코인 거래는 투명성이 적용되어 통화 공급에 관련된 모든 정보는 블럭체인에서 누구나 실시간으로 확인 및 어떤 개인이나 단체도 비트코인 프로토콜을 통제할 수 없어 신뢰할 수 있는 거래가 가능</p>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+
+		var stickyElement = $(".coinList"),
+				stickyClass = "coinList-pin",
+				stickyPos = stickyElement.offset().top, //Distance from the top of the window.
+				stickyHeight;
+
+
+		//Sticker function:
+		function stickerFn() {
+			var winTop = $(this).scrollTop();
+			//Check element position:
+			winTop >= stickyPos ?
+				stickyElement.addClass(stickyClass):
+				stickyElement.removeClass(stickyClass) //Boolean class switcher.
+		};
+		stickerFn(); //Run.
+
+		//Function trigger:
+		$(window).scroll(function(){
+			stickerFn();
+		});
+	});
+</script>
+
+	<footer>
+		<div class="inner">
+			<div class="foot_info">
+				<div class="foot_logo_wrap">
+					<img src="images/front/global/common/logo_gray.png" alt="planbit" />
+				</div>
+				<ul class="info">
+					<li><strong>(주)팩트비트</strong></li>
+					<li>주소 : <strong>서울 강남구 언주로</strong></li>
+					<li>대표 : <strong>홍길동</strong></li>
+					<li>사업자등록번호 : <strong>123-44-56789</strong></li>
+					<li>고객센터 : <strong>1234-5678</strong></li>
+					<li>Email : <strong>help@pactbit.io</strong></li>
+					<li>운영시간 : <strong>10:00 ~ 17:00(주말 및 공휴일 제외)</strong></li>
+				</ul>
+				<ul class="cert_mark">
+					<li>
+						<img src="images/front/global/common/img_ios.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_google.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_ssl.png">
+					</li>
+				</ul>
+			</div>
+			<p class="copy">Copyright ⓒ 2018 pactbit. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+<a href="#0" class="cd-top js-cd-top">Top</a>
+<!-- 로그인 -->
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<a href="#0" class="cd-popup-close img-replace"></a>
+		<h3><img src="images/front/global/common/logo.png" alt="pactbit" /></h3>
+		<ul class="formBox">
+			<li><input type="email" placeholder="이메일을 입력해 주세요." /></li>
+			<li><input type="password" placeholder="비밀번호를 입력해 주세요."></li>
+		</ul>
+		<div class="formOp">
+			<span class="saveId"><input type="checkbox" id="saveId" class="iCheck" /><label for="saveId">ID저장</label></span>
+			<span class="findPw"><a href="#">비밀번호찾기</a></span>
+		</div>
+		<a href="#" class="submit">로그인</a>
+	</div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+</body>
+</html>
+

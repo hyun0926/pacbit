@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>pactbit</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="pactbit">
+	<meta name="description" content="글로벌 암호화폐거래소">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<link rel="shortcut icon" href="images/front/global/common/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<link rel="stylesheet" href="css/front/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<script type="text/javascript" src="js/front/jquery.mCustomScrollbar.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="global_header cd-auto-hide-header">
+		<div class="inner">
+			<h1><a href="index.html"><img src="images/front/global/common/logo.png" alt="planbit" /></a></h1>
+			<nav class="gnb">
+				<ul class="mainMenu">
+					<li><a href="about.html">거래소 소개</a></li>
+					<li><a href="trade.html">거래소</a></li>
+					<li><a href="banking.html">입출금</a></li>
+					<li><a href="wallet.html">지갑관리</a></li>
+					<li><a href="trend.html">코인동향</a></li>
+					<li>
+						<a href="sm_services.html">부가서비스</a>
+						<ul class="subMenu">
+							<li><a href="sm_services.html">자동거래</a></li>
+							<li><a href="trust.html">Trust신청</a></li>
+							<li><a href="lending.html">렌딩</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="notice.html">고객센터</a>
+						<ul class="subMenu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="install_hts.html">HTS 설치방법</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="commission_guide.html">수수료 및 입출금한도</a></li>
+							<li><a href="market_cap.html">Market Cap</a></li>
+							<li><a href="certificate.html">인증자료제출</a></li>
+							<li><a href="coin_list.html">암호화폐정보</a></li>
+							<li><a href="api.html">API</a></li>
+							<li><a href="franchising.html">가맹점 안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="certification_center.html">마이페이지</a>
+						<ul class="subMenu">
+							<li><a href="certification_center.html">인증센터</a></li>
+							<li><a href="member_info.html">회원정보</a></li>
+							<li><a href="connectinfo.html">접속정보</a></li>
+							<li><a href="transaction_details.html">내 거래내역</a></li>
+							<li><a href="inquiry.html">1:1문의</a></li>
+							<li><a href="point_change.html">포인트 전환</a></li>
+						</ul>
+					</li>
+					<li><a href="lucky_box.html">이벤트</a></li>
+				</ul>
+			</nav>
+			<div class="right">
+				<a href="#n" class="btn_menu_mobile"><i class="xi-bars"></i></a>
+				<div class="top_menu_wrap">
+					<svg width="15" height="9">
+						<polygon points="7,0 15,9 0,9" style="fill:rgba(255,255,255,1)"></polygon>
+					</svg>
+					<!-- 로그아웃
+					<ul class="top_menu js-signin-modal-trigger">
+						<li><a href="#" class="top_menu_box cd-popup-trigger">로그인</a></li>
+						<li><a href="sign_up.html" class="top_menu_box">회원가입</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					 -->
+					<!-- 로그인 -->
+					
+					<ul class="top_menu">
+						<li><a href="member_info.html">홍길동님<strong>[Mypage]</strong></a></li>
+						<li><a href="message.html"><i class="xi-note-o"></i> 쪽지함<span class="msNum">2</span></a></li>
+						<li><a href="sign_up.html"><i class="xi-power-off"></i> 로그아웃</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div class="container trust">
+	<div class="contents">
+		<h3>Trust</h3>
+		<div class="cell">
+			<h4 class="belitStyle">Trust 신청</h4>
+			<p class="gap">TRUST는 거래소에 자신이 보유하고 있는 4대 암호화폐(BTC, ETH, BCH, XRP) 중 일부를 수탁하실 경우 
+      고객에게 최소 3개월 이후부터 투자한 암호화폐의 이자를 암호화폐로 지급하는 상품입니다.</p>
+      <table class="normal_table tb-th__bgColor tb-th__left">
+      	<colgroup>
+      		<col width="15%" />
+      		<col width="35%" />
+      		<col width="15%" />
+      		<col width="35%" />
+      	</colgroup>
+      	<thead>
+      		<tr>
+      			<th>통화</th>
+      			<td>
+      				<select style="width: 100%;">
+      					<option value="">BTC</option>
+      					<option value="">ETH</option>
+      					<option value="">BTH</option>
+      				</select>
+      			</td>
+      			<th>최소 신청 수량</th>
+      			<td>5 BTC</td>
+      		</tr>
+      		<tr>
+      			<th>보유 코인</th>
+      			<td>21,000 BTC</td>
+      			<th>신청 수량</th>
+      			<td><input type="text"> <a href="#n" class="btn-default">전액</a></td>
+      		</tr>
+      		<tr>
+      			<th>기간 선택</th>
+      			<td>
+							<select style="width: 100%;">
+								<option value="">6개월</option>
+								<option value="">12개월</option>
+							</select>
+      			</td>
+      			<th>이자율</th>
+      			<td><p>9%</p><p>3개월(3%)+3개월(6%)</p></td>
+      		</tr>
+      		<tr>
+      			<th>예상 이자</th>
+      			<td>0.9 BTC</td>
+      			<th>총 수령액 (이자포함)</th>
+      			<td>10.9 BTC</td>
+      		</tr>
+      		<tr>
+      			<th>신청일</th>
+      			<td>2018-09-01</td>
+      			<th>만기일</th>
+      			<td>2018-11-30</td>
+      		</tr>
+      		<tr>
+      			<th>이용약관</th>
+      			<td colspan="3"><input type="checkbox" id="c1" class="iCheck"> <label for="c1">이용약관 [필수]</label> <a href="#n" class="btn-fun__default btnPopNum1">약관보기</a></td>
+      		</tr>
+      	</thead>
+      </table>
+      <a href="#n" class="btn-single_submit">신청하기</a>
+		</div>
+		<div class="cell">
+			<ul class="inlineStyle tabItem tab-2 sub_tabmenu">
+				<li><a href="#n" data-tab="1" class="current">Trust 신청 내역</a></li>
+				<li><a href="#n" data-tab="2">이자지급내역</a></li>
+			</ul>
+			<div class="tabCn_1 tabCn">
+				<table class="normal_table tb-td__center">
+					<thead>
+						<tr>
+							<th>NO</th>
+							<th>Trust 신청일</th>
+							<th>만기일</th>
+							<th>통화</th>
+							<th>수량</th>
+							<th>이자</th>
+							<th>총 수령액</th>
+							<th>해지일</th>
+							<th>신청상태</th>
+							<th>비고</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>2018/10/23 22:47:50</td>
+							<td>2019/12/23 22:47:50</td>
+							<td>XRP</td>
+							<td>2,000 XRP</td>
+							<td>60 XRP</td>
+							<td>2,060 XRP</td>
+							<td>2019/12/23 22:47:50</td>
+							<td>만기</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>2018/10/23 22:47:50</td>
+							<td>2019/12/23 22:47:50</td>
+							<td>BTC</td>
+							<td>10 BTC</td>
+							<td>0.9 BTC</td>
+							<td>10.9 BTC</td>
+							<td></td>
+							<td>신청완료</td>
+							<td><a href="#n" class="btn-fun_line">해지하기</a></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>2018/10/23 22:47:50</td>
+							<td>2019/12/23 22:47:50</td>
+							<td>ETH</td>
+							<td>15 ETH</td>
+							<td></td>
+							<td></td>
+							<td>2019/12/23 22:47:50</td>
+							<td>해지</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="tabCn_2 tabCn">
+				<table class="normal_table tb-td__center">
+					<thead>
+						<tr>
+							<th>NO</th>
+							<th>구분</th>
+							<th>신청일</th>
+							<th>만기일</th>
+							<th>이자지급일</th>
+							<th>통화</th>
+							<th>수량</th>
+							<th>이자</th>
+							<th>총 수령액</th>
+							<th>신청상태</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>이자 지급</td>
+							<td>2018/12/23</td>
+							<td>2019/12/23</td>
+							<td>2019/05/28</td>
+							<td>PAN</td>
+							<td>2,000 PAN</td>
+							<td>60 PAN</td>
+							<td>60 PAN</td>
+							<td>신청완료</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>이자 지급</td>
+							<td>2018/10/22</td>
+							<td>2019/01/22</td>
+							<td>2019/01/23</td>
+							<td>BTC</td>
+							<td>10 BTC</td>
+							<td>0.9 BTC</td>
+							<td>10.0 BTC</td>
+							<td>만기</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 이메일 가입 및 사용자 약관 동의 -->
+<div class="popup_wrap popNum1">
+  <div class="clause_box">
+    <h2>암호화폐수탁거래기본약관</h2>
+    <a href="#n" class="btn_popClose"><i class="xi-close-thin"></i></a>
+    <div class="popup_contents">
+			<p>Trust 암호화폐수탁거래 기본약관 (이하 “약관”이라 함)은 수탁자인 플랜비트 (이하 “거래소”라 함)와 수탁거래자인 위탁자 (이하 “고객”이라 함)가 서로 믿음을 바탕으로 고객의 이익증식 등을 위하여 계약한 암호화폐수탁(이하 “수탁”이라 함)거래를 신속·정확하게 처리하는 동시에 당사자 사이의 이해관계를 합리적으로 조정하기 위한 기본적이고 일반적인 사항을 정한 것입니다.</p>
+   		<p class="gap">거래소는 이 약관 및 수탁상품 약관을 거래소 홈페이지에 공개하고, 고객은 24시간 언제든지 열람하거나 교부를 청구할 수 있습니다. (단, 업데이트 및 오류로 인한 경우 제외)</p>
+			<h4>제1조 (적용범위)</h4>
+			<p class="gap">이 약관은 거래소와 고객 사이의 운용방법을 지정하지 아니한 암호화폐수탁거래에 수탁상품 약관과 함께 적용합니다.</p>
+			<h4>제2조 (수탁관계인)</h4>
+			<ol class="styleNum">
+				<li><p>이 약관에서 위탁자란 거래소에 암호화폐를 수탁한 자이며, 수탁자란 암호화폐를 인수한 자, 즉 거래소를 말합니다.</p></li>
+				<li><p>수익자란 원금 암호화폐 및 암호화폐 이자를 받는 자 즉 고객 및 위탁자를 말합니다.</p></li>
+			</ol>
+			<h4>제3조 (수탁 거래)</h4>
+			<ol class="styleNum">
+				<li><p>고객은 온라인,앱 수탁거래시 거래소에 가입한 내용과 거래자의 내용이 일치해야 합니다.</p></li>
+				<li><p>고객은 거래소가 거래 확인을 위해서 정보를 요청할 시 정보를 알려줘야 합니다.</p></li>
+			</ol>
+			
+			<h4>제4조 (거래 방법)</h4>
+			<p class="gap">고객은 거래소에서 교부한 방법에 의하여 거래하여야 합니다.</p>
+			
+			<h4>제5조 (입금)</h4>
+			<ol class="styleNum">
+				<li><p>고객은 4대 암호화폐로(BTC,ETH,BCH,XRP) (이하 “암호화폐”라 함)로 입금할 수 있습니다.</p></li>
+			</ol>
+			
+			<h4>제6조 (수탁성립시기)</h4>
+			<ol class="styleNum">
+				<li>
+					<p>제 5 조 제 1 항에 따라 입금하는 경우에는 다음의 시기에 수탁이 성립합니다.</p>
+					<ol class="styleNum_s">
+						<li><p>암호화폐로 입금하는 경우에는 거래소가 이를 받아 확인한 때를 일컫습니다.</p></li>
+					</ol>
+				</li>
+			</ol>
+			
+			<h4>제7조 (수탁암호화폐의 운용)</h4>
+			<ol class="styleNum">
+				<li><p>수탁암호화폐는 관계약관 및 수탁업감독규정과 거래소가 정하는 방법으로 운용방법을 같이하는 다른 수탁암호화폐와 합동하여 운용합니다.</p></li>
+				<li><p>수탁암호화폐를 운용하여 취득한 수탁암호화폐는 다시 이를 담보로 수익자를 위하여 차입 할 수 있으며, 차입암호화폐는 원 수탁암호화폐와 같은 방법으로 운용합니다.</p></li>
+			</ol>
+			
+			<h4>제8조 (수탁암호화폐의 표시)</h4>
+			<p class="gap">수탁암호화폐에 대하여 수탁의 등기 또는 등록을 하여야 하며 등기 또는 등록을 할 수 없는 경우에는 수탁암호화폐임을 표시합니다.</p>
+			
+			<h4>제9조 (이자배당)</h4>
+			<ol class="styleNum">
+				<li><p>수탁이익은 제 8 조에 따라 수탁이 성립한 날로부터 배당일 전일까지의 기간에 대하여 별도 약정한 방법과 배당률로 계산하여 배당합니다.</li>
+				<li><p>제 1 항의 배당률이 관계약관 및 거래소감독규정 등에 따라 변경되는 경우에는 그에 따르기로 합니다.</p></li>
+			</ol>
+			
+			<h4>제10조 (수수료)</h4>
+			<ol class="styleNum">
+				<li><p>고객이 온라인 (거래소 내)을 통해 수탁을 가입할 때 거래소는 사전에 안내한 송금수수료 등을 암호화폐로 받을 수 있습니다.</p></li>
+				<li><p>제 1 항 관련한 송금수수료는 거래소의 인터넷 홈페이지, 온라인 거래를 위한 컴퓨터 화면, 그밖에 이와 유사한 전자통신매체에 비치 또는 게시합니다.</p></li>
+			</ol>
+			
+			<h4>제11조 (수탁암호화폐의 지급)</h4>
+			<ol class="styleNum">
+				<li><p>수탁암호화폐 또는 수탁암호화폐이자의 지급을 청구하는 경우에는 거래소에 등록한 아이디,비밀번호 등을 적어 온라인으로 제출하여야 합니다.</p></li>
+				<li><p>수탁이 종료된 경우 거래소는 최종계산서를 작성하여 수익자의 승인을 얻습니다.</p></li>
+				<li><p>최종계산서에 대하여 수익자가 승인을 하지 아니한 경우 거래소는 수익자에게 최종계산의 승인을 요구하고, 수익자는 계산승인의 요구를 받은 때로부터 1 개월 이내에 승인여부를 거래소에게 통지하여야 합니다.</p></li>
+				<li><p>거래소는 제 4 항의 계산승인을 요구하는 경우 “수익자는 최종계산에 대하여 이의가 있는 경우 계산승인을 요구 받은 때로부터 1 개월 이내에 이의를 제기할 수 있으며, 그 기간 내에 이의를 제기하지 않으면 수익자가 최종계산을 승인한 것으로 봅니다”라는 취지의 내용을 수익자에게 고지하여야 합니다.</p></li>
+				<li><p>수익자가 거래소로부터 제 4 항의 계산승인을 요구 받은 때로부터 1 개월 내에 이의를 제기하지 아니하는 경우 계산을 승인한 것으로 봅니다.</p></li>
+			</ol>
+			
+			<h4>제12조 (중도해지)</h4>
+			<ol class="styleNum">
+				<li><p>수탁기간 만료 전에 수탁을 해지하고자 할 때는 위탁자 연서로써 해지를 신청할 수 있으며 거래소는 이자를 지급하지 아니한다.</p></li>
+				<li><p>위탁자가 사망하였을 때에는 보호자가 보호자 확인 서류 제출 후 중도해지를 신청할 수 있습니다.</p></li>
+			</ol>
+
+			<h4>제13조 (사고·변경사항의 신고)</h4>
+			<ol class="styleNum">
+				<li><p>고객은 거래소 아이디·비밀번호·성명·상호·대표자·대리인·주소·전화번호·전자우편주소 등 신고사항을 변경할 때는 지체 없이 거래소에 신고하여야 합니다.</p></li>
+			</ol>
+			
+			<h4>제14조 (오류처리 등)</h4>
+			<ol class="styleNum">
+				<li><p>고객은 거래를 마친 때는 지체 없이 그 내용이 정확 한가를 확인하고 거래내용이 사실과 다르게 처리된 경우에는 그 정정을 요구할 수 있으며, 거래소는 그 사실을 확인하여 조치하여야 합니다.</p></li>
+				<li><p>거래소는 거래내용이 사실과 다르게 처리된 것을 발견한 때는 이를 정정 처리합니다.</p></li>
+			</ol>
+			
+			<h4>제15조 (비밀보장)</h4>
+			<p class="gap">거래소는 관계약관에서 정한 경우를 제외하고는 고객의 거래내용에 대한 자료나 정보를 타인에게 제공하거나 누설하지 아니합니다.</p>
+			
+			<h4>제16조 (거래정보 제공)</h4>
+			<p class="gap">고객이 전화 등으로 암호화폐입금(송금 포함), 수탁암호화폐 암호화폐잔액 등에 관한 정보 제공을 요청하는 경우에 거래소는 명의인, 거래소 회원정보 아이디 및 비밀번호가 일치하면 정보의 제공요청자를 본인으로 간주하여 입금암호화폐, 수탁암호화폐잔액 등에 관한 정보를 제공할 수 있습니다.</p>
+			
+			<h4>제17조 (통지방법)</h4>
+			<ol class="styleNum">
+				<li><p>거래소는 고객에게 통지할 사항이 있을 경우에는 신고된 연락처로 서면이나 전화,이메일 등 사전에 합의한 방법으로 통지합니다.</p></li>
+				<li><p>거래소가 제 1 항의 통지를 서면으로 했을 때는 거래소의 책임 있는 사유 없이 고객의 책임 있는 사유로 거래소에 대한 통지 등이 연착하거나 도착되지 아니하는 때에는 보통의 우송기간 후 도달한 것으로 봅니다.</p></li>
+				<li><p>거래소가 수탁의 해지 등 중요한 의사표시를 하는 때에는 그 통지가 고객에게 도달 되어야 의사표시의 효력이 발생합니다. 다만, 관계약관에 다른 규정이 있거나 거래소의 책임 있는 사유 없이 고객이 14 조에 의한 변경신고를 게을리하여 도달되지 않은 때에는 보통 우송기간 후 도달된 것으로 봅니다.</p></li>
+			</ol>
+			
+			<h4>제18조 (면책)</h4>
+			<ol class="styleNum">
+				<li><p>거래소는 고객의 부주의 혹은 실수로 도용·위조·변조, 비밀번호의 누설이나 그밖의 사고로 말미암아 고객에게 손해가 발생하여도 거래소의 책임 있는 사유가 없는 한 책임을 지지 아니합니다.</p></li>
+				<li><p>거래소는 전산통신기기 등의 이용이나 거래정보 등의 제공과 관련하여 거래소의 책임 없는 사유로 말미암아 아이디, 비밀번호 등이 누설됨으로써 고객에게 손해가 발생하여도 그 책임을 지지 아니합니다. 다만 거래소는 고객으로부터 아이디, 비밀번호 등의 누설을 통지 받은 때에는 그때부터 제 3 자가 아이디, 비밀번호를 사용하여 고객에게 발생한 손해를 배상할 책임을 집니다.</p></li>
+				<li><p>고객의 책임 있는 사유로 제 19 조의 신고를 지연하여 발생한 고객의 손해에 대하여 거래소는 거래소의 책임 있는 사유가 없는 한 그 책임을 지지 아니합니다.</p></li>
+				<li><p>제 1 항내지 제 3 항에도 불구하고 전자금융거래시 접근매체(카드, 비밀번호 등)의 위조나 변조로 발생한 사고, 계약체결 또는 거래지시의 전자적 전송이나 처리과정에서 발생한 사고, 전자금융거래를 위한 전자적 장치 또는 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 제 2 조제 1 항제 1 호에 따른 정보통신망에 침입하여 거짓이나 그 밖의 부정한 방법으로 획득한 접근매체의 이용으로 발생한 사고로 인하여 고객에게 손해가 발생한 경우 거래소는 과실 여부를 불문하고 그 손해를 배상할 책임을 집니다. 다만, 고객의 고의나 중대한 과실이 있는 경우 등 전자금융거래기본약관에 정한 사유로 인한 경우에는 그러하지 아니합니다.</p></li>
+				<li><p>제 1 항 내지 제 4 항에도 불구하고 관련 약관에 고객에게 유리하게 적용될 수 있는 규정이 있는 경우에는 그 약관을 우선 적용합니다.</p></li>
+			</ol>
+			
+			<h4>제19조 (약관변경 등)</h4>
+			<ol class="styleNum">
+				<li><p>거래소는 약관을 변경하고자 하는 경우 변경내용을 변경되는 약관의 시행일 1 개월 전에 고객이 확인할 수 있도록 거래소의 인터넷 홈페이지, 온라인 거래를 위한 컴퓨터 화면, 그 밖에 이와 유사한 전자통신매체를 통하여 게시합니다. 다만, 관계 약관 또는 거래소업무규정의 재·개정에 따른 제도변경 등으로 약관이 변경되는 경우로서 본문에 따라 안내하기가 어려운 급박하고 부득이한 사정이 있는 경우에는 변경내용을 앞의 문장과 같은 방법으로 개정 약관의 시행일 전에 게시합니다.</p></li>
+				<li><p>제 1 항의 변경내용이 고객에게 불리한 경우 거래소는 이를 서면 등 고객과 사전에 합의한 방법으로 변경 전 최소 1 개월 전까지 고객에게 통지하여야 합니다. 다만, 고객에게 변경 전 내용이 그대로 적용되는 경우 또는 고객이 변경내용에 대한 통지를 받지 아니하겠다는 의사를명시적으로 표시한 경우에는 그러하지 아니합니다.</p></li>
+				<li><p>거래소는 제 2 항의 통지를 할 경우 “고객이 변경에 동의하지 아니한 경우 계약을 해지 할 수 있으며, 통지를 받은 날로부터 변경 예정일 전 영업일까지 계약해지의 의사표시를 하지 아니한 경우에는 변경에 동의한 것으로 봅니다”라는 취지의 내용을 통지하여야 합니다.</p></li>
+				<li><p>고객이 제 3 항의 통지를 받은 날부터 변경 예정일 전 영업일까지 계약해지의 의사표시를 하지 아니한 경우에는 변경에 동의한 것으로 봅니다.</p></li>
+				<li><p>거래소는 약관을 은행의 온라인이나 인터넷 홈페이지에 게시하여 고객이 요구할 경우 이를 교부하여야 하며, 인터넷 홈페이지, 온라인 거래를 위한 컴퓨터 화면, 그 밖에 이와 유사한 전자통신매체에 게시하여 고객이 약관을 조회하고 다운로드(화면출력 포함)받을 수 있도록 하여야 합니다.</p></li>
+			</ol>
+			
+			<h4>제20조 (약관의 적용)</h4>
+			<ol class="styleNum">
+				<li><p>이 약관에 정한 사항과 수탁상품별 약관 및 별도 약정에 정한 사항이 다른 경우에는 수탁상품별 약관 및 별도약정을 우선 적용합니다.</p></li>
+				<li><p>이 약관이나 수탁상품별 약관에서 정하지 아니한 사항은 관계법령, 관련 감독규정 을 적용합니다.</p></li>
+			</ol>
+			
+			<h3>부칙</h3>
+			<h4>제1조 (수탁암호화폐의 지급)</h4>
+			<ol class="styleNum">
+				<li><p>수탁암호화폐의 지급 또는 중도해지 규정에도 불구하고 다음 각호의 1 에 해당하는 날이 공휴일이 아닌 거래소휴무일에 도래하는 경우에는 수탁암호화폐 또는 수탁이익을 직전 영업일에 지급할 수 있다.</p>
+					<ol class="styleNum_s">
+						<li>수탁상품의 만기 (만기교부일)</li>
+					</ol>
+				</li>
+			</ol>
+			
+			<h4>제2조 (시행일)</h4>
+			<p>이 약관은 2018년 11월 05일부터 시행합니다.</p>
+		</div>
+  </div>
+</div>
+
+
+
+	<footer>
+		<div class="inner">
+			<div class="foot_info">
+				<div class="foot_logo_wrap">
+					<img src="images/front/global/common/logo_gray.png" alt="planbit" />
+				</div>
+				<ul class="info">
+					<li><strong>(주)팩트비트</strong></li>
+					<li>주소 : <strong>서울 강남구 언주로</strong></li>
+					<li>대표 : <strong>홍길동</strong></li>
+					<li>사업자등록번호 : <strong>123-44-56789</strong></li>
+					<li>고객센터 : <strong>1234-5678</strong></li>
+					<li>Email : <strong>help@pactbit.io</strong></li>
+					<li>운영시간 : <strong>10:00 ~ 17:00(주말 및 공휴일 제외)</strong></li>
+				</ul>
+				<ul class="cert_mark">
+					<li>
+						<img src="images/front/global/common/img_ios.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_google.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_ssl.png">
+					</li>
+				</ul>
+			</div>
+			<p class="copy">Copyright ⓒ 2018 pactbit. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+<a href="#0" class="cd-top js-cd-top">Top</a>
+<!-- 로그인 -->
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<a href="#0" class="cd-popup-close img-replace"></a>
+		<h3><img src="images/front/global/common/logo.png" alt="pactbit" /></h3>
+		<ul class="formBox">
+			<li><input type="email" placeholder="이메일을 입력해 주세요." /></li>
+			<li><input type="password" placeholder="비밀번호를 입력해 주세요."></li>
+		</ul>
+		<div class="formOp">
+			<span class="saveId"><input type="checkbox" id="saveId" class="iCheck" /><label for="saveId">ID저장</label></span>
+			<span class="findPw"><a href="#">비밀번호찾기</a></span>
+		</div>
+		<a href="#" class="submit">로그인</a>
+	</div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+</body>
+</html>
+
+

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>planbit</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="bitKREX">
+	<meta name="description" content="글로벌 암호화폐거래소">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<meta property="og:site_name" content="planbit">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="planbit">
+	<meta property="og:description" content="고객님의 자산을 투명하고 안전하게 지키기 위한 거래소">
+	<meta property="og:url" content="https://www.planbit.com">
+	<meta property="og:image" content="https://www.planbit.com/images/mobile/app/bitkrex.png">
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="cd-auto-hide-header">
+		<div class="inner">
+			<h1><a href="index.html"><img src="images/front/ko/logo.png" alt="planbit" /></a></h1>
+			<nav class="gnb">
+				<ul class="mainMenu">
+					<li><a href="">거래소</a></li>
+					<li><a href="trade.html">거래현황</a></li>
+					<li><a href="wallet.html">지갑관리</a></li>
+					<li><a href="trend.html">코인동향</a></li>
+					<li>
+						<a href="notice.html">고객센터</a>
+						<ul class="subMenu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="">HTS 설치방법</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="commission_guide.html">수수료 및 입출금한도</a></li>
+							<li><a href="market_cap.html">Market Cap</a></li>
+							<li><a href="">인증자료제출</a></li>
+							<li><a href="coin_list.html">암호화폐정보</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="certification.html">마이페이지</a>
+						<ul class="subMenu">
+							<li><a href="certification.html">인증센터</a></li>
+							<li><a href="member_info.html">회원정보</a></li>
+							<li><a href="inquiry.html">1:1문의</a></li>
+							<li><a href="transaction_details.html">내 거래내역</a></li>
+							<li><a href="connectinfo.html">접속정보</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="right">
+				<a href="#n" class="btn_menu_mobile"><i class="xi-bars"></i></a>
+				<div class="top_menu_wrap">
+					<svg width="15" height="9">
+						<polygon points="7,0 15,9 0,9" style="fill:rgba(255,255,255,1)"></polygon>
+					</svg>
+					<!-- 로그아웃 -->
+					<ul class="top_menu js-signin-modal-trigger">
+						<li><a href="#" class="cd-popup-trigger"><i class="xi-power-off"></i> 로그인</a></li>
+						<li><a href="sign_up.html"><i class="xi-user-plus-o"></i> 회원가입</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					<!-- 로그인 -->
+					<!--
+					<ul class="top_menu">
+						<li><a href="member_info.html">홍길동님<strong>[Mypage]</strong></a></li>
+						<li><a href="sign_up.html"><i class="xi-power-off"></i> 로그아웃</a></li>
+						<li>
+							<div class="select_box">
+								<select width="120" height="36">
+									<option value="Korea">Korea</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+				-->
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div class="container certification">
+	<div class="contents">
+		<h3>인증센터</h3>
+		<!-- 인증완료 전 -->
+		<!--
+		<ol class="stage">
+			<li>
+				<div class="left">
+					<p class="step">Step.1</p>
+					<h4>이메일 인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="85%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이메일</th>
+								<td>test@test.com</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+			<li>
+				<div class="left">
+					<p class="step">Step.2</p>
+					<h4>휴대폰 본인인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="30%" />
+							<col width="15%" />
+							<col width="40%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름</th>
+								<td><input type="text" placeholder="실명을 입력해 주세요." /></td>
+								<th>국적</th>
+								<td>
+									<select>
+										<option value="">한국</option>
+										<option value="">미국</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>생년월일</th>
+								<td><input type="number" placeholder="예) 960101" /></td>
+								<th>성별</th>
+								<td>
+									<ul class="gender">
+										<li><input type="radio" name="gender" id="r1" class="iCheck" /><label for="r1">남성</label></li>
+										<li><input type="radio" name="gender" id="r2" class="iCheck" /><label for="r2">여성</label></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>휴대번호</th>
+								<td><input type="number" placeholder="예) 01011112222" /></td>
+								<th>인증코드</th>
+								<td><input type="number" class="code" /><a href="#" class="btn-tb__basics">인증코드발송</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="btnArea"><a href="#" class="btn-fun__pointB" >인증하기</a></p>
+				</div>
+			</li>
+			<li>
+				<div class="left">
+					<p class="step">Step.3</p>
+					<h4>계좌인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="85%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>계좌</th>
+								<td>
+									<select>
+										<option value="은행선택">은행선택</option>
+										<option value="">국민은행</option>
+										<option value="">신한은행</option>
+										<option value="">기업은행</option>
+									</select>
+									<input type="number" placeholder="계좌번호" style="width:260px;" />
+									<input type="text" class="readonly" style="width:100px;" readonly />
+									<a href="#" class="btn-fun__pointB" >인증하기</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+			<li>
+				<div class="left">
+					<h4>Google OTP</h4>
+				</div>
+				<div class="right">
+					<div class="cover">
+						<h5>구글 OTP 설정하는 방법</h5>
+						<ol>
+							<li>휴대폰 스토어에서 "Google OTP"앱을 설치하시기 바랍니다.</li>
+							<li>"Google OTP"앱을 실행한 후 "바코드 스캔"을 선택합니다.</li>
+							<li>옆의 QR코드를 스캔하시기 바랍니다.</li>
+							<li>"Google OTP"앱에서 보이는 OTP번호를 아래에 입력하시기 바랍니다.</li>
+						</ol>
+						<label>OTP</label><input type="number" /><a href="#" class="btn-fun__pointB" >등록하기</a>
+					</div>
+					<div class="qrCode">
+						<img src="images/front/ko/qrcode.png" alt="" />
+					</div>
+				</div>
+			</li>
+		</ol>
+		-->
+		<!-- 인증완료 후 -->
+		<ol class="stage completion">
+			<li>
+				<div class="left">
+					<p class="step">Step.1</p>
+					<h4><i class="xi-check"></i>이메일 인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="85%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이메일</th>
+								<td>test@test.com</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+			<li>
+				<div class="left">
+					<p class="step">Step.2</p>
+					<h4><i class="xi-check"></i>휴대폰 본인인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="35%" />
+							<col width="15%" />
+							<col width="35%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름</th>
+								<td>홍길동</td>
+								<th>국적</th>
+								<td>한국</td>
+							</tr>
+							<tr>
+								<th>생년월일</th>
+								<td>96****</td>
+								<th>성별</th>
+								<td>여성</td>
+							</tr>
+							<tr>
+								<th>휴대번호</th>
+								<td>010-****-4567</td>
+								<th>인증코드</th>
+								<td>완료</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<a href="#" class="btn-fun__modify">변경</a>
+			</li>
+			<li>
+				<div class="left">
+					<p class="step">Step.3</p>
+					<h4><i class="xi-check"></i>계좌인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="85%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>계좌</th>
+								<td>
+									<select>
+										<option value="은행선택">은행선택</option>
+										<option value="">국민은행</option>
+										<option value="">신한은행</option>
+										<option value="">기업은행</option>
+									</select>
+									<input type="number" placeholder="계좌번호" style="width:260px;" />
+									<input type="text" class="readonly" style="width:100px;" readonly />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<a href="#" class="btn-fun__modify">변경</a>
+			</li>
+			<li>
+				<div class="left">
+					<h4><i class="xi-check"></i>Google OTP</h4>
+				</div>
+				<div class="right">
+					<div class="cover">
+						<h5>등록완료</h5>
+					</div>
+				</div>
+				<a href="#" class="btn-fun__modify">변경</a>
+			</li>
+		</ol>
+	</div>
+</div>
+
+	<footer>
+		<div class="inner">
+			<div class="foot_info">
+				<div class="foot_logo_wrap">
+					<img src="images/front/ko/logo_gray.png" alt="planbit" />
+				</div>
+				<ul class="info">
+					<li><strong>오프라인 상담센터 :</strong> 서울시 강남구 봉은사로20길 38 (06126)</li>
+					<li><strong>상담센터 :</strong> 1588-0000</li>
+					<li><strong>Email :</strong> contact@planbit.com</li>
+				</ul>
+				<ul class="foot_menu">
+					<li><a href="" class="btn_foot">회사소개</a></li>
+					<li>
+						<select>
+							<option selected>계열사</option>
+							<option value="http://stargram.io">Stargram</option>
+							<option value="http://www.kmscom.com/">Kms</option>
+							<option value="http://www.eventgod.net/">Eventgod</option>
+							<option value="http://www.mxenter.com/">Mxenter</option>
+						</select>
+						<a href="#n" class="urlArea">http://stargram.io</a>
+					</li>
+				</ul>
+			</div>
+			<p class="copy">Copyright ⓒ 2018 planbit. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+<a href="#0" class="cd-top js-cd-top">Top</a>
+<!-- 로그인 -->
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<a href="#0" class="cd-popup-close img-replace"></a>
+		<h3><img src="images/front/ko/logo.png" alt="planbit" /></h3>
+		<ul class="formBox">
+			<li><input type="email" placeholder="이메일을 입력해 주세요." /></li>
+			<li><input type="password" placeholder="비밀번호를 입력해 주세요."></li>
+		</ul>
+		<div class="formOp">
+			<span class="saveId"><input type="checkbox" id="saveId" class="iCheck" /><label for="saveId">ID저장</label></span>
+			<span class="findPw"><a href="#">비밀번호찾기</a></span>
+		</div>
+		<a href="#" class="submit">로그인</a>
+	</div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+</body>
+</html>
+

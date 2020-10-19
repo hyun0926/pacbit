@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>pactbit</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="pactbit">
+	<meta name="description" content="글로벌 암호화폐거래소">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<link rel="shortcut icon" href="images/front/global/common/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<link rel="stylesheet" href="css/front/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<script type="text/javascript" src="js/front/jquery.mCustomScrollbar.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="global_header main_header">
+		<div class="inner">
+			<h1><a href="index.html"><img src="images/front/global/common/logo_white.png" alt="planbit" /></a></h1>
+			<nav class="gnb">
+				<ul class="mainMenu">
+					<li><a href="about.html">거래소 소개</a></li>
+					<li><a href="trade.html">거래소</a></li>
+					<li><a href="banking.html">입출금</a></li>
+					<li><a href="wallet.html">지갑관리</a></li>
+					<li><a href="trend.html">코인동향</a></li>
+					<li>
+						<a href="sm_services.html">부가서비스</a>
+						<ul class="subMenu">
+							<li><a href="sm_services.html">자동거래</a></li>
+							<li><a href="trust.html">Trust신청</a></li>
+							<li><a href="lending.html">렌딩</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="notice.html">고객센터</a>
+						<ul class="subMenu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="install_hts.html">HTS 설치방법</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="commission_guide.html">수수료 및 입출금한도</a></li>
+							<li><a href="market_cap.html">Market Cap</a></li>
+							<li><a href="certificate.html">인증자료제출</a></li>
+							<li><a href="coin_list.html">암호화폐정보</a></li>
+							<li><a href="api.html">API</a></li>
+							<li><a href="franchising.html">가맹점 안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="certification_center.html">마이페이지</a>
+						<ul class="subMenu">
+							<li><a href="certification_center.html">인증센터</a></li>
+							<li><a href="member_info.html">회원정보</a></li>
+							<li><a href="connectinfo.html">접속정보</a></li>
+							<li><a href="transaction_details.html">내 거래내역</a></li>
+							<li><a href="inquiry.html">1:1문의</a></li>
+						</ul>
+					</li>
+					<li><a href="lucky_box.html">이벤트</a></li>
+				</ul>
+			</nav>
+			<div class="right">
+				<a href="#n" class="btn_menu_mobile"><i class="xi-bars"></i></a>
+				<div class="top_menu_wrap">
+					<svg width="15" height="9">
+						<polygon points="7,0 15,9 0,9" style="fill:rgba(255,255,255,1)"></polygon>
+					</svg>
+					<!-- 로그아웃 
+					<ul class="top_menu js-signin-modal-trigger">
+						<li><a href="">API</a></li>
+						<li><a href="https://play.google.com/store/apps/details?id=cme.pactbit.app" target="_blank">앱다운로드</a></li>
+						<li><a href="#" class="top_menu_box cd-popup-trigger">로그인</a></li>
+						<li><a href="sign_up.html" class="top_menu_box">회원가입</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					-->
+					
+					<!-- 로그인 -->
+					
+					<ul class="top_menu">
+						<li><a href="member_info.html">홍길동님<strong>[Mypage]</strong></a></li>
+						<li><a href="message.html"><i class="xi-note-o"></i> 쪽지함<span class="msNum">2</span></a></li>
+						<li><a href="sign_up.html"><i class="xi-power-off"></i> 로그아웃</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+				
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="visu_container">
+		<div class="inner">
+			<em class="slogan">지금껏 볼 수 없던 새로운 기준 <strong>PACTBIT</strong></em>
+			<p class="slogan_desc">고객님의 자산을 투명하고 안전하게 지키기 위한 거래소</p>
+			<!-- before
+			<ul class="login-box">
+				<li class="loginForm"><input type="email" placeholder="이메일" /></li>
+				<li class="loginForm"><input type="password" placeholder="비밀번호" /></li>
+				<li class="loginBtn"><a href="">로그인</a></li>
+				<a href="sign_up.html" class="join-us">회원가입</a>
+				<a href="#n" class="find-pw">비밀번호 찾기</a>
+			</ul>
+			 -->
+			<!-- after -->
+			<ul class="btn_wrap">
+				<li><a href="trade.html"><i class="xi-catched"></i> 거래하기</a></li>
+				<li><a href="wallet.html"><i class="xi-wallet"></i> 지갑관리</a></li>
+			</ul>
+		</div>
+		<div class="inner-wide">
+		
+			<div class="swiper-container">
+				<div class="swiper-cover">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>비트코인<span>BTC/KRW</span></h6>
+								<em class="up">14,105,000<span>원</span></em>
+								<p class="up">199,000<span>1.46%</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>이더리움<span>ETH/KRW</span></h6>
+								<em class="down">270,400<span>원</span></em>
+								<p class="down">4,000<span>1.45%</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>비트코인캐시<span>BCH/KRW</span></h6>
+								<em class="">270,400<span>원</span></em>
+								<p class=""></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>리플<span>XRP/KRW</span></h6>
+								<em class="up">375<span>원</span></em>
+								<p class="up">10<span>1.46%</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>비트코인<span>BTC/KRW</span></h6>
+								<em class="up">14,105,000<span>원</span></em>
+								<p class="up">199,000<span>1.46%</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>이더리움<span>ETH/KRW</span></h6>
+								<em class="down">270,400<span>원</span></em>
+								<p class="down">4,000<span>1.45%</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>비트코인캐시<span>BCH/KRW</span></h6>
+								<em class="">270,400<span>원</span></em>
+								<p class=""></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>리플<span>XRP/KRW</span></h6>
+								<em class="up">375<span>원</span></em>
+								<p class="up">10<span>1.46%</span></p>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>비트코인<span>BTC/KRW</span></h6>
+								<em class="up">14,105,000<span>원</span></em>
+								<p class="up">199,000<span>1.46%</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>이더리움<span>ETH/KRW</span></h6>
+								<em class="down">270,400<span>원</span></em>
+								<p class="down">4,000<span>1.45%</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>비트코인캐시<span>BCH/KRW</span></h6>
+								<em class="">270,400<span>원</span></em>
+								<p class=""></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>리플<span>XRP/KRW</span></h6>
+								<em class="up">375<span>원</span></em>
+								<p class="up">10<span>1.46%</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>비트코인<span>BTC/KRW</span></h6>
+								<em class="up">14,105,000<span>원</span></em>
+								<p class="up">199,000<span>1.46%</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>이더리움<span>ETH/KRW</span></h6>
+								<em class="down">270,400<span>원</span></em>
+								<p class="down">4,000<span>1.45%</span></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>비트코인캐시<span>BCH/KRW</span></h6>
+								<em class="">270,400<span>원</span></em>
+								<p class=""></p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cover">
+								<h6>리플<span>XRP/KRW</span></h6>
+								<em class="up">375<span>원</span></em>
+								<p class="up">10<span>1.46%</span></p>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<!--<div class="swiper-pagination"></div>-->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>				
+			</div>
+			<link rel="stylesheet" type="text/css" href="css/front/swiper.min.css" media="all" />
+			<script type="text/javascript" src="js/front/swiper.min.js"></script>
+			<script>
+				var swiper = new Swiper('.swiper-cover', {
+					loop: true,
+					direction: 'horizontal',
+					slidesPerView: 8,
+					mousewheel: true,
+					autoplay: {
+						delay: 2000,
+						disableOnInteraction: false,
+					},					
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+					pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+					},
+				});
+			</script>
+    
+<!--
+			<ul class="popularity-coin">
+				<li>
+					<a href="#n">
+					<h4><img src="images/front/global/coin/btc.png" alt="" />BTC</h4>
+					<div class="cover">
+						<em class="">14,600,000</em>
+						<span class="">0(0.0%)</span>
+					</div>
+					</a>
+				</li>
+				<li>
+					<a href="#n">
+					<h4><img src="images/front/global/coin/eth.png" alt="" />ETH</h4>
+					<div class="cover">
+						<em class="down">14,600,000</em>
+						<span class="down">700,000(-4.58%)</span>
+					</div>
+					</a>
+				</li>
+				<li>
+					<a href="#n">
+					<h4><img src="images/front/global/coin/bch.png" alt="" />BCH</h4>
+					<div class="cover">
+						<em class="up">14,600,000</em>
+						<span class="up">700,000(-4.58%)</span>
+					</div>
+					</a>
+				</li>
+				<li>
+					<a href="#n">
+					<h4><img src="images/front/global/coin/xrp.png" alt="" />XRP</h4>
+					<div class="cover">
+						<em class="up">14,600,000</em>
+						<span class="up">700,000(-4.58%)</span>
+					</div>
+					</a>
+				</li>
+			</ul>
+-->
+		</div>
+	</div>
+	<div class="notice_box">
+		<div class="inner">
+			<p><a href="">서버점검 안내 (회원이용 프로세스 개선 준비)</a></p>
+			<div class="box_controler">
+				<ul>
+					<li><a href="" class="swap"><i class="xi-angle-up-min"></i></a></li>
+					<li><a href="" class="swap"><i class="xi-angle-down-min"></i></a></li>
+				</ul>
+				<a href="" class="btnMore">MORE<i class="xi-plus-min"></i></a>
+			</div>
+		</div>
+	</div>
+<!--
+	<div class="pan_event">
+		<div class="inner">
+			<h3><img src="images/front/global/coin/big_admt.png" alt="">PAN COIN 실시간 거래량 순위</h3>
+			<p class="latest">2019-05-20 16:50:00 기준</p>
+			<table class="normal_table">
+				<colgroup>
+					<col width="5%" />
+					<col width="26%" />
+					<col width="19%" />
+					<col width="19%" />
+					<col width="19%" />
+					<col width="12%" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>순위</th>
+						<th>ID</th>
+						<th>당일거래량</th>
+						<th>거래량합계</th>
+						<th>거래량 합계금액(KRW)</th>
+						<th>순위변동</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="txt-c">1</td>
+						<td class="txt-l">ryun.kim@cmesoft.co.kr</td>
+						<td class="txt-r">100.12340560</td>
+						<td class="txt-r">150.12340500</td>
+						<td class="txt-r">3,002,469</td>
+						<td class="txt-c"><span class="up">1</span></td>
+					</tr>
+					<tr>
+						<td class="txt-c">2</td>
+						<td class="txt-l">testyn331@gmail.com</td>
+						<td class="txt-r">101.123456</td>
+						<td class="txt-r">120.12340025</td>
+						<td class="txt-r">2,400,000</td>
+						<td class="txt-c"><span class="down">1</span></td>
+					</tr>
+					<tr>
+						<td class="txt-c">3</td>
+						<td class="txt-l">testreeh224@gmail.com</td>
+						<td class="txt-r">95.1263422</td>
+						<td class="txt-r">100.1245301</td>
+						<td class="txt-r">2,000,000</td>
+						<td class="txt-c"><span class="normal">0</span></td>
+					</tr>
+					<tr>
+						<td class="txt-c">4</td>
+						<td class="txt-l">apexbp1@gmail.com</td>
+						<td class="txt-r">80.12345678</td>
+						<td class="txt-r">95.10025220</td>
+						<td class="txt-r">1,900,000</td>
+						<td class="txt-c"><span class="up new">14</span></td>
+					</tr>
+				</tbody>
+			</table>				
+		</div>
+	</div>
+-->
+	<div class="market_price">
+		<div class="inner">
+			<aside id="content-md" class="sideBanner">
+				<div class="banner_wrap">
+					<ul>
+						<li><a href="#n"><img src="images/front/ko/banner/banner_test.jpg" alt="" /></a></li>
+						<li><a href="#n"><img src="images/front/ko/banner/banner_test2.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+			</aside>
+			<script>
+				$(function(){
+
+					var stickyElement = $(".sideBanner"),
+							stickyClass = "sideBanner-pin",
+							stickyPos = stickyElement.offset().top, //Distance from the top of the window.
+							stickyHeight;
+
+
+					//Sticker function:
+					function stickerFn() {
+						var winTop = $(this).scrollTop();
+						//Check element position:
+						winTop >= stickyPos ?
+							stickyElement.addClass(stickyClass):
+							stickyElement.removeClass(stickyClass) //Boolean class switcher.
+					};
+					stickerFn(); //Run.
+
+					//Function trigger:
+					$(window).scroll(function(){
+						stickerFn();
+					});
+				});
+			</script>				
+		
+			<h3>거래소 시세</h3>
+			<table>
+				<colgroup>
+					<col width="34%">
+					<col width="22%">
+					<col width="22%">
+					<col width="22%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>코인명</th>
+						<th>현재가</th>
+						<th>변동률</th>
+						<th>거래량</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/admt.png" alt="" /><strong>ADMT</strong>에이디엠</a> <p class="ieo">IEO IN PROGRESS</p></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/btc.png" alt="" /><strong>BTC</strong>비트코인</a></th>
+						<td><strong class="down">4,599,000</strong> KRW</td>
+						<td><strong class="down">-55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/eth.png" alt="" /><strong>ETH</strong>이더리움</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/bch.png" alt="" /><strong>BCH</strong>비트코인캐시</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/xrp.png" alt="" /><strong>XRP</strong>리플</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/qtum.png" alt="" /><strong>QTUM</strong>퀀텀</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/btg.png" alt="" /><strong>BTG</strong>비트코인골드</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/DASH.png" alt="" /><strong>dash</strong>대시</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/ltc.png" alt="" /><strong>LTC</strong>라이트코인</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/sgc.png" alt="" /><strong>SGC</strong>스타그램코인</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/secret.png" alt="" /><strong>SECRET</strong>시크릿코인</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/hdac.png" alt="" /><strong>HDAC</strong>에이치닥</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/sgc.png" alt="" /><strong>VSTC</strong>비스타코인</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/bsv.png" alt="" /><strong>BSV</strong>비트코인SV</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/trx.png" alt="" /><strong>TRX</strong>트론</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/xlm.png" alt="" /><strong>XLM</strong>스텔라루멘</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/waves.png" alt="" /><strong>WAVES</strong>웨이브</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/poly.png" alt="" /><strong>POLY</strong>폴리매스</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/omg.png" alt="" /><strong>OMG</strong>오미세고</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/mith.png" alt="" /><strong>MITH</strong>미스릴</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/icx.png" alt="" /><strong>ICX</strong>아이콘</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					<tr>
+						<th><a href="trade.html"><img src="images/front/global/coin/xem.png" alt="" /><strong>XEM</strong>넴</a></th>
+						<td><strong class="up">4,599,000</strong> KRW</td>
+						<td><strong class="up">+55(1.96%)</strong></td>
+						<td><strong>0.84139841</strong> 개</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+<!--
+<div class="layerPop_wrap">
+	<div id="layer2" class="popupBox">
+		<div class="layerInner">
+			<div class="txtBox">
+				<img src="images/front/ko/popup/test.jpg" alt="" />
+			</div>
+			<input type="checkbox" name="popCheck" id="pop02" onClick="notice_closeWin(2);" /><label for="pop02">오늘 하루 창 열지않기</label><a href="#" onClick="layerX(this);" class="popClose">[닫기]</a>
+		</div>
+	</div>
+	<div id="layer4" class="popupBox">
+		<div class="layerInner">
+			<div class="txtBox">
+				<img src="images/front/ko/popup/popup0319.jpg" alt="" />
+			</div>
+			<input type="checkbox" name="popCheck" id="pop04" onClick="notice_closeWin(4);" /><label for="pop04">오늘 하루 창 열지않기</label><a href="#" onClick="layerX(this);" class="popClose">[닫기]</a>
+		</div>
+	</div>
+</div>
+-->	
+	
+	<footer>
+		<div class="inner">
+			<div class="foot_info">
+				<div class="foot_logo_wrap">
+					<img src="images/front/global/common/logo_gray.png" alt="planbit" />
+				</div>
+				<ul class="info">
+					<li><strong>(주)팩트비트</strong></li>
+					<li>주소 : <strong>서울 강남구 언주로</strong></li>
+					<li>대표 : <strong>홍길동</strong></li>
+					<li>사업자등록번호 : <strong>123-44-56789</strong></li>
+					<li>고객센터 : <strong>1234-5678</strong></li>
+					<li>Email : <strong>help@pactbit.io</strong></li>
+					<li>운영시간 : <strong>10:00 ~ 17:00(주말 및 공휴일 제외)</strong></li>
+				</ul>
+				<ul class="cert_mark">
+					<li>
+						<img src="images/front/global/common/img_ios.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_google.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_ssl.png">
+					</li>
+				</ul>
+			</div>
+			<p class="copy">Copyright ⓒ 2018 pactbit. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+<a href="#0" class="cd-top js-cd-top">Top</a>
+<!-- 로그인 -->
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<a href="#0" class="cd-popup-close img-replace"></a>
+		<h3><img src="images/front/global/common/logo.png" alt="pactbit" /></h3>
+		<ul class="formBox">
+			<li><input type="email" placeholder="이메일을 입력해 주세요." /></li>
+			<li><input type="password" placeholder="비밀번호를 입력해 주세요."></li>
+		</ul>
+		<div class="formOp">
+			<span class="saveId"><input type="checkbox" id="saveId" class="iCheck" /><label for="saveId">ID저장</label></span>
+			<span class="findPw"><a href="#">비밀번호찾기</a></span>
+		</div>
+		<a href="#" class="submit">로그인</a>
+	</div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

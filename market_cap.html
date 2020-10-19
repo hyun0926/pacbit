@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>pactbit</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="pactbit">
+	<meta name="description" content="글로벌 암호화폐거래소">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<link rel="shortcut icon" href="images/front/global/common/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<link rel="stylesheet" href="css/front/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<script type="text/javascript" src="js/front/jquery.mCustomScrollbar.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="global_header cd-auto-hide-header">
+		<div class="inner">
+			<h1><a href="index.html"><img src="images/front/global/common/logo.png" alt="planbit" /></a></h1>
+			<nav class="gnb">
+				<ul class="mainMenu">
+					<li><a href="about.html">거래소 소개</a></li>
+					<li><a href="trade.html">거래소</a></li>
+					<li><a href="banking.html">입출금</a></li>
+					<li><a href="wallet.html">지갑관리</a></li>
+					<li><a href="trend.html">코인동향</a></li>
+					<li>
+						<a href="sm_services.html">부가서비스</a>
+						<ul class="subMenu">
+							<li><a href="sm_services.html">자동거래</a></li>
+							<li><a href="trust.html">Trust신청</a></li>
+							<li><a href="lending.html">렌딩</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="notice.html">고객센터</a>
+						<ul class="subMenu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="install_hts.html">HTS 설치방법</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="commission_guide.html">수수료 및 입출금한도</a></li>
+							<li><a href="market_cap.html">Market Cap</a></li>
+							<li><a href="certificate.html">인증자료제출</a></li>
+							<li><a href="coin_list.html">암호화폐정보</a></li>
+							<li><a href="api.html">API</a></li>
+							<li><a href="franchising.html">가맹점 안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="certification_center.html">마이페이지</a>
+						<ul class="subMenu">
+							<li><a href="certification_center.html">인증센터</a></li>
+							<li><a href="member_info.html">회원정보</a></li>
+							<li><a href="connectinfo.html">접속정보</a></li>
+							<li><a href="transaction_details.html">내 거래내역</a></li>
+							<li><a href="inquiry.html">1:1문의</a></li>
+							<li><a href="point_change.html">포인트 전환</a></li>
+						</ul>
+					</li>
+					<li><a href="lucky_box.html">이벤트</a></li>
+				</ul>
+			</nav>
+			<div class="right">
+				<a href="#n" class="btn_menu_mobile"><i class="xi-bars"></i></a>
+				<div class="top_menu_wrap">
+					<svg width="15" height="9">
+						<polygon points="7,0 15,9 0,9" style="fill:rgba(255,255,255,1)"></polygon>
+					</svg>
+					<!-- 로그아웃
+					<ul class="top_menu js-signin-modal-trigger">
+						<li><a href="#" class="top_menu_box cd-popup-trigger">로그인</a></li>
+						<li><a href="sign_up.html" class="top_menu_box">회원가입</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					 -->
+					<!-- 로그인 -->
+					
+					<ul class="top_menu">
+						<li><a href="member_info.html">홍길동님<strong>[Mypage]</strong></a></li>
+						<li><a href="message.html"><i class="xi-note-o"></i> 쪽지함<span class="msNum">2</span></a></li>
+						<li><a href="sign_up.html"><i class="xi-power-off"></i> 로그아웃</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div class="container market_cap">
+	<div class="contents">
+		<h3>Market Cap</h3>
+		<table class="normal_table">
+			<colgroup>
+				<col width="2%" />
+				<col width="22%" />
+				<col width="18%" />
+				<col width="16%" />
+				<col width="18%" />
+				<col width="14%" />
+				<col width="13%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>NO</th>
+					<th>Coin Name</th>
+					<th>Market Cap</th>
+					<th>Price</th>
+					<th>Volume (24h)</th>
+					<th>Circulating Supply</th>
+					<th>Change (24h)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td><img src="images/front/global/coin/admt.png" alt="ADMT" /><strong>ADMT</strong></td>
+					<td class="right">144,798,994,412,833원</td>
+					<td class="right">51원</td>
+					<td class="right">7,613,374,560원</td>
+					<td>75.0 ADMT</td>
+					<td class="right up">0.51%</td>
+				</tr>			
+				<tr>
+					<td>2</td>
+					<td><img src="images/front/global/coin/btc.png" alt="BTC" /><strong>BTC</strong></td>
+					<td class="right">144,798,994,412,833원</td>
+					<td class="right">8,545,751원</td>
+					<td class="right">5,327,667,054,900원</td>
+					<td>16,943,975.0BTC</td>
+					<td class="right up">0.51%</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td><img src="images/front/global/coin/eth.png" alt="ETH" /><strong>ETH</strong></td>
+					<td class="right">48,302,659,637,079원</td>
+					<td class="right">490,562원</td>
+					<td class="right">1,661,221,505,700원</td>
+					<td>98,463,831.0ETH</td>
+					<td class="right down">-0.48%</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td><img src="images/front/global/coin/bch.png" alt="BCH" /><strong>BCH</strong></td>
+					<td class="right">24,459,676,572,310원</td>
+					<td class="right">625원</td>
+					<td class="right">307,157,005,890원</td>
+					<td>39,094,227,299.0XRP</td>
+					<td class="right up">1.19%</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td><img src="images/front/global/coin/xrp.png" alt="XRP" /><strong>XRP</strong></td>
+					<td class="right">16,122,139,971,860원</td>
+					<td class="right">946,019원</td>
+					<td class="right">344,786,349,150원</td>
+					<td>344,786,349,150원</td>
+					<td class="right down">-2.65%</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td><img src="images/front/global/coin/qtum.png" alt="QTUM" /><strong>QTUM</strong></td>
+					<td class="right">4,497,312,709,212원</td>
+					<td class="right">173원</td>
+					<td class="right">86,249,321,262원</td>
+					<td>25,927,070,538.0ADA</td>
+					<td class="right up">4.14%</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td><img src="images/front/global/coin/btg.png" alt="BTG" /><strong>BTG</strong></td>
+					<td class="right">3,614,624,420,495원</td>
+					<td class="right">1,300원</td>
+					<td class="right">29,291,829,957원</td>
+					<td>2,779,530,283.0MIOTA</td>
+					<td class="right up">3.61%</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td><img src="images/front/global/coin/dash.png" alt="DASH" /><strong>DASH</strong></td>
+					<td class="right">1,775,232,766,393원</td>
+					<td class="right">17,610원</td>
+					<td class="right">180,576,271,710원</td>
+					<td>100,803,023.0ETC</td>
+					<td class="right up">4.51% </td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td><img src="images/front/global/coin/ltc.png" alt="LTC" /><strong>LTC</strong></td>
+					<td class="right">1,515,224,602,499원</td>
+					<td class="right">17,124원</td>
+					<td class="right">159,730,089,030원</td>
+					<td>88,481,104.0QTUM</td>
+					<td class="right up">4.50%</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td><img src="images/front/global/coin/sgc.png" alt="SGC" /><strong>SGC</strong></td>
+					<td class="right">1,102,926,095,616원</td>
+					<td class="right">10,808원</td>
+					<td class="right">24,534,468,306원</td>
+					<td>102,042,552.0OMG</td>
+					<td class="right up">4.61%</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td><img src="images/front/global/coin/secret.png" alt="SECRET" /><strong>SECRET</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td><img src="images/front/global/coin/hdac.png" alt="HDAC" /><strong>HDAC</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td><img src="images/front/global/coin/vista.png" alt="VSTC" /><strong>VSTC</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td><img src="images/front/global/coin/bsv.png" alt="BSV" /><strong>BSV</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td><img src="images/front/global/coin/trx.png" alt="TRX" /><strong>TRX</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td><img src="images/front/global/coin/xlm.png" alt="XLM" /><strong>XLM</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td><img src="images/front/global/coin/waves.png" alt="WAVES" /><strong>WAVES</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td><img src="images/front/global/coin/poly.png" alt="POLY" /><strong>POLY</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td><img src="images/front/global/coin/omg.png" alt="OMG" /><strong>OMG</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td><img src="images/front/global/coin/mith.png" alt="MITH" /><strong>MITH</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td><img src="images/front/global/coin/icx.png" alt="ICX" /><strong>ICX</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td><img src="images/front/global/coin/xem.png" alt="XEM" /><strong>XEM</strong></td>
+					<td class="right">348,783,891,444원</td>
+					<td class="right">100원</td>
+					<td class="right">25,089,854,634원</td>
+					<td>3,470,483,788.0SNT</td>
+					<td class="right up">5.91%</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+	<footer>
+		<div class="inner">
+			<div class="foot_info">
+				<div class="foot_logo_wrap">
+					<img src="images/front/global/common/logo_gray.png" alt="planbit" />
+				</div>
+				<ul class="info">
+					<li><strong>(주)팩트비트</strong></li>
+					<li>주소 : <strong>서울 강남구 언주로</strong></li>
+					<li>대표 : <strong>홍길동</strong></li>
+					<li>사업자등록번호 : <strong>123-44-56789</strong></li>
+					<li>고객센터 : <strong>1234-5678</strong></li>
+					<li>Email : <strong>help@pactbit.io</strong></li>
+					<li>운영시간 : <strong>10:00 ~ 17:00(주말 및 공휴일 제외)</strong></li>
+				</ul>
+				<ul class="cert_mark">
+					<li>
+						<img src="images/front/global/common/img_ios.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_google.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_ssl.png">
+					</li>
+				</ul>
+			</div>
+			<p class="copy">Copyright ⓒ 2018 pactbit. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+<a href="#0" class="cd-top js-cd-top">Top</a>
+<!-- 로그인 -->
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<a href="#0" class="cd-popup-close img-replace"></a>
+		<h3><img src="images/front/global/common/logo.png" alt="pactbit" /></h3>
+		<ul class="formBox">
+			<li><input type="email" placeholder="이메일을 입력해 주세요." /></li>
+			<li><input type="password" placeholder="비밀번호를 입력해 주세요."></li>
+		</ul>
+		<div class="formOp">
+			<span class="saveId"><input type="checkbox" id="saveId" class="iCheck" /><label for="saveId">ID저장</label></span>
+			<span class="findPw"><a href="#">비밀번호찾기</a></span>
+		</div>
+		<a href="#" class="submit">로그인</a>
+	</div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+</body>
+</html>
+

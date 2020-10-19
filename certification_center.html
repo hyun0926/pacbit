@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>pactbit</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="pactbit">
+	<meta name="description" content="글로벌 암호화폐거래소">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<link rel="shortcut icon" href="images/front/global/common/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<link rel="stylesheet" href="css/front/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<script type="text/javascript" src="js/front/jquery.mCustomScrollbar.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="global_header cd-auto-hide-header">
+		<div class="inner">
+			<h1><a href="index.html"><img src="images/front/global/common/logo.png" alt="planbit" /></a></h1>
+			<nav class="gnb">
+				<ul class="mainMenu">
+					<li><a href="about.html">거래소 소개</a></li>
+					<li><a href="trade.html">거래소</a></li>
+					<li><a href="banking.html">입출금</a></li>
+					<li><a href="wallet.html">지갑관리</a></li>
+					<li><a href="trend.html">코인동향</a></li>
+					<li>
+						<a href="sm_services.html">부가서비스</a>
+						<ul class="subMenu">
+							<li><a href="sm_services.html">자동거래</a></li>
+							<li><a href="trust.html">Trust신청</a></li>
+							<li><a href="lending.html">렌딩</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="notice.html">고객센터</a>
+						<ul class="subMenu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="install_hts.html">HTS 설치방법</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="commission_guide.html">수수료 및 입출금한도</a></li>
+							<li><a href="market_cap.html">Market Cap</a></li>
+							<li><a href="certificate.html">인증자료제출</a></li>
+							<li><a href="coin_list.html">암호화폐정보</a></li>
+							<li><a href="api.html">API</a></li>
+							<li><a href="franchising.html">가맹점 안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="certification_center.html">마이페이지</a>
+						<ul class="subMenu">
+							<li><a href="certification_center.html">인증센터</a></li>
+							<li><a href="member_info.html">회원정보</a></li>
+							<li><a href="connectinfo.html">접속정보</a></li>
+							<li><a href="transaction_details.html">내 거래내역</a></li>
+							<li><a href="inquiry.html">1:1문의</a></li>
+							<li><a href="point_change.html">포인트 전환</a></li>
+						</ul>
+					</li>
+					<li><a href="lucky_box.html">이벤트</a></li>
+				</ul>
+			</nav>
+			<div class="right">
+				<a href="#n" class="btn_menu_mobile"><i class="xi-bars"></i></a>
+				<div class="top_menu_wrap">
+					<svg width="15" height="9">
+						<polygon points="7,0 15,9 0,9" style="fill:rgba(255,255,255,1)"></polygon>
+					</svg>
+					<!-- 로그아웃
+					<ul class="top_menu js-signin-modal-trigger">
+						<li><a href="#" class="top_menu_box cd-popup-trigger">로그인</a></li>
+						<li><a href="sign_up.html" class="top_menu_box">회원가입</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					 -->
+					<!-- 로그인 -->
+					
+					<ul class="top_menu">
+						<li><a href="member_info.html">홍길동님<strong>[Mypage]</strong></a></li>
+						<li><a href="message.html"><i class="xi-note-o"></i> 쪽지함<span class="msNum">2</span></a></li>
+						<li><a href="sign_up.html"><i class="xi-power-off"></i> 로그아웃</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div class="container certification_center">
+	<div class="contents">
+		<h3>인증센터</h3>
+		<!-- 인증완료 전 -->
+		<ol class="stage">
+			<!-- 이메일 인증 -->
+			<li>
+				<div class="left">
+					<p class="step">Step.1</p>
+					<h4>이메일 인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="85%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이메일</th>
+								<td>test@test.com</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+			<li class="completion unchanged">
+				<div class="left">
+					<p class="step">Step.1</p>
+					<h4><i class="xi-check"></i>이메일 인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="85%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이메일</th>
+								<td>test@test.com</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+			<!-- 휴대폰 본인인증 -->
+			<li>
+				<div class="left">
+					<p class="step">Step.2</p>
+					<h4>휴대폰 본인인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="30%" />
+							<col width="15%" />
+							<col width="40%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름</th>
+								<td><input type="text" placeholder="실명을 입력해 주세요." /></td>
+								<th>국적</th>
+								<td>한국</td>
+							</tr>
+							<tr>
+								<th>생년월일</th>
+								<td><input type="number" placeholder="예) 960101" /></td>
+								<th>성별</th>
+								<td>
+									<ul class="gender">
+										<li><input type="radio" name="gender" id="r1" class="iCheck" /><label for="r1">남성</label></li>
+										<li><input type="radio" name="gender" id="r2" class="iCheck" /><label for="r2">여성</label></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>휴대번호</th>
+								<td><input type="number" placeholder="예) 01011112222" /></td>
+								<th>인증코드</th>
+								<td><input type="number" class="code" /><a href="#" class="btn-default">인증코드발송</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="btnArea"><a href="#" class="btn-single_submit">인증하기</a></p>
+				</div>
+			</li>
+			<li class="completion">
+				<div class="left">
+					<p class="step">Step.2</p>
+					<h4><i class="xi-check"></i>휴대폰 본인인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="35%" />
+							<col width="15%" />
+							<col width="35%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름</th>
+								<td>홍길동</td>
+								<th>국적</th>
+								<td>한국</td>
+							</tr>
+							<tr>
+								<th>생년월일</th>
+								<td>96****</td>
+								<th>성별</th>
+								<td>여성</td>
+							</tr>
+							<tr>
+								<th>휴대번호</th>
+								<td>010-****-4567</td>
+								<th>인증코드</th>
+								<td>완료</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<a href="#" class="btn-fun__modify">변경</a>
+			</li>
+			<!-- 계좌인증 -->
+			<li>
+				<div class="left">
+					<p class="step">Step.3</p>
+					<h4>계좌인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="85%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>계좌</th>
+								<td>
+									<select>
+										<option value="은행선택">은행선택</option>
+										<option value="">국민은행</option>
+										<option value="">신한은행</option>
+										<option value="">기업은행</option>
+									</select>
+									<input type="number" placeholder="계좌번호" style="width:260px;" />
+									<input type="text" class="readonly" style="width:100px;" readonly />
+									<a href="#" class="btn-default" >인증하기</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>
+			<li class="completion">
+				<div class="left">
+					<p class="step">Step.3</p>
+					<h4><i class="xi-check"></i>계좌인증</h4>
+				</div>
+				<div class="right">
+					<table class="normal_table tb-th__bgColor">
+						<colgroup>
+							<col width="15%" />
+							<col width="85%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>계좌</th>
+								<td>
+									<select>
+										<option value="은행선택">은행선택</option>
+										<option value="">국민은행</option>
+										<option value="">신한은행</option>
+										<option value="">기업은행</option>
+									</select>
+									<input type="number" placeholder="계좌번호" style="width:260px;" />
+									<input type="text" class="readonly" style="width:100px;" readonly />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<a href="#" class="btn-fun__modify">변경</a>
+			</li>
+			<!-- google OTP -->
+			<li>
+				<div class="left">
+					<h4>Google OTP</h4>
+				</div>
+				<div class="right">
+					<div class="optBox">
+						<div class="optRegist">
+							<ul>
+								<li><label>OTP</label><input type="number" /><a href="#" class="btn-fun__pointB" >등록하기</a></li>
+								<li><label>Email인증</label><input type="number" /><a href="#" class="btn-fun__pointB" >Email인증</a><a href="#" class="btn-fun__pointB" >Email인증</a></li>
+							</ul>
+						</div>
+						<div class="optCase">
+							<div class="wayOtp">
+								<span><input type="radio" id="r3" name="wayOtp" class="iCheck" checked><label for="r3">직접입력</label></span>
+								<span><input type="radio" id="r4" name="wayOtp" class="iCheck"><label for="r4">QR 스캔</label></span>
+							</div>
+							<div class="textCode">
+								<em>2ET4DT</em>
+							</div>
+							<div class="qrCode">
+								<img src="images/front/ko/qrcode.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<h5>구글 OTP 설정하는 방법</h5>
+					<ol class="optSeting">
+						<li>
+							<svg height="50" width="50">
+								<polygon points="0,0 50,0 0,50" style="fill:rgb(66,134,245);" />
+							</svg>
+							<span>1</span>
+							<img src="images/front/ko/certification_center/opt_img01.jpg" alt="" />
+							<p>휴대폰 스토어에서 "Google OTP"앱을<br/>설치하시기 바랍니다.</p>
+						</li>
+						<li>
+							<svg height="50" width="50">
+								<polygon points="0,0 50,0 0,50" style="fill:rgb(66,134,245);" />
+							</svg>
+							<span>2</span>
+							<img src="images/front/ko/certification_center/opt_img02.jpg" alt="" />
+							<p>"Google OTP"앱을 실행한 후<br/>"바코드 스캔"을 선택합니다.</p>
+						</li>
+						<li>
+							<svg height="50" width="50">
+								<polygon points="0,0 50,0 0,50" style="fill:rgb(66,134,245);" />
+							</svg>
+							<span>3</span>
+							<img src="images/front/ko/certification_center/opt_img03.jpg" alt="" />
+							<p>옆의 QR코드를 스캔하시기 바랍니다.</p>
+						</li>
+						<li>
+							<svg height="50" width="50">
+								<polygon points="0,0 50,0 0,50" style="fill:rgb(66,134,245);" />
+							</svg>
+							<span>4</span>
+							<img src="images/front/ko/certification_center/opt_img04.jpg" alt="" />
+							<p>"Google OTP"앱에서 보이는 OTP번호를<br/>입력하시기 바랍니다.</p>
+						</li>
+					</ol>
+				</div>
+			</li>
+			<li class="completion">
+				<div class="left">
+					<h4><i class="xi-check"></i>Google OTP</h4>
+				</div>
+				<div class="right">
+					<div class="cover">
+						<h5>등록완료</h5>
+					</div>
+				</div>
+				<a href="#" class="btn-fun__modify">변경</a>
+			</li>
+			<!-- KYC 인증 -->
+			<li>
+				<div class="left">
+					<p class="step">Step.3</p>
+					<h4>KYC인증</h4>
+				</div>
+				<div class="right">
+					<div class="grayBox">
+						<small>업로드 전 [마이페이지 > 회원정보] 의 이름, 생년월일, 국적을 정확히 입력 후 업로드해주세요.<br/>업로드 된 사진과 다를 시 인증이 거부됩니다.</small>
+					</div>
+					<ol class="kycSeting">
+						<li>
+							<svg height="50" width="50">
+								<polygon points="0,0 50,0 0,50" style="fill:rgb(66,134,245);" />
+							</svg>
+							<span>1</span>
+							<img src="images/front/ko/certificate/certified_img01.png" alt="" />
+							<p>
+								<strong>STEP 1. 신분증 업로드</strong>
+								신분증에 주민등록번호 뒤 7자리,운전면허증번호, 여권번호는 모두가려주세요.<br/>
+								<em>인증목적, 인증전화번호, 인증이메일, 요청날짜 메모와 개인정보를 가린 신분증을 찍은사진을 첨부해주세요.</em>
+								(인증 가능 신분증 : 주민등록증, 운전면허증, 여권)
+							</p>
+							<div class="kycBox">
+								<a href="#n" class="upload_blank"></a>
+								<a href="#n" class="btn-tb__basics">파일업로드</a>
+							</div>
+						</li>
+						<li>
+							<svg height="50" width="50">
+								<polygon points="0,0 50,0 0,50" style="fill:rgb(66,134,245);" />
+							</svg>
+							<span>2</span>
+							<img src="images/front/ko/certificate/certified_img02.png" alt="" />
+							<p>
+								<strong>STEP 2. 신분증을 들고 있는 본인 이미지 업로드</strong>
+								신분증에 인증목적, 인증전화번호, 인증이메일, 요청날짜 메모를 부착해서 촬영해주세요.<br/>
+								신분증 글자(메모포함)를 읽을 수 있어야 합니다. <br/>
+								받은 사진은 해당 요청에 대한 비대면 실명 확인 용도로만 사용합니다.
+							</p>
+							<div class="kycBox">
+								<a href="#n" class="upload_blank"></a>
+								<a href="#n" class="btn-tb__basics">파일업로드</a>
+							</div>
+						</li>
+					</ol>
+					<p class="btnArea">
+						<a href="#n" class="btn-single_submit">인증요청</a>
+						<a href="#n" class="btn-single_submit manager_checking">관리자 확인 중</a>
+						<a href="#n" class="btn-single_submit cert_complete">인증완료</a>
+					</p>
+				</div>
+			</li>
+		</ol>
+	</div>
+</div>
+
+	<footer>
+		<div class="inner">
+			<div class="foot_info">
+				<div class="foot_logo_wrap">
+					<img src="images/front/global/common/logo_gray.png" alt="planbit" />
+				</div>
+				<ul class="info">
+					<li><strong>(주)팩트비트</strong></li>
+					<li>주소 : <strong>서울 강남구 언주로</strong></li>
+					<li>대표 : <strong>홍길동</strong></li>
+					<li>사업자등록번호 : <strong>123-44-56789</strong></li>
+					<li>고객센터 : <strong>1234-5678</strong></li>
+					<li>Email : <strong>help@pactbit.io</strong></li>
+					<li>운영시간 : <strong>10:00 ~ 17:00(주말 및 공휴일 제외)</strong></li>
+				</ul>
+				<ul class="cert_mark">
+					<li>
+						<img src="images/front/global/common/img_ios.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_google.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_ssl.png">
+					</li>
+				</ul>
+			</div>
+			<p class="copy">Copyright ⓒ 2018 pactbit. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+<a href="#0" class="cd-top js-cd-top">Top</a>
+<!-- 로그인 -->
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<a href="#0" class="cd-popup-close img-replace"></a>
+		<h3><img src="images/front/global/common/logo.png" alt="pactbit" /></h3>
+		<ul class="formBox">
+			<li><input type="email" placeholder="이메일을 입력해 주세요." /></li>
+			<li><input type="password" placeholder="비밀번호를 입력해 주세요."></li>
+		</ul>
+		<div class="formOp">
+			<span class="saveId"><input type="checkbox" id="saveId" class="iCheck" /><label for="saveId">ID저장</label></span>
+			<span class="findPw"><a href="#">비밀번호찾기</a></span>
+		</div>
+		<a href="#" class="submit">로그인</a>
+	</div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+</body>
+</html>
+

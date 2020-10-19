@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>pactbit</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="pactbit">
+	<meta name="description" content="글로벌 암호화폐거래소">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<link rel="shortcut icon" href="images/front/global/common/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<link rel="stylesheet" href="css/front/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<script type="text/javascript" src="js/front/jquery.mCustomScrollbar.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="global_header cd-auto-hide-header">
+		<div class="inner">
+			<h1><a href="index.html"><img src="images/front/global/common/logo.png" alt="planbit" /></a></h1>
+			<nav class="gnb">
+				<ul class="mainMenu">
+					<li><a href="about.html">거래소 소개</a></li>
+					<li><a href="trade.html">거래소</a></li>
+					<li><a href="banking.html">입출금</a></li>
+					<li><a href="wallet.html">지갑관리</a></li>
+					<li><a href="trend.html">코인동향</a></li>
+					<li>
+						<a href="sm_services.html">부가서비스</a>
+						<ul class="subMenu">
+							<li><a href="sm_services.html">자동거래</a></li>
+							<li><a href="trust.html">Trust신청</a></li>
+							<li><a href="lending.html">렌딩</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="notice.html">고객센터</a>
+						<ul class="subMenu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="install_hts.html">HTS 설치방법</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="commission_guide.html">수수료 및 입출금한도</a></li>
+							<li><a href="market_cap.html">Market Cap</a></li>
+							<li><a href="certificate.html">인증자료제출</a></li>
+							<li><a href="coin_list.html">암호화폐정보</a></li>
+							<li><a href="api.html">API</a></li>
+							<li><a href="franchising.html">가맹점 안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="certification_center.html">마이페이지</a>
+						<ul class="subMenu">
+							<li><a href="certification_center.html">인증센터</a></li>
+							<li><a href="member_info.html">회원정보</a></li>
+							<li><a href="connectinfo.html">접속정보</a></li>
+							<li><a href="transaction_details.html">내 거래내역</a></li>
+							<li><a href="inquiry.html">1:1문의</a></li>
+							<li><a href="point_change.html">포인트 전환</a></li>
+						</ul>
+					</li>
+					<li><a href="lucky_box.html">이벤트</a></li>
+				</ul>
+			</nav>
+			<div class="right">
+				<a href="#n" class="btn_menu_mobile"><i class="xi-bars"></i></a>
+				<div class="top_menu_wrap">
+					<svg width="15" height="9">
+						<polygon points="7,0 15,9 0,9" style="fill:rgba(255,255,255,1)"></polygon>
+					</svg>
+					<!-- 로그아웃
+					<ul class="top_menu js-signin-modal-trigger">
+						<li><a href="#" class="top_menu_box cd-popup-trigger">로그인</a></li>
+						<li><a href="sign_up.html" class="top_menu_box">회원가입</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					 -->
+					<!-- 로그인 -->
+					
+					<ul class="top_menu">
+						<li><a href="member_info.html">홍길동님<strong>[Mypage]</strong></a></li>
+						<li><a href="message.html"><i class="xi-note-o"></i> 쪽지함<span class="msNum">2</span></a></li>
+						<li><a href="sign_up.html"><i class="xi-power-off"></i> 로그아웃</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+<div class="container banking">
+	<div class="contents">
+		<h3>입출금</h3>
+		<div class="side_con">
+			<p class="desc"><input id="c1" type="checkbox" /><label for="c1">보유코인만</label></p>
+			<table class="normal_table">
+				<colgroup>
+					<col width="30%" />
+					<col width="70%" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>코인명</th>
+						<th>출금가능</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="current">
+						<th><img src="images/front/global/coin/admt.png" alt="ADMT">ADMT</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/btc.png" alt="BTC">BTC</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/eth.png" alt="ETH">ETH</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/bch.png" alt="BCH">BCH</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/xrp.png" alt="XRP">XRP</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/qtum.png" alt="QTUM">QTUM</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/btg.png" alt="BTG">BTG</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/dash.png" alt="DASH">DASH</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/ltc.png" alt="LTC">LTC</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/SGC.png" alt="SGC">SGC</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/secret.png" alt="SECRET">SECRET</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/hdac.png" alt="HDAC">HDAC</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/vista.png" alt="VSTC">VSTC</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/bsv.png" alt="BSV">BSV</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/trx.png" alt="TRX">TRX</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/xlm.png" alt="XLM">XLM</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/waves.png" alt="WAVES">WAVES</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/poly.png" alt="POLY">POLY</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/omg.png" alt="OMG">OMG</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/mith.png" alt="MITH">MITH</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/icx.png" alt="ICX">ICX</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+					<tr>
+						<th><img src="images/front/global/coin/xem.png" alt="XEM">XEM</th>
+						<td>0.000000000 <span>(0PTC)</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="banking_con">
+			<ul class="inlineStyle category tab-2 sub_tabmenu">
+				<li><a href="#n" data-tab="1" class="current">입금</a></li>
+				<li><a href="#n" data-tab="2">출금</a></li>
+			</ul>
+			<!-- PTC충전 -->
+			<div class="tabCn_1 tabCn">
+				<h4>계좌 충전</h4>
+				<div class="cell">
+					<h5>PTC 충전 안내 및 주의사항</h5>
+					<ol class="listNumStyle">
+						<li>PTC충전은 계좌입금으로 가능합니다.</li>
+						<li>계좌 입금 후 반영까지 약 2분~ 30분 정도가 소요됩니다. (은행 점검, 전산망 장애 등 긴급 상황 발생 시 예외)</li>
+						<li>아래와 같은 경우 입금이 확인되지 않습니다. [고객지원 > 인증자료제출]의 입금사실증명의 자료제출을 해주셔야 입금이 완료됩니다.
+							<ul class="listDot ">
+								<li>인증계좌로 등록한 본인 계좌에서 입금 하지 않을 경우</li>
+								<li>인증계좌에서 입금하더라도 입금자명 (적요)을 변경하여 송금 할 경우<br><strong>(적요 : 아래 ‘입금자명’ 에 표시된 내용으로 입금 시 통장 적요에 입력)</strong></li>
+								<li>고액을 입금 할 경우</li>
+							</ul>
+						</li>
+					</ol>
+					<table class="normal_table tb-th__left tb-th__bgColor">
+						<colgroup>
+							<col width="16%" />
+							<col width="34%" />
+							<col width="16%" />
+							<col width="34%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>입금은행</th>
+								<td>
+									<select style="width: 100%;">
+										<option value="">선택하세요.</option>
+										<option value="">선택하세요.</option>
+										<option value="">선택하세요.</option>
+									</select>
+								</td>
+								<th>계좌번호</th>
+								<td></td>
+							</tr>
+							<tr>
+								<th>입금주</th>
+								<td></td>
+								<th>받는사람<br>통장 적요</th>
+								<td>홍길동 1234</td>
+							</tr>
+						</tbody>
+					</table>
+					<a href="" class="btn-more">더보기 <i class="xi-angle-down"></i></a>
+				</div>
+				<div class="cell">
+					<h5>최근 거래 내역</h5>
+					<table class="normal_table">
+						<colgroup>
+							<col width="25%" />
+							<col width="25%" />
+							<col width="25%" />
+							<col width="25%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>완료일자</th>
+								<th>구분</th>
+								<th>충전금액</th>
+								<th>진행상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- BTC 입금 -->
+			<div class="tabCn_1 tabCn">
+				<h4>BTC 입금</h4>
+				<p>신규 가입하신 회원님께서는 주소 생성하기 버튼을 클릭하셔야 고유 전자지갑주소가 발급 됩니다.<br>진행은 블록체인상에서 승인 이후 해당 코인 입출금 지갑에 반영됩니다. 입금은 약 10분~ 30분 동안 진행됩니다.</p>
+				<div class="creatWallet">
+					<a href="#n" class="btn_ewallet view"><span>비트코인 전자지갑주소 생성</span></a>
+					<div class="hidden" style="display:none;">
+						<dl>
+							<dt>비트코인 전자지갑주소</dt>
+							<dd>
+								<a href="#n" class="btn-address btnPopNum2">0x7bC87933305f09F4c6004E1Bb77f97deB1</a><a href="#n" class="btn-copy">COPY</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<h5>최근 입금내역</h5>
+				<table class="normal_table">
+					<colgroup>
+						<col width="20%" />
+						<col width="20%" />
+						<col width="20%" />
+						<col width="20%" />
+						<col width="20%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>종류</th>
+							<th>일자</th>
+							<th>코인개수</th>
+							<th>진행상태</th>
+							<th>완료일자</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="" class="btn-more">더보기 <i class="xi-angle-down"></i></a>
+			</div>
+			<!-- PTC 출금 -->
+			<div class="tabCn_2 tabCn">
+				<div class="tabList tab-list">
+					<a href="#tab1" class="item current">계좌출금</a>
+					<a href="#tab2" class="item">PTC송금</a>
+				</div>
+				<!-- 계좌출금 -->
+				<!--
+				<div id="tab1" class="tabCon current">
+					<div class="tgroup">
+						<h4>계좌출금</h4>
+						<p class="desc">출금은 본인 명의의 계좌로만 가능합니다.</p>
+					</div>				
+					<div class="cell">
+						<table class="normal_table tb-th__left tb-th__bgColor">
+							<colgroup>
+								<col width="16%" />
+								<col width="34%" />
+								<col width="16%" />
+								<col width="34%" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>수수료</th>
+									<td>1,000 PTC</td>
+									<th>출금 최소 금액</th>
+									<td>10,000 PTC</td>
+								</tr>
+								<tr>
+									<th>출금 한도</th>
+									<td></td>
+									<th>보유 PTC</th>
+									<td>0 PTC</td>
+								</tr>
+								<tr>
+									<th>출금 신청금액</th>
+									<td colspan="3"><input type="text"> <a href="#n" class="btn-default">전액</a></td>
+								</tr>
+								<tr>
+									<th>수령액<br>(수수료 제외)</th>
+									<td></td>
+									<th>은행명</th>
+									<td></td>
+								</tr>
+								<tr>
+									<th>계좌번호</th>
+									<td></td>
+									<th>예금주</th>
+									<td></td>
+								</tr>
+								<tr>
+									<th>Email 인증</th>
+									<td colspan="3">
+										<input type="text" style="width:30%;">
+										<a href="#n" class="btn-default">인증번호발송</a>
+										<span class="timer">3:00</span><a href="#n" class="btn-fun__default">인증확인</a>
+										<a href="" class="btn-fun__default">재발송</a>
+										<a href="" class="btn-fun__default">취소</a>
+									</td>
+								</tr>
+								<tr>
+									<th>OTP 인증</th>
+									<td colspan="3">
+										<input type="text" style="width:30%;">
+										<a href="#n" class="btn-default">인증확인</a>
+									</td>
+								</tr>
+								<tr>
+									<th>SMS 인증</th>
+									<td colspan="3">
+										<input type="text" style="width:30%;">
+										<a href="#n" class="btn-default">SMS 인증</a>
+										<span class="timer">3:00</span><a href="#n" class="btn-fun__default">인증확인</a>
+										<a href="" class="btn-fun__default">재발송</a>
+										<a href="" class="btn-fun__default">취소</a>
+									</td>
+								</tr>				
+							</tbody>
+						</table>
+						<ul class="checkList">
+							<li>시스템 업데이트 시 반영이 지연 될 수 있습니다.</li>
+							<li>모든 출금은 관리자 확인 후 진행됩니다.</li>
+							<li>OTP 등록이 되어 있지 않은 경우, [인증센터 > OTP 등록] 에서 등록하셔야 출금이 가능합니다.</li>
+							<li>출금은 1만원 단위로만 신청이 가능하며, 신청 금액은 수수료가 포함된 금액으로 실수령액을 확인해 주시기 바랍니다.</li>
+						</ul>
+						<a href="#n" class="btn-single_submit">충전하기</a>
+					</div>
+					<div class="cell">
+						<table class="normal_table">
+							<colgroup>
+								<col width="25%" />
+								<col width="25%" />
+								<col width="25%" />
+								<col width="25%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>출금신청일시</th>
+									<th>출금액</th>
+									<th>상태</th>
+									<th>출금일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div> -->
+				<!-- coin 송금 -->
+				<div id="tab1" class="tabCon current">
+					<div class="tgroup">
+						<h4>ETH 송금</h4>
+						<p class="desc">출금은 본인 명의의 계좌로만 가능합니다.</p>
+					</div>
+					<div class="cell">
+						<table class="normal_table tb-th__left tb-th__bgColor">
+							<colgroup>
+								<col width="16%" />
+								<col width="34%" />
+								<col width="16%" />
+								<col width="34%" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>송금 가능 코인</th>
+									<td>0.00000000BTC</td>
+									<th>송금한도</th>
+									<td>1회 : 10ETH / 1일 : 100ETH</td>
+								</tr>
+								<tr>
+									<th>송금할 주소</th>
+									<td colspan="3">
+										<input type="text" style="width: 50%;">
+										<a href="#n" class="btn-default btnPopNum3"><i class="xi-send"></i> 최근송금</a>
+										<a href="#n" class="btn-default btnPopNum4"><i class="xi-star"></i> 즐겨찾기</a>
+									</td>
+								</tr>
+								<tr>
+									<th>송금 신청 금액</th>
+									<td>
+										<p style="margin-bottom: 4px;">최소송금 : 0.01ETH</p>
+										<input type="text">
+									</td>
+									<th>실제 출금 총액</th>
+									<td>BTC</td>
+								</tr>
+								<tr>
+									<th>BTC 수수료</th>
+									<td colspan="3">0.001BTC</td>
+								</tr>
+								<tr>
+									<th>Email 인증</th>
+									<td colspan="3">
+										<input type="text" style="width:30%;">
+										<a href="#n" class="btn-default">인증번호발송</a>
+										<span class="timer">3:00</span>
+										<a href="" class="btn-fun__default">재발송</a>
+										<a href="" class="btn-fun__default">취소</a>
+									</td>
+								</tr>
+								<tr>
+									<th>OTP 인증</th>
+									<td colspan="3">
+										<input type="text" style="width:30%;">
+										<a href="#n" class="btn-default">인증확인</a>
+									</td>
+								</tr>
+								<tr>
+									<th>SMS 인증</th>
+									<td colspan="3">
+										<input type="text" style="width:30%;">
+										<a href="#n" class="btn-default">SMS 인증</a>
+										<span class="timer">3:00</span>
+										<a href="" class="btn-fun__default">재발송</a>
+										<a href="" class="btn-fun__default">취소</a>
+									</td>
+								</tr>				
+							</tbody>
+						</table>
+						<ul class="checkList">
+							<li>전자지갑주소 (입금 주소)를 반드시 확인하고 송금 해주시기 바랍니다.</li>
+							<li>BTC 는 BTC 전자지갑주소로만 전송 할 수 있습니다.</li>
+							<li>코인 거래는 출금 시 거래 추적이 어렵기 때문에 보이스피싱 등이 의심된다면, 경찰청 혹은 금융감독원에 직접 확인 후 진행하시기 바랍니다. 보이스피싱 및 사기 피해의 경우 해당 거래소는 법적 책임을 지지 않습니다.</li>
+							<li>모든 송금은 관리자 확인 후 진행됩니다.</li>
+							<li>주의 사항을 한 번 더 확인 해주시고 입출금을 진행해주시기 바랍니다. 해당 사항을 어길 경우 발생하는 불이익은 거래소에서 책임지지 않습니다. 송금 전에 반드시 확인 하고 진행해주시기 바랍니다.</li>
+						</ul>
+						<div class="check-wrap">
+							<input id="c2" type="checkbox" /><label for="c2">위 내용을 확인 했습니다.</label>
+						</div>
+						<a href="#n" class="btn-single_submit">송금요청</a>
+					</div>
+					<div class="cell">
+						<table class="normal_table">
+							<colgroup>
+								<col width="16.66666666666667%" />
+								<col width="16.66666666666667%" />
+								<col width="16.66666666666667%" />
+								<col width="16.66666666666667%" />
+								<col width="16.66666666666667%" />
+								<col width="16.66666666666667%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>송금코드</th>
+									<th>신청일시</th>
+									<th>송금액</th>
+									<th>수수료</th>
+									<th>상태</th>
+									<th>송금완료일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>										
+				</div>
+				<div id="tab2" class="tabCon">
+					<div class="tgroup">
+						<h4>PTC 거래소 내 송금 주의사항</h4>
+						<p class="desc">송금은 본인의 회원 자산에서 거래소내 회원에게 전송이 됩니다.<br>회원이 실수로 잘못 송금한 경우 거래소에서 책임지지 않습니다.</p>
+					</div>
+					<div class="cell">
+						<table class="normal_table tb-th__left tb-th__bgColor">
+							<colgroup>
+								<col width="20%" />
+								<col width="80%" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>보유 PTC</th>
+									<td><strong>9,800,000 PTC</strong></td>
+								</tr>
+								<tr>
+									<th>송금 최소 금액</th>
+									<td>10,000 PTC</td>
+								</tr>
+								<tr>
+									<th>송금 한도</th>
+									<td>무제한</td>
+								</tr>
+								<tr>
+									<th>구분</th>
+									<td>
+										<span class="radioBox">
+											<input type="radio" id="userEmail" name="case" checked><label for="userEmail">회원이메일</label>
+											<input type="radio" id="userPhone" name="case"><label for="userPhone">전화번호</label>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<th>받는 이</th>
+									<td><input type="text"> <a href="#n" class="btn-default">전액</a></td>
+								</tr>
+								<tr>
+									<th>송금 수량</th>
+									<td><input type="text"> <a href="#n" class="btn-default">전액</a></td>
+								</tr>
+								<tr>
+									<th>SMS 인증</th>
+									<td>
+										<input type="text" style="width:30%;">
+										<a href="#n" class="btn-default">SMS 전송</a>
+									</td>
+								</tr>				
+							</tbody>
+						</table>
+						<a href="#n" class="btn-single_submit btnPopNum1">송금요청</a>
+					</div>
+					<div class="cell">
+						<table class="normal_table tb-td__center">
+							<colgroup>
+								<col width="19%" />
+								<col width="19%" />
+								<col width="9%" />
+								<col width="15%" />
+								<col width="10%" />
+								<col width="9%" />
+								<col width="19%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>출금신청일시</th>
+									<th>회원 아이디</th>
+									<th>회원명</th>
+									<th>전화번호</th>
+									<th>송금수량</th>
+									<th>상태</th>
+									<th>송금일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2017-07-24 10:10:10</td>
+									<td>testyn331@gmail.com</td>
+									<td>홍길동</td>
+									<td>010-2121-3252</td>
+									<td class="txt-r">21,000</td>
+									<td>송금실패</td>
+									<td>2017-07-24 10:10:10</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- ETH 송금
+			<div class="tabCn_2 tabCn">
+				<div class="tgroup">
+					<h4>ETH 송금</h4>
+					<p class="desc">출금은 본인 명의의 계좌로만 가능합니다.</p>
+				</div>
+				<div class="cell">
+					<table class="normal_table tb-th__left tb-th__bgColor">
+						<colgroup>
+							<col width="16%" />
+							<col width="34%" />
+							<col width="16%" />
+							<col width="34%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>송금 가능 코인</th>
+								<td>0 ETH</td>
+								<th>송금한도</th>
+								<td>1회 10 ETH / 1일 100 ETH</td>
+							</tr>
+							<tr>
+								<th>송금할 주소</th>
+								<td colspan="3"><input type="text" style="width: 100%;" /></td>
+							</tr>
+							<tr>
+								<th>송금신청금액</th>
+								<td><p style="margin-bottom: 4px;">최소 송금 : 0.01ETH</p><input type="text" /></td>
+								<th>실제 출금 총액</th>
+								<td><input type="text" style="width: 70%;" /> ETH</td>
+							</tr>
+							<tr>
+								<th>이더리움 수수료</th>
+								<td>0.01 ETH</td>
+								<th>실제출금총액</th>
+								<td>0 ETH</td>
+							</tr>
+							<tr>
+								<th>Email 인증</th>
+								<td colspan="3">
+									<input type="text" style="width:30%;">
+									<a href="#n" class="btn-default">인증번호발송</a>
+									<span class="timer">3:00</span><a href="#n" class="btn-point">인증확인</a>
+									<a href="" class="btn-default">재발송</a>
+									<a href="" class="btn-default">취소</a>
+								</td>
+							</tr>
+							<tr>
+								<th>OTP 인증</th>
+								<td colspan="3">
+									<input type="text" style="width:30%;">
+									<a href="#n" class="btn-default">인증확인</a>
+								</td>
+							</tr>
+							<tr>
+								<th>SMS 인증</th>
+								<td colspan="3">
+									<input type="text" style="width:30%;">
+									<a href="#n" class="btn-default">SMS 인증</a>
+									<span class="timer">3:00</span><a href="#n" class="btn-point">인증확인</a>
+									<a href="" class="btn-default">재발송</a>
+									<a href="" class="btn-default">취소</a>
+								</td>
+							</tr>				
+						</tbody>
+					</table>
+					<h6>이더리움 (ETH) 송금 시 주의사항</h6>
+					<ol class="listNumStyle">
+						<li>ETH 전자지갑주소(입금 주소)를 반드시 확인하고 송금해주시기 바랍니다.</li>
+						<li>ETH는 ETH 전자지갑 주소로만 전송 할 수 있습니다. 해당페이지에서 ETC전자지갑주소 송금이 안됩니다.</li>
+						<li>ICO 및 Smart Contract로 보내는 출금은 진행되지 않으며, 오직 이더리움만 허용하는 주소로만 출금이 허용됩니다.</li>
+						<li>코인 거래는 출금 시 거래 추적이 어렵기 때문에 보이스피싱 등이 의심된다면, 경찰청 혹은 금융감독원에 직접 확인 후 진행 하시기바랍니다. 보이스피싱 및 사기 피해의 경우 해당 거래소는 법적 책임을 지지않습니다.</li>
+					</ol>
+					<p>주의사항을 한번 더 확인 해 주시고 입금을 진행해주시기 바랍니다. 해당사항 미준수시 발생하는 불이익은 거래소에서 책임지지 않습니다. 송금 전에 반드시 확인 하고 진행해주시기 바랍니다.</p>
+					<div class="check-wrap">
+						<input id="c2" type="checkbox" /><label for="c2">위 내용을 확인 했습니다.</label>
+					</div>
+					<a href="#n" class="btn-single_submit">출금 요청</a>
+				</div>
+				<div class="cell">
+					<table class="normal_table">
+						<colgroup>
+							<col width="16.66666666666667%" />
+							<col width="16.66666666666667%" />
+							<col width="16.66666666666667%" />
+							<col width="16.66666666666667%" />
+							<col width="16.66666666666667%" />
+							<col width="16.66666666666667%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>송금코드</th>
+								<th>신청일시</th>
+								<th>송금액</th>
+								<th>수수료</th>
+								<th>상태</th>
+								<th>송금완료일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</div>
+
+
+<!-- alert -->
+<!-- <div class="popup_wrap popNum1">
+  <div class="popup_inner">
+		<h3>PTC 충전 주의사항</h3>
+		<a href="#n" class="btn_popClose"><i class="xi-close-thin"></i></a>
+		<div class="popup_contents">
+      <dl class="recipient">
+      	<dt>받는사람 통장 적요</dt>
+      	<dd>김수진0934</dd>
+      </dl>
+      <p>아래와 같은 경우 입금이 확인되지 않습니다.</p>
+      <ul class="listDot gab">
+      	<li>인증계좌로 등록한 보인 계좌에서 입금하지 않은 경우</li>
+      	<li>인증계좌에서 입금하더라도 받는 사람 통장 적요를 변경하여 송금할 경우</li>
+      </ul>
+      <p>확인이 되지 않았을 경우 [고객지원 > 인증자료제출]의 입금 사실 증명의 자료를 인증 자료 제출로 요청하셔야 입금이 완료됩니다.</p>
+      <a href="#n" class="btn-fun__sub">확인</a>
+    </div>
+  </div>
+</div> -->
+
+<!-- alert -->
+<div class="popup_wrap popNum2">
+  <div class="popup_inner">
+		<h3>비트코인(BTC) QRCODE</h3>
+		<a href="#n" class="btn_popClose"><i class="xi-close-thin"></i></a>
+		<div class="popup_contents">
+    	<div class="view-qrcode">
+				<img src="images/front/ko/qrcode.png" alt="">
+				<p>0x7bC87933305f09F4c6004E1Bb77f97deB1</p>
+    	</div>
+			<a href="#n" class="btn-fun__sub">확인</a>
+    </div>
+  </div>
+</div>
+
+<!-- alert -->
+<div class="popup_wrap popNum1">
+  <div class="popup_inner">
+		<h3>PTC 송금</h3>
+		<a href="#n" class="btn_popClose"><i class="xi-close-thin"></i></a>
+		<div class="popup_contents">
+      <table class="normal_table tb-th__bgColor">
+      	<colgroup>
+      		<col width="20%">
+      		<col width="80%">
+      	</colgroup>
+      	<tbody>
+      		<tr>
+      			<th>회원명</th>
+      			<td>홍길동</td>
+      		</tr>
+      		<tr>
+      			<th>회원아이디</th>
+      			<td>testyn331@gmail.com</td>
+      		</tr>
+      		<tr>
+      			<th>송금일시</th>
+      			<td>2019-07-24 10:10:10</td>
+      		</tr>
+      		<tr>
+      			<th>송금수량</th>
+      			<td>3,000,000 PTC</td>
+      		</tr>
+      	</tbody>
+      </table>
+      <p>회원이 실수로 잘못 송금한 경우 거래소에서 책임지지 않습니다. <br>해당 회원에게 송금 진행을 하시겠습니까?</p>
+      <a href="#n" class="btn-fun__sub">확인</a>
+    </div>
+  </div>
+</div>
+
+<!-- alert -->
+<div class="popup_wrap popNum3">
+  <div class="popup_inner wide_xl">
+		<h3>최근 송금</h3>
+		<a href="#n" class="btn_popClose"><i class="xi-close-thin"></i></a>
+		<div class="popup_contents">
+    	<div class="searchCover">
+				<div class="searchBox">
+					<input type="text"><a href="#n"><i class="xi-search"></i></a>
+				</div>
+    	</div>   	
+    	<table class="normal_table">
+        <colgroup>
+          <col width="10%" />
+          <col width="20%" />
+          <col width="20%" />
+          <col width="50%" />
+        </colgroup>
+        <thead>
+        	<tr>
+        		<th>No.</th>
+        		<th>날짜</th>
+        		<th>코인명</th>
+        		<th>지갑주소</th>
+        	</tr>
+        </thead>
+        <tbody>
+        	<tr>
+        		<td class="txt-c">1</td>
+        		<td class="txt-c">2019.07.29</td>
+        		<td class="txt-c">ETH</td>
+        		<td>fwe2mfpomweiofmi2omf</td>
+        	</tr>
+        	<tr>
+        		<td class="txt-c">2</td>
+        		<td class="txt-c">2019.07.29</td>
+        		<td class="txt-c">ETH</td>
+        		<td>fwe2mfpomweiofmi2omf</td>
+        	</tr>
+        	<tr>
+        		<td class="txt-c">3</td>
+        		<td class="txt-c">2019.07.29</td>
+        		<td class="txt-c">ETH</td>
+        		<td>fwe2mfpomweiofmi2omf</td>
+        	</tr>
+        	<tr>
+        		<td class="txt-c">4</td>
+        		<td class="txt-c">2019.07.29</td>
+        		<td class="txt-c">ETH</td>
+        		<td>fwe2mfpomweiofmi2omf</td>
+        	</tr>
+        </tbody>
+			</table>
+			<ul class="btnArea btn2">
+				<li><a href="#n" class="btnCancel">취소</a></li>
+				<li><a href="#n" class="">확인</a></li>
+			</ul>
+    </div>
+  </div>
+</div>
+
+<!-- alert -->
+<div class="popup_wrap popNum4">
+  <div class="popup_inner wide_xl">
+		<h3>즐겨찾기</h3>
+		<a href="#n" class="btn_popClose"><i class="xi-close-thin"></i></a>
+		<div class="popup_contents">
+    	<div class="searchCover">
+				<div class="searchBox">
+					<input type="text"><a href="#n"><i class="xi-search"></i></a>
+				</div>
+    	</div>
+			<div class="favoriteCover">
+				<a href="#n" class="btn_f btnPopNum5"><i class="xi-star"></i> 즐겨찾기 등록</a>
+			</div>
+			<table class="normal_table">
+				<colgroup>
+					<col width="10%" />
+					<col width="15%" />
+					<col width="15%" />
+					<col width="45%" />
+					<col width="15%" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>No.</th>
+						<th>날짜</th>
+						<th>코인명</th>
+						<th>지갑주소</th>
+						<th>수정</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="txt-c">1</td>
+						<td class="txt-c">2019.07.29</td>
+						<td class="txt-c">ETH</td>
+						<td>fwe2mfpomweiofmi2omf</td>
+						<td class="txt-c">
+							<a href="#n" class="btn_mo" title="수정"><i class="xi-pen"></i></a>
+							<a href="#n" class="btn_de" title="삭제"><i class="xi-close"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td class="txt-c">2</td>
+						<td class="txt-c">2019.07.29</td>
+						<td class="txt-c">ETH</td>
+						<td>fwe2mfpomweiofmi2omf</td>
+						<td class="txt-c">
+							<a href="#n" class="btn_mo" title="수정"><i class="xi-pen"></i></a>
+							<a href="#n" class="btn_de" title="삭제"><i class="xi-close"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td class="txt-c">3</td>
+						<td class="txt-c">2019.07.29</td>
+						<td class="txt-c">ETH</td>
+						<td>fwe2mfpomweiofmi2omf</td>
+						<td class="txt-c">
+							<a href="#n" class="btn_mo" title="수정"><i class="xi-pen"></i></a>
+							<a href="#n" class="btn_de" title="삭제"><i class="xi-close"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td class="txt-c">4</td>
+						<td class="txt-c">2019.07.29</td>
+						<td class="txt-c">ETH</td>
+						<td>fwe2mfpomweiofmi2omf</td>
+						<td class="txt-c">
+							<a href="#n" class="btn_mo" title="수정"><i class="xi-pen"></i></a>
+							<a href="#n" class="btn_de" title="삭제"><i class="xi-close"></i></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul class="btnArea btn2">
+				<li><a href="#n" class="btnCancel">취소</a></li>
+				<li><a href="#n" class="">확인</a></li>
+			</ul>
+    </div>
+  </div>
+</div>
+
+<!-- alert -->
+<div class="popup_wrap popNum5">
+  <div class="popup_inner wide">
+		<h3>즐겨찾기 등록</h3>
+		<a href="#n" class="btn_popClose"><i class="xi-close-thin"></i></a>
+		<div class="popup_contents">
+      <ul class="listDot" style="margin-bottom: 10px;">
+        <li>내용을 입력하시고, “등록”버튼을 클릭하시면 즐겨찾기 주소로 등록됩니다.</li>
+        <li>등록하시려는 지갑주소는 정확히 입력하여 주시기 바랍니다. 잘못 입력한 주소로 송금 하실 경우, 거래소는 책임져 드리지 않습니다.</li>
+      </ul>
+      <table class="normal_table tb-th__bgColor">
+				<colgroup>
+					<col width="20%" />
+					<col width="80%" />
+				</colgroup>
+     		<tbody>
+     			<tr>
+     				<th>별칭</th>
+     				<td><input type="text" style="width: 100%;"></td>
+     			</tr>
+     			<tr>
+     				<th>코인명</th>
+     				<td>
+     					<select style="width: 100%;">
+								<option value="">코인명</option>
+								<option value="">BTC</option>
+								<option value="">ETH</option>
+							</select>
+     				</td>
+     			</tr>
+     			<tr>
+     				<th>지갑주소</th>
+     				<td><input type="text" style="width: 50%;"> <a href="#n" class="btn-default">주소확인</a></td>
+     			</tr>
+     			<tr>
+     				<th>태그</th>
+     				<td><input type="text" style="width: 100%;"></td>
+     			</tr>
+     		</tbody>
+			</table>
+			<ul class="btnArea btn2">
+				<li><a href="#n" class="btnCancel">취소</a></li>
+				<li><a href="#n" class="">등록</a></li>
+			</ul>			
+		</div>
+	</div>
+</div>
+	<footer>
+		<div class="inner">
+			<div class="foot_info">
+				<div class="foot_logo_wrap">
+					<img src="images/front/global/common/logo_gray.png" alt="planbit" />
+				</div>
+				<ul class="info">
+					<li><strong>(주)팩트비트</strong></li>
+					<li>주소 : <strong>서울 강남구 언주로</strong></li>
+					<li>대표 : <strong>홍길동</strong></li>
+					<li>사업자등록번호 : <strong>123-44-56789</strong></li>
+					<li>고객센터 : <strong>1234-5678</strong></li>
+					<li>Email : <strong>help@pactbit.io</strong></li>
+					<li>운영시간 : <strong>10:00 ~ 17:00(주말 및 공휴일 제외)</strong></li>
+				</ul>
+				<ul class="cert_mark">
+					<li>
+						<img src="images/front/global/common/img_ios.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_google.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_ssl.png">
+					</li>
+				</ul>
+			</div>
+			<p class="copy">Copyright ⓒ 2018 pactbit. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+<a href="#0" class="cd-top js-cd-top">Top</a>
+<!-- 로그인 -->
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<a href="#0" class="cd-popup-close img-replace"></a>
+		<h3><img src="images/front/global/common/logo.png" alt="pactbit" /></h3>
+		<ul class="formBox">
+			<li><input type="email" placeholder="이메일을 입력해 주세요." /></li>
+			<li><input type="password" placeholder="비밀번호를 입력해 주세요."></li>
+		</ul>
+		<div class="formOp">
+			<span class="saveId"><input type="checkbox" id="saveId" class="iCheck" /><label for="saveId">ID저장</label></span>
+			<span class="findPw"><a href="#">비밀번호찾기</a></span>
+		</div>
+		<a href="#" class="submit">로그인</a>
+	</div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+</body>
+</html>
+
+
+

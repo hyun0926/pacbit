@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>pactbit</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="pactbit">
+	<meta name="description" content="글로벌 암호화폐거래소">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<link rel="shortcut icon" href="images/front/global/common/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<link rel="stylesheet" href="css/front/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<script type="text/javascript" src="js/front/jquery.mCustomScrollbar.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="global_header cd-auto-hide-header">
+		<div class="inner">
+			<h1><a href="index.html"><img src="images/front/global/common/logo.png" alt="planbit" /></a></h1>
+			<nav class="gnb">
+				<ul class="mainMenu">
+					<li><a href="about.html">거래소 소개</a></li>
+					<li><a href="trade.html">거래소</a></li>
+					<li><a href="banking.html">입출금</a></li>
+					<li><a href="wallet.html">지갑관리</a></li>
+					<li><a href="trend.html">코인동향</a></li>
+					<li>
+						<a href="sm_services.html">부가서비스</a>
+						<ul class="subMenu">
+							<li><a href="sm_services.html">자동거래</a></li>
+							<li><a href="trust.html">Trust신청</a></li>
+							<li><a href="lending.html">렌딩</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="notice.html">고객센터</a>
+						<ul class="subMenu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="install_hts.html">HTS 설치방법</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="commission_guide.html">수수료 및 입출금한도</a></li>
+							<li><a href="market_cap.html">Market Cap</a></li>
+							<li><a href="certificate.html">인증자료제출</a></li>
+							<li><a href="coin_list.html">암호화폐정보</a></li>
+							<li><a href="api.html">API</a></li>
+							<li><a href="franchising.html">가맹점 안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="certification_center.html">마이페이지</a>
+						<ul class="subMenu">
+							<li><a href="certification_center.html">인증센터</a></li>
+							<li><a href="member_info.html">회원정보</a></li>
+							<li><a href="connectinfo.html">접속정보</a></li>
+							<li><a href="transaction_details.html">내 거래내역</a></li>
+							<li><a href="inquiry.html">1:1문의</a></li>
+							<li><a href="point_change.html">포인트 전환</a></li>
+						</ul>
+					</li>
+					<li><a href="lucky_box.html">이벤트</a></li>
+				</ul>
+			</nav>
+			<div class="right">
+				<a href="#n" class="btn_menu_mobile"><i class="xi-bars"></i></a>
+				<div class="top_menu_wrap">
+					<svg width="15" height="9">
+						<polygon points="7,0 15,9 0,9" style="fill:rgba(255,255,255,1)"></polygon>
+					</svg>
+					<!-- 로그아웃
+					<ul class="top_menu js-signin-modal-trigger">
+						<li><a href="#" class="top_menu_box cd-popup-trigger">로그인</a></li>
+						<li><a href="sign_up.html" class="top_menu_box">회원가입</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					 -->
+					<!-- 로그인 -->
+					
+					<ul class="top_menu">
+						<li><a href="member_info.html">홍길동님<strong>[Mypage]</strong></a></li>
+						<li><a href="message.html"><i class="xi-note-o"></i> 쪽지함<span class="msNum">2</span></a></li>
+						<li><a href="sign_up.html"><i class="xi-power-off"></i> 로그아웃</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div class="container pb_message">
+	<div class="contents">
+		<h3>쪽지함</h3>
+		<a href="#n" class="btn-fun__pointB btnPopNum1">쪽지보내기</a>
+		<ul class="inlineStyle category tab-3 sub_tabmenu">
+			<li><a href="#n" class="current" data-tab="1">받은 쪽지함</a></li>
+			<li><a href="#n" data-tab="2">보낸 쪽지함</a></li>
+			<li><a href="#n" data-tab="3">쪽지 보관함</a></li>
+		</ul>
+		<div class="tabCn_1 tabCn">
+			<div class="optBox">
+				<select name="" id="">
+					<option value="">전체</option>
+					<option value="">읽은쪽지</option>
+					<option value="">안읽은쪽지</option>
+				</select>
+				<a href="#n" class="btn-default-dark"><i class="xi-package"></i> 보관</a>
+				<a href="#n" class="btn-default-dark"><i class="xi-close"></i> 삭제</a>
+				<a href="#n" class="btn-default msAllDel"><i class="xi-trash-o"></i> 쪽지함비우기</a>
+				<p class="desc"><strong>30</strong>통의 받은 쪽지가 있습니다. <span>(안읽음: <strong>10</strong>통)</span></p>
+			</div>
+			<div class="tabDown col-5">
+				<div class="tabDownHead">
+					<ul>
+						<li><input type="checkbox" /></li>
+						<li>보낸사람</li>
+						<li>쪽지내용</li>
+						<li>보낸시각</li>
+						<li>읽은시각</li>
+					</ul>
+				</div>
+				<!-- 받은 쪽지가 없을때-->
+				<div class="noData">
+					<p>받은 쪽지가 없습니다.</p>
+				</div>
+				<!-- 받은 쪽지가 있을때 -->
+				<dl class="tabDownBody">
+					<dt>
+						<ul>
+							<li><input type="checkbox"></li>
+							<li>PACTBIT고객센터</li>
+							<li>안녕하세요~! 지금껏 볼 수 없던 새로…</li>
+							<li>2019-10-10 19:00</li>
+							<li><strong>안읽음</strong></li>
+						</ul>
+					</dt>
+					<dd>
+						<div class="cover">
+							<p>안녕하세요. planbit 입니다.</p>
+							<p>3월 28일 부로 비트렉스에서 거래 개시된 다음의 코인이 업비트의 BTC, ETH 마켓에 추가됩니다.</p>
+						</div>
+					</dd>
+					<dt>
+						<ul>
+							<li><input type="checkbox"></li>
+							<li>PACTBIT고객센터</li>
+							<li>안녕하세요~! 지금껏 볼 수 없던 새로…</li>
+							<li>2019-10-10 19:00</li>
+							<li>2019-10-10 20:00</li>
+						</ul>
+					</dt>
+					<dd>
+						<div class="cover">
+							<p>안녕하세요. planbit 입니다.</p>
+							<p>3월 28일 부로 비트렉스에서 거래 개시된 다음의 코인이 업비트의 BTC, ETH 마켓에 추가됩니다.</p>
+						</div>
+					</dd>			
+				</dl>
+			</div>
+			<div class="pagination">
+				<div class="pagination_wrap">
+					<ul>
+						<li><a href="#" class="on">1</a></li>
+						<li><a href="#">2</a></li>
+					</ul>
+					<a href="#" class="prev xi-angle-left"><span>이전</span></a>
+					<a href="#" class="next xi-angle-right"><span>다음</span></a>
+				</div>
+			</div>	
+		</div>
+		<div class="tabCn_2 tabCn">
+			<div class="optBox">
+				<a href="#n" class="btn-default-dark"><i class="xi-package"></i> 보관</a>
+				<a href="#n" class="btn-default-dark"><i class="xi-close"></i> 삭제</a>
+				<a href="#n" class="btn-default msAllDel"><i class="xi-trash-o"></i> 쪽지함비우기</a>
+				<p class="desc"><strong>10</strong>통의 받은 쪽지가 있습니다.</p>
+			</div>
+			<div class="tabDown col-5">
+				<div class="tabDownHead">
+					<ul>
+						<li><input type="checkbox" /></li>
+						<li>받는사람</li>
+						<li>쪽지내용</li>
+						<li>보낸시각</li>
+						<li>읽은시각</li>
+					</ul>
+				</div>
+				<!-- 받은 쪽지가 없을때-->
+				<div class="noData">
+					<p>받은 쪽지가 없습니다.</p>
+				</div>
+				<!-- 받은 쪽지가 있을때 -->
+				<dl class="tabDownBody">
+					<dt>
+						<ul>
+							<li><input type="checkbox"></li>
+							<li>PACTBIT고객센터</li>
+							<li>안녕하세요~! 지금껏 볼 수 없던 새로…</li>
+							<li>2019-10-10 19:00</li>
+							<li><strong>안읽음</strong></li>
+						</ul>
+					</dt>
+					<dd>
+						<div class="cover">
+							<p>안녕하세요. planbit 입니다.</p>
+							<p>3월 28일 부로 비트렉스에서 거래 개시된 다음의 코인이 업비트의 BTC, ETH 마켓에 추가됩니다.</p>
+						</div>
+					</dd>
+					<dt>
+						<ul>
+							<li><input type="checkbox"></li>
+							<li>PACTBIT고객센터</li>
+							<li>안녕하세요~! 지금껏 볼 수 없던 새로…</li>
+							<li>2019-10-10 19:00</li>
+							<li>2019-10-10 20:00</li>
+						</ul>
+					</dt>
+					<dd>
+						<div class="cover">
+							<p>안녕하세요. planbit 입니다.</p>
+							<p>3월 28일 부로 비트렉스에서 거래 개시된 다음의 코인이 업비트의 BTC, ETH 마켓에 추가됩니다.</p>
+						</div>
+					</dd>			
+				</dl>
+			</div>
+			<div class="pagination">
+				<div class="pagination_wrap">
+					<ul>
+						<li><a href="#" class="on">1</a></li>
+						<li><a href="#">2</a></li>
+					</ul>
+					<a href="#" class="prev xi-angle-left"><span>이전</span></a>
+					<a href="#" class="next xi-angle-right"><span>다음</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="tabCn_3 tabCn">
+			<div class="optBox">
+				<select name="" id="">
+					<option value="">전체</option>
+					<option value="">받은쪽지</option>
+					<option value="">보낸쪽지</option>
+				</select>
+				<a href="#n" class="btn-default-dark"><i class="xi-close"></i> 삭제</a>
+				<a href="#n" class="btn-default msAllDel"><i class="xi-trash-o"></i> 쪽지함비우기</a>
+				<p class="desc"><strong>20</strong>통의 쪽지를 보관중입니다. <span>(최대 <strong>100</strong>통까지 보관 가능)</span></p>
+			</div>
+			<div class="tabDown col-5">
+				<div class="tabDownHead">
+					<ul>
+						<li><input type="checkbox" /></li>
+						<li>보낸사람</li>
+						<li>쪽지내용</li>
+						<li>보낸시각</li>
+						<li>읽은시각</li>
+					</ul>
+				</div>
+				<!-- 받은 쪽지가 없을때-->
+				<div class="noData">
+					<p>받은 쪽지가 없습니다.</p>
+				</div>
+				<!-- 받은 쪽지가 있을때 -->
+				<dl class="tabDownBody">
+					<dt>
+						<ul>
+							<li><input type="checkbox"></li>
+							<li>PACTBIT고객센터</li>
+							<li>안녕하세요~! 지금껏 볼 수 없던 새로…</li>
+							<li>2019-10-10 19:00</li>
+							<li><strong>안읽음</strong></li>
+						</ul>
+					</dt>
+					<dd>
+						<div class="cover">
+							<p>안녕하세요. planbit 입니다.</p>
+							<p>3월 28일 부로 비트렉스에서 거래 개시된 다음의 코인이 업비트의 BTC, ETH 마켓에 추가됩니다.</p>
+						</div>
+					</dd>
+					<dt>
+						<ul>
+							<li><input type="checkbox"></li>
+							<li>PACTBIT고객센터</li>
+							<li>안녕하세요~! 지금껏 볼 수 없던 새로…</li>
+							<li>2019-10-10 19:00</li>
+							<li>2019-10-10 20:00</li>
+						</ul>
+					</dt>
+					<dd>
+						<div class="cover">
+							<p>안녕하세요. planbit 입니다.</p>
+							<p>3월 28일 부로 비트렉스에서 거래 개시된 다음의 코인이 업비트의 BTC, ETH 마켓에 추가됩니다.</p>
+						</div>
+					</dd>			
+				</dl>
+			</div>
+			<div class="pagination">
+				<div class="pagination_wrap">
+					<ul>
+						<li><a href="#" class="on">1</a></li>
+						<li><a href="#">2</a></li>
+					</ul>
+					<a href="#" class="prev xi-angle-left"><span>이전</span></a>
+					<a href="#" class="next xi-angle-right"><span>다음</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 쪽지보내기  -->
+<div class="popup_wrap popNum1">
+	<div class="popup_inner">
+		<h3>쪽지보내기</h3>
+		<a href="#n" class="btn_popClose"><i class="xi-close-thin"></i></a>
+		<div class="popup_contents">
+			<h5>받는사람</h5>
+			<input type="text" style="width: 100%;" placeholder="PACTBIT 고객센터" disabled>
+			<h5>내용</h5>
+			<textarea rows="10" style="resize: none; width:100%;" placeholder="최대 5,000자 까지 입력 가능합니다."></textarea>
+			<ul class="btnArea btn2">
+				<li><a href="#n" class="btnCancel">취소</a></li>
+				<li><a href="#n" class="btn_submit">보내기</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<footer>
+		<div class="inner">
+			<div class="foot_info">
+				<div class="foot_logo_wrap">
+					<img src="images/front/global/common/logo_gray.png" alt="planbit" />
+				</div>
+				<ul class="info">
+					<li><strong>(주)팩트비트</strong></li>
+					<li>주소 : <strong>서울 강남구 언주로</strong></li>
+					<li>대표 : <strong>홍길동</strong></li>
+					<li>사업자등록번호 : <strong>123-44-56789</strong></li>
+					<li>고객센터 : <strong>1234-5678</strong></li>
+					<li>Email : <strong>help@pactbit.io</strong></li>
+					<li>운영시간 : <strong>10:00 ~ 17:00(주말 및 공휴일 제외)</strong></li>
+				</ul>
+				<ul class="cert_mark">
+					<li>
+						<img src="images/front/global/common/img_ios.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_google.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_ssl.png">
+					</li>
+				</ul>
+			</div>
+			<p class="copy">Copyright ⓒ 2018 pactbit. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+<a href="#0" class="cd-top js-cd-top">Top</a>
+<!-- 로그인 -->
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<a href="#0" class="cd-popup-close img-replace"></a>
+		<h3><img src="images/front/global/common/logo.png" alt="pactbit" /></h3>
+		<ul class="formBox">
+			<li><input type="email" placeholder="이메일을 입력해 주세요." /></li>
+			<li><input type="password" placeholder="비밀번호를 입력해 주세요."></li>
+		</ul>
+		<div class="formOp">
+			<span class="saveId"><input type="checkbox" id="saveId" class="iCheck" /><label for="saveId">ID저장</label></span>
+			<span class="findPw"><a href="#">비밀번호찾기</a></span>
+		</div>
+		<a href="#" class="submit">로그인</a>
+	</div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>pactbit</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="pactbit">
+	<meta name="description" content="글로벌 암호화폐거래소">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<link rel="shortcut icon" href="images/front/global/common/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<link rel="stylesheet" href="css/front/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<script type="text/javascript" src="js/front/jquery.mCustomScrollbar.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="global_header cd-auto-hide-header">
+		<div class="inner">
+			<h1><a href="index.html"><img src="images/front/global/common/logo.png" alt="planbit" /></a></h1>
+			<nav class="gnb">
+				<ul class="mainMenu">
+					<li><a href="about.html">거래소 소개</a></li>
+					<li><a href="trade.html">거래소</a></li>
+					<li><a href="banking.html">입출금</a></li>
+					<li><a href="wallet.html">지갑관리</a></li>
+					<li><a href="trend.html">코인동향</a></li>
+					<li>
+						<a href="sm_services.html">부가서비스</a>
+						<ul class="subMenu">
+							<li><a href="sm_services.html">자동거래</a></li>
+							<li><a href="trust.html">Trust신청</a></li>
+							<li><a href="lending.html">렌딩</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="notice.html">고객센터</a>
+						<ul class="subMenu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="install_hts.html">HTS 설치방법</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="commission_guide.html">수수료 및 입출금한도</a></li>
+							<li><a href="market_cap.html">Market Cap</a></li>
+							<li><a href="certificate.html">인증자료제출</a></li>
+							<li><a href="coin_list.html">암호화폐정보</a></li>
+							<li><a href="api.html">API</a></li>
+							<li><a href="franchising.html">가맹점 안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="certification_center.html">마이페이지</a>
+						<ul class="subMenu">
+							<li><a href="certification_center.html">인증센터</a></li>
+							<li><a href="member_info.html">회원정보</a></li>
+							<li><a href="connectinfo.html">접속정보</a></li>
+							<li><a href="transaction_details.html">내 거래내역</a></li>
+							<li><a href="inquiry.html">1:1문의</a></li>
+							<li><a href="point_change.html">포인트 전환</a></li>
+						</ul>
+					</li>
+					<li><a href="lucky_box.html">이벤트</a></li>
+				</ul>
+			</nav>
+			<div class="right">
+				<a href="#n" class="btn_menu_mobile"><i class="xi-bars"></i></a>
+				<div class="top_menu_wrap">
+					<svg width="15" height="9">
+						<polygon points="7,0 15,9 0,9" style="fill:rgba(255,255,255,1)"></polygon>
+					</svg>
+					<!-- 로그아웃
+					<ul class="top_menu js-signin-modal-trigger">
+						<li><a href="#" class="top_menu_box cd-popup-trigger">로그인</a></li>
+						<li><a href="sign_up.html" class="top_menu_box">회원가입</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					 -->
+					<!-- 로그인 -->
+					
+					<ul class="top_menu">
+						<li><a href="member_info.html">홍길동님<strong>[Mypage]</strong></a></li>
+						<li><a href="message.html"><i class="xi-note-o"></i> 쪽지함<span class="msNum">2</span></a></li>
+						<li><a href="sign_up.html"><i class="xi-power-off"></i> 로그아웃</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div class="container planbit_card">
+	<div class="contents">
+		<h3>선불카드신청</h3>
+		<div class="cell">
+			<h4 class="belitStyle">선불카드 신청 및 사용 방법</h4>
+			<div class="card_box">
+				<img src="images/front/ko/card.png" alt="" / style="width:300px;">
+				<ul class="listDot">
+					<li>선불카드는 USD 충전과 출금을 이용하실 수 있는 카드입니다</li>
+					<li>선불카드 출금은 1일 2,000,000KRW 한도입니다.</li>
+					<li>1인 최대 5개까지 신청 받으실 수 있습니다.</li>
+					<li>카드 발급 후 주소지 혹은 오프라인 가맹점에서 수령 하여 하단 [카드등록] 버튼을 눌러 카드를 등록 후 사용하실 수 있습니다.</li>
+					<li>카드 발급비용은 국내용 카드 1회 20,000KRW 입니다.</li>
+					<a href="#n" class="btn-fun__sub">카드등록</a>
+					<a href="#n" class="btn-fun__sub btnAtm btnPopNum1">ATM 비밀번호 등록</a>
+				</ul>
+				<img src="images/front/ko/card_process.png" alt="" class="card_process">
+			</div>
+		</div>
+		<div class="cell">
+			<h5>선불카드 신청</h5>
+			<table class="normal_table tb-th__left tb-th__bgColor">
+				<colgroup>
+					<col width="15%" />
+					<col width="35%" />
+					<col width="15%" />
+					<col width="35%" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>이름</th>
+						<td>홍길동</td>
+						<th>ID</th>
+						<td>test11@test.com</td>
+					</tr>
+					<tr>
+						<th>생년월일</th>
+						<td><input type="text" placeholder="ex)19900101"></td>
+						<th>휴대번호</th>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<th rowspan="3">주소</th>
+						<td colspan="3"><input type="number" placeholder="우편주소" style="margin-right: 3px;" class="readonly" readonly><a href="#n" class="btn-tb__basics">검색</a></td>
+					</tr>
+					<tr>
+						<td colspan="3"><input type="text" placeholder="도로명주소" style="width: 80%;" class="readonly" readonly></td>
+					</tr>
+					<tr>
+						<td colspan="3"><input type="text" placeholder="나머지주소" style="width: 80%;"></td>
+					</tr>
+					<tr>
+						<th>카드 수령 방법</th>
+						<td colspan="3">
+							입력 주소지로 수령 (배송비 : 1,500원 부과)
+						</td>
+					</tr>
+					<tr>
+						<th>신청 비용</th>
+						<td style="text-align:right;">20,000 KRW</td>
+						<th>입금방법</th>
+						<td>카드 결제</td>
+					</tr>
+				</tbody>
+			</table>
+			<h5>신청비용 입금 <strong>주의사항</strong></h5>
+			<ol class="listNumStyle">
+				<li>신청비용 입금 시 관리자의 확인 후 진행됩니다.</li>
+				<li>카드수령 비용은 씨엠이소프트(주)에서 결제대행합니다.</li>
+				<li>카드 수령 방법을 '오프라인 가맹점 수령'선택 시 가까운 가맹점을 방문하셔서 카드를 수령하시면 됩니다.</li>
+			</ol>
+			<a href="#" class="btn-fun__sub">신청하기</a>
+		</div>
+		<div class="cell">
+			<h5>선불카드 신청내역</h5>
+			<table class="normal_table tb-td__center">
+				<colgroup>
+					<col width="7%">
+					<col width="17%">
+					<col width="10%">
+					<col width="19%">
+					<col width="17%">
+					<col width="20%">
+					<col width="10%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>NO</th>
+						<th>신청일</th>
+						<th>신청상태</th>
+						<th>입금처리일시</th>
+						<th>발송일시</th>
+						<th>카드번호</th>
+						<th>등록일시</th>
+						<th>해지일시</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>18-05-03 00:00:00</td>
+						<td>신청완료</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>18-05-03 00:00:00</td>
+						<td>입금완료</td>
+						<td>18-05-03 00:00:00</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>18-05-03 00:00:00</td>
+						<td>발송완료</td>
+						<td>18-05-03 00:00:00</td>
+						<td>18-05-03 00:00:00</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>18-05-03 00:00:00</td>
+						<td>등록완료</td>
+						<td>18-05-03 00:00:00</td>
+						<td>18-05-03 00:00:00</td>
+						<td>1234-56**-****-3456</td>
+						<td>18-05-03 00:00:00</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>18-05-03 00:00:00</td>
+						<td>해지완료</td>
+						<td>18-05-03 00:00:00</td>
+						<td>18-05-03 00:00:00</td>
+						<td></td>
+						<td></td>
+						<td>18-05-03 00:00:00</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>18-05-03 00:00:00</td>
+						<td>해지완료</td>
+						<td>18-05-03 00:00:00</td>
+						<td>18-05-03 00:00:00</td>
+						<td>1234-56**-****-3456</td>
+						<td>18-05-03 00:00:00</td>
+						<td>18-05-03 00:00:00</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<!-- alert -->
+<div class="popup_wrap popNum1">
+  <div class="popup_inner">
+		<h3>ATM 비밀번호 등록</h3>
+		<a href="#n" class="btn_popClose"><i class="xi-close-thin"></i></a>
+		<div class="popup_contents">
+     	<p class="gab">ATM 비밀번호는 카드사용비밀번호와는 별개로CU편의점 ATM(은행공동망ATM)에서 입/출금시 사용하는 비밀번호입니다.<br/>
+     	미등록 시 ATM 기기 입/출금을 이용하실 수 없습니다.</p>
+			<table class="normal_table tb-th__left tb-th__bgColor">
+				<colgroup>
+					<col width="25%">
+					<col width="75%">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>카드번호</th>
+						<td><input type="text" class="readonly" readonly style="width:100%" /></td>
+					</tr>
+					<tr>
+						<th>비밀번호 입력</th>
+						<td><input type="password" style="width:100%" /></td>
+					</tr>
+					<tr>
+						<th>비밀번호 확인</th>
+						<td><input type="password" style="width:100%" /></td>
+					</tr>
+				</tbody>
+			</table>
+     	<ul class="btnArea btn2">
+     		<li><a href="#n" class="btn_submit">등록</a></li>
+     		<li><a href="#n" class="btnCancel">취소</a></li>
+     	</ul>
+    </div>
+  </div>
+</div>
+
+	<footer>
+		<div class="inner">
+			<div class="foot_info">
+				<div class="foot_logo_wrap">
+					<img src="images/front/global/common/logo_gray.png" alt="planbit" />
+				</div>
+				<ul class="info">
+					<li><strong>(주)팩트비트</strong></li>
+					<li>주소 : <strong>서울 강남구 언주로</strong></li>
+					<li>대표 : <strong>홍길동</strong></li>
+					<li>사업자등록번호 : <strong>123-44-56789</strong></li>
+					<li>고객센터 : <strong>1234-5678</strong></li>
+					<li>Email : <strong>help@pactbit.io</strong></li>
+					<li>운영시간 : <strong>10:00 ~ 17:00(주말 및 공휴일 제외)</strong></li>
+				</ul>
+				<ul class="cert_mark">
+					<li>
+						<img src="images/front/global/common/img_ios.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_google.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_ssl.png">
+					</li>
+				</ul>
+			</div>
+			<p class="copy">Copyright ⓒ 2018 pactbit. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+<a href="#0" class="cd-top js-cd-top">Top</a>
+<!-- 로그인 -->
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<a href="#0" class="cd-popup-close img-replace"></a>
+		<h3><img src="images/front/global/common/logo.png" alt="pactbit" /></h3>
+		<ul class="formBox">
+			<li><input type="email" placeholder="이메일을 입력해 주세요." /></li>
+			<li><input type="password" placeholder="비밀번호를 입력해 주세요."></li>
+		</ul>
+		<div class="formOp">
+			<span class="saveId"><input type="checkbox" id="saveId" class="iCheck" /><label for="saveId">ID저장</label></span>
+			<span class="findPw"><a href="#">비밀번호찾기</a></span>
+		</div>
+		<a href="#" class="submit">로그인</a>
+	</div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+</body>
+</html>
+

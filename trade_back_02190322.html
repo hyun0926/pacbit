@@ -1,0 +1,2189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>pactbit</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="apple-mobile-web-app-title" content="pactbit">
+	<meta name="description" content="글로벌 암호화폐거래소">
+	<meta name="keywords" content="비트코인, 가상화폐">
+	<link rel="shortcut icon" href="images/front/global/common/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/contents.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/front/flat/blue.css" media="all" />
+	<link rel="stylesheet" href="css/front/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="js/front/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/front/global.js"></script>
+	<script type="text/javascript" src="js/front/icheck.js"></script>
+	<script type="text/javascript" src="js/front/jquery.mCustomScrollbar.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="global_header cd-auto-hide-header">
+		<div class="inner">
+			<h1><a href="index.html"><img src="images/front/global/common/logo.png" alt="planbit" /></a></h1>
+			<nav class="gnb">
+				<ul class="mainMenu">
+					<li><a href="about.html">거래소 소개</a></li>
+					<li><a href="trade.html">거래소</a></li>
+					<li><a href="banking.html">입출금</a></li>
+					<li><a href="wallet.html">지갑관리</a></li>
+					<li><a href="trend.html">코인동향</a></li>
+					<li>
+						<a href="sm_services.html">부가서비스</a>
+						<ul class="subMenu">
+							<li><a href="sm_services.html">자동거래</a></li>
+							<li><a href="trust.html">Trust신청</a></li>
+							<li><a href="lending.html">렌딩</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="notice.html">고객센터</a>
+						<ul class="subMenu">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="install_hts.html">HTS 설치방법</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="commission_guide.html">수수료 및 입출금한도</a></li>
+							<li><a href="market_cap.html">Market Cap</a></li>
+							<li><a href="certificate.html">인증자료제출</a></li>
+							<li><a href="coin_list.html">암호화폐정보</a></li>
+							<li><a href="api.html">API</a></li>
+							<li><a href="franchising.html">가맹점 안내</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="certification_center.html">마이페이지</a>
+						<ul class="subMenu">
+							<li><a href="certification_center.html">인증센터</a></li>
+							<li><a href="member_info.html">회원정보</a></li>
+							<li><a href="connectinfo.html">접속정보</a></li>
+							<li><a href="transaction_details.html">내 거래내역</a></li>
+							<li><a href="inquiry.html">1:1문의</a></li>
+							<li><a href="point_change.html">포인트 전환</a></li>
+						</ul>
+					</li>
+					<li><a href="lucky_box.html">이벤트</a></li>
+				</ul>
+			</nav>
+			<div class="right">
+				<a href="#n" class="btn_menu_mobile"><i class="xi-bars"></i></a>
+				<div class="top_menu_wrap">
+					<svg width="15" height="9">
+						<polygon points="7,0 15,9 0,9" style="fill:rgba(255,255,255,1)"></polygon>
+					</svg>
+					<!-- 로그아웃
+					<ul class="top_menu js-signin-modal-trigger">
+						<li><a href="#" class="top_menu_box cd-popup-trigger">로그인</a></li>
+						<li><a href="sign_up.html" class="top_menu_box">회원가입</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					 -->
+					<!-- 로그인 -->
+					
+					<ul class="top_menu">
+						<li><a href="member_info.html">홍길동님<strong>[Mypage]</strong></a></li>
+						<li><a href="message.html"><i class="xi-note-o"></i> 쪽지함<span class="msNum">2</span></a></li>
+						<li><a href="sign_up.html"><i class="xi-power-off"></i> 로그아웃</a></li>
+						<li>
+							<div class="lang">
+								<select width="120">
+									<option value="Korean">Korean</option>
+									<option value="English">English</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div class="container-wide trade premium">
+	<div class="inner">
+		<div class="marketList">
+			<ul class="tab_ui sub_tabmenu tab4">
+				<li><a href="#n" data-tab="1" class="current">USDT</a></li>
+				<li><a href="#n" data-tab="2">KRW</a></li>
+				<li><a href="#n" data-tab="3">BTC</a></li>
+				<li><a href="#n" data-tab="4">ETH</a></li>
+			</ul>
+			<div class="tabCn_1 tabCn">
+				<div class="sec01">
+					<figure class="currentCoin">
+						<img src="images/front/global/coin/big_btc.png" alt="btc" />
+						<figcaption>BTC</figcaption>
+					</figure>
+					<dl>
+						<dt>Quotes</dt><dd>10,7000,000 KRW</dd>
+					</dl>
+					<dl>
+						<dt>Rate</dt><dd>10,700,000 (+0%)</dd>
+					</dl>
+					<dl>
+						<dt>Volume</dt><dd>10,700,000 (+0%)</dd>
+					</dl>
+				</div>
+				<div class="sec02">
+					<table class="crTb">
+						<colgroup>
+								<col width="25%">
+								<col width="20%">
+								<col width="20%">
+								<col width="35%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>코인</th>
+								<th>현재시세</th>
+								<th>변동률</th>
+								<th>거래량</th>
+							</tr>
+						</thead>					
+					</table>
+					<div class="tradeCover">
+						<table class="crTb">
+							<colgroup>
+									<col width="25%">
+									<col width="20%">
+									<col width="20%">
+									<col width="35%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><img src="images/front/global/coin/admt.png" alt="">ADMT <p class="ieo">IEO IN PROGRESS</p></th>
+									<td class="up">7,037.292</td>
+									<td class="up">-6.20% <span class="graph up"></span></td>
+									<td>2,901.74345566<strong>QTUM</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/btc.png" alt="">BTC</th>
+									<td class="up">374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>2<strong>ETC</strong></td>
+								</tr>
+								<tr class="active">
+									<th><img src="images/front/global/coin/eth.png" alt="">ETH</th>
+									<td class="">4,000</td>
+									<td>0% <span class="graph_stable"></span></td>
+									<td>100000<strong>XRP</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/bch.png" alt="">BCH</th>
+									<td class="up">23,374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xrp.png" alt="">XRP</th>
+									<td class="up">23,374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/qtum.png" alt="">QTUM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/btg.png" alt="">BTG</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/dash.png" alt="">DASH</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/ltc.png" alt="">LTC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/sgc.png" alt="">SGC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/secret.png" alt="">SECRET</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/hdac.png" alt="">HDAC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/vista.png" alt="">VSTC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/bsv.png" alt="">BSV</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/trx.png" alt="">TRX</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xlm.png" alt="">XLM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/waves.png" alt="">WAVES</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/poly.png" alt="">POLY</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/omg.png" alt="">OMG</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/mith.png" alt="">MITH</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/icx.png" alt="">ICX</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xem.png" alt="">XEM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="tabCn_2 tabCn">
+				<div class="sec01">
+					<figure class="currentCoin">
+						<img src="images/front/global/coin/big_krw.png" alt="btc" />
+						<figcaption>KRW</figcaption>
+					</figure>
+					<dl>
+						<dt>Quotes</dt><dd>10,7000,000 KRW</dd>
+					</dl>
+					<dl>
+						<dt>Rate</dt><dd>10,700,000 (+0%)</dd>
+					</dl>
+					<dl>
+						<dt>Volume</dt><dd>10,700,000 (+0%)</dd>
+					</dl>
+				</div>
+				<div class="sec02">
+					<table class="crTb">
+						<colgroup>
+								<col width="25%">
+								<col width="20%">
+								<col width="20%">
+								<col width="35%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>코인</th>
+								<th>현재시세</th>
+								<th>변동률</th>
+								<th>거래량</th>
+							</tr>
+						</thead>					
+					</table>
+					<div class="tradeCover">
+						<table class="crTb">
+							<colgroup>
+									<col width="25%">
+									<col width="20%">
+									<col width="20%">
+									<col width="35%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><img src="images/front/global/coin/admt.png" alt="">ADMT <p class="ieo">IEO IN PROGRESS</p></th>
+									<td class="up">7,037.292</td>
+									<td class="up">-6.20% <span class="graph up"></span></td>
+									<td>2,901.74345566<strong>QTUM</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/btc.png" alt="">BTC</th>
+									<td class="up">374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>2<strong>ETC</strong></td>
+								</tr>
+								<tr class="active">
+									<th><img src="images/front/global/coin/eth.png" alt="">ETH</th>
+									<td class="">4,000</td>
+									<td>0% <span class="graph_stable"></span></td>
+									<td>100000<strong>XRP</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/bch.png" alt="">BCH</th>
+									<td class="up">23,374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xrp.png" alt="">XRP</th>
+									<td class="up">23,374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/qtum.png" alt="">QTUM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/btg.png" alt="">BTG</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/dash.png" alt="">DASH</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/ltc.png" alt="">LTC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/sgc.png" alt="">SGC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/secret.png" alt="">SECRET</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/hdac.png" alt="">HDAC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/vista.png" alt="">VSTC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/bsv.png" alt="">BSV</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/trx.png" alt="">TRX</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xlm.png" alt="">XLM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/waves.png" alt="">WAVES</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/poly.png" alt="">POLY</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/omg.png" alt="">OMG</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/mith.png" alt="">MITH</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/icx.png" alt="">ICX</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xem.png" alt="">XEM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="tabCn_3 tabCn">
+				<div class="sec01">
+					<figure class="currentCoin">
+						<img src="images/front/global/coin/big_btc.png" alt="btc" />
+						<figcaption>BTC</figcaption>
+					</figure>
+					<dl>
+						<dt>Quotes</dt><dd>10,7000,000 KRW</dd>
+					</dl>
+					<dl>
+						<dt>Rate</dt><dd>10,700,000 (+0%)</dd>
+					</dl>
+					<dl>
+						<dt>Volume</dt><dd>10,700,000 (+0%)</dd>
+					</dl>
+				</div>
+				<div class="sec02">
+					<table class="crTb">
+						<colgroup>
+								<col width="25%">
+								<col width="20%">
+								<col width="20%">
+								<col width="35%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>코인</th>
+								<th>현재시세</th>
+								<th>변동률</th>
+								<th>거래량</th>
+							</tr>
+						</thead>					
+					</table>
+					<div class="tradeCover">
+						<table class="crTb">
+							<colgroup>
+									<col width="25%">
+									<col width="20%">
+									<col width="20%">
+									<col width="35%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><img src="images/front/global/coin/admt.png" alt="">ADMT <p class="ieo">IEO IN PROGRESS</p></th>
+									<td class="up">7,037.292</td>
+									<td class="up">-6.20% <span class="graph up"></span></td>
+									<td>2,901.74345566<strong>QTUM</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/btc.png" alt="">BTC</th>
+									<td class="up">374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>2<strong>ETC</strong></td>
+								</tr>
+								<tr class="active">
+									<th><img src="images/front/global/coin/eth.png" alt="">ETH</th>
+									<td class="">4,000</td>
+									<td>0% <span class="graph_stable"></span></td>
+									<td>100000<strong>XRP</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/bch.png" alt="">BCH</th>
+									<td class="up">23,374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xrp.png" alt="">XRP</th>
+									<td class="up">23,374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/qtum.png" alt="">QTUM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/btg.png" alt="">BTG</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/dash.png" alt="">DASH</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/ltc.png" alt="">LTC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/sgc.png" alt="">SGC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/secret.png" alt="">SECRET</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/hdac.png" alt="">HDAC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/vista.png" alt="">VSTC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/bsv.png" alt="">BSV</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/trx.png" alt="">TRX</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xlm.png" alt="">XLM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/waves.png" alt="">WAVES</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/poly.png" alt="">POLY</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/omg.png" alt="">OMG</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/mith.png" alt="">MITH</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/icx.png" alt="">ICX</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xem.png" alt="">XEM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="tabCn_4 tabCn">
+				<div class="sec01">
+					<figure class="currentCoin">
+						<img src="images/front/global/coin/big_eth.png" alt="ETH" />
+						<figcaption>ETH</figcaption>
+					</figure>
+					<dl>
+						<dt>Quotes</dt><dd>10,7000,000 KRW</dd>
+					</dl>
+					<dl>
+						<dt>Rate</dt><dd>10,700,000 (+0%)</dd>
+					</dl>
+					<dl>
+						<dt>Volume</dt><dd>10,700,000 (+0%)</dd>
+					</dl>
+				</div>
+				<div class="sec02">
+					<table class="crTb">
+						<colgroup>
+								<col width="25%">
+								<col width="20%">
+								<col width="20%">
+								<col width="35%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>코인</th>
+								<th>현재시세</th>
+								<th>변동률</th>
+								<th>거래량</th>
+							</tr>
+						</thead>					
+					</table>
+					<div class="tradeCover">
+						<table class="crTb">
+							<colgroup>
+									<col width="25%">
+									<col width="20%">
+									<col width="20%">
+									<col width="35%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><img src="images/front/global/coin/admt.png" alt="">ADMT <p class="ieo">IEO IN PROGRESS</p></th>
+									<td class="up">7,037.292</td>
+									<td class="up">-6.20% <span class="graph up"></span></td>
+									<td>2,901.74345566<strong>QTUM</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/btc.png" alt="">BTC</th>
+									<td class="up">374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>2<strong>ETC</strong></td>
+								</tr>
+								<tr class="active">
+									<th><img src="images/front/global/coin/eth.png" alt="">ETH</th>
+									<td class="">4,000</td>
+									<td>0% <span class="graph_stable"></span></td>
+									<td>100000<strong>XRP</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/bch.png" alt="">BCH</th>
+									<td class="up">23,374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xrp.png" alt="">XRP</th>
+									<td class="up">23,374,000</td>
+									<td class="up">3.20% <span class="graph up"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/qtum.png" alt="">QTUM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/btg.png" alt="">BTG</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/dash.png" alt="">DASH</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/ltc.png" alt="">LTC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/sgc.png" alt="">SGC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/secret.png" alt="">SECRET</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/hdac.png" alt="">HDAC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/vista.png" alt="">VSTC</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/bsv.png" alt="">BSV</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/trx.png" alt="">TRX</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xlm.png" alt="">XLM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/waves.png" alt="">WAVES</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/poly.png" alt="">POLY</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/omg.png" alt="">OMG</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/mith.png" alt="">MITH</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/icx.png" alt="">ICX</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+								<tr>
+									<th><img src="images/front/global/coin/xem.png" alt="">XEM</th>
+									<td class="down">23,374,000</td>
+									<td class="down">-6.20% <span class="graph down"></span></td>
+									<td>10<strong>BTC</strong></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="center_cover">
+			<div class="chart">
+				<img src="images/front/ko/graph.jpg" style="width: 100%;" alt="" />
+			</div>
+			<div class="tradeOrder">
+				<ul class="tab_ui sub_tabmenu02 tab4">
+					<li><a href="#n" data-tab="1" class="current" >거래</a></li>
+					<li><a href="#n" data-tab="2">자동거래</a></li>
+					<li><a href="#n" data-tab="3">내 미체결주문</a></li>
+					<li><a href="#n" data-tab="4">내 최근거래내역</a></li>
+				</ul>
+				<div class="tabCn02_1 tabCn02">
+					<table class="trTb">
+						<colgroup>
+							<col width="20%" />
+							<col width="80%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>구분</th>
+								<td><input type="checkbox" id="c1" /><label for="c1"><strong>시장가거래</strong></label></td>
+							</tr>
+							<tr>
+								<th>가격(KRW)</th>
+								<td>
+									<div class="input_group">
+										<select>
+											<option value="0">0%</option>
+											<option value="10">10%</option>
+											<option value="20">20%</option>
+										</select>
+										<input type="text" style="width: 70%" />
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>수량(BTC)</th>
+								<td>
+									<div class="input_group">
+										<input type="text" style="width: 100%" />
+										<span class="qt_btn">
+											<a href="#n" class="input_minus"><i class="xi-minus-min"></i></a>
+											<a href="#n" class="input_plus"><i class="xi-plus-min"></i></a>
+										</span>
+									</div>
+									<p>(판매가능 : 0000000 BTC)</p>
+								</td>
+							</tr>
+							<tr>
+								<th>금액(KRW)</th>
+								<td>
+									<ul class="btn">
+										<li><a href="#n">10%</a></li>
+										<li><a href="#n">25%</a></li>
+										<li><a href="#n">50%</a></li>
+										<li><a href="#n">100%</a></li>
+									</ul>
+									<input type="text" style="width: 100%" />
+									<p>(구매가능 : 0000000 BTC)</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<dl class="totalWrap">
+						<dt>수수료 :</dt>
+						<dd>0.15%</dd>
+						<dt>최소주문금액 :</dt>
+						<dd>0.001BTC / 5,000KRW</dd>
+					</dl>
+					<div class="btnBox">
+						<ul class="inlineStyle tab2">
+							<li><a href="#n" class="btn-r">구매</a></li>
+							<li><a href="#n" class="btn-b">판매</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="tabCn02_2 tabCn02">
+					<ul class="tabList atList">
+							<li><a href="#autoTrade01" class="current">자동거래</a></li>
+							<li><a href="#autoTrade02">손절자동거래</a></li>
+							<li><a href="#autoTrade03">자동거래설정 내역</a></li>
+						</ul>
+					<div id="autoTrade01" class="tabCon current">
+						<div class="toCover">
+							<h5>자동구매</h5>
+							<div class="tooltip">
+								<i class="xi-help-o"></i>
+								<div>
+									<h6>자동구매 등록이란?</h6>
+									<ul class="listDot">
+										<li>자동구매의 경우 미체결 최고 구매가 보다 낮게 가격을 지정하면 해당 주문가격 도달(오차범위 내)시 마다 시장가로 체결됩니다.</li>
+										<li>주문금액보다 남아있는 금액이 적을 경우 남아있는 금액만큼 체결됩니다.</li>
+										<li>[자동거래취소] 버튼으로 취소가 가능합니다.</li>
+										<li><strong>자동거래는 PC 거래소가 로그인되어 있어야 체결이 가능합니다. 1순위 설정 금액부터 체결되고 설정되어 있는 동안은 설정금액 도달 시 계속 체결됩니다.</strong></li>
+									</ul>
+								</div>
+							</div>						
+							<table class="atTb">
+								<colgroup>
+									<col width="25%">
+									<col width="75%">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>1순위</th>
+										<td>
+											<div class="input_wrap">
+												<div class="input_group">
+													<input type="text" style="width: 100%" />
+													<span class="qt_btn">
+														<a href="#n" class="input_minus"><i class="xi-minus-min"></i></a>
+														<a href="#n" class="input_plus"><i class="xi-plus-min"></i></a>
+													</span>
+												</div>
+												<select>
+													<option value="">오차율</option>
+													<option value="">1%</option>
+													<option value="">2%</option>
+													<option value="">3%</option>
+												</select>
+												<div class="rp">
+													<input type="text" />
+													<span>BTC</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>2순위</th>
+										<td>
+											<div class="input_wrap">
+												<div class="input_group">
+													<input type="text" style="width: 100%" />
+													<span class="qt_btn">
+														<a href="#n" class="input_minus"><i class="xi-minus-min"></i></a>
+														<a href="#n" class="input_plus"><i class="xi-plus-min"></i></a>
+													</span>
+												</div>
+												<select>
+													<option value="">오차율</option>
+													<option value="">1%</option>
+													<option value="">2%</option>
+													<option value="">3%</option>
+												</select>
+												<div class="rp">
+													<input type="text" />
+													<span>BTC</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>3순위</th>
+										<td>
+											<div class="input_wrap">
+												<div class="input_group">
+													<input type="text" style="width: 100%" />
+													<span class="qt_btn">
+														<a href="#n" class="input_minus"><i class="xi-minus-min"></i></a>
+														<a href="#n" class="input_plus"><i class="xi-plus-min"></i></a>
+													</span>
+												</div>
+												<select>
+													<option value="">오차율</option>
+													<option value="">1%</option>
+													<option value="">2%</option>
+													<option value="">3%</option>
+												</select>
+												<div class="rp">
+													<input type="text" />
+													<span>BTC</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<h5>자동판매</h5>
+							<div class="tooltip">
+								<i class="xi-help-o"></i>
+								<div>
+									<h6>자동판매 등록이란?</h6>
+									<ul class="listDot">
+										<li>판매의 경우 미체결 최저 판매가 보다 높게 가격을 지정하면 해당 주문가격 도달 (오차범위 내) 시 마다 시장가로 체결됩니다.</li>
+										<li>주문수량보다 남아있는 수량이 적을 경우 남아있는 수량 만큼 체결됩니다.</li>
+										<li>[자동거래취소] 버튼으로 취소가 가능합니다.</li>
+										<li><strong>자동거래는 PC거래소가 로그인 되어있어야 체결이 가능합니다. 1순위 설정 금액부터 체결되고 설정되어 있는 동안은 설정금액 도달 시 계속 체결됩니다.</strong></li>
+									</ul>
+								</div>
+							</div>						
+							<table class="atTb">
+							<colgroup>
+								<col width="25%">
+								<col width="75%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>1순위</th>
+									<td>
+										<div class="input_wrap">
+											<div class="input_group">
+												<input type="text" style="width: 100%" />
+												<span class="qt_btn">
+													<a href="#n" class="input_minus"><i class="xi-minus-min"></i></a>
+													<a href="#n" class="input_plus"><i class="xi-plus-min"></i></a>
+												</span>
+											</div>
+											<select>
+												<option value="">오차율</option>
+												<option value="">1%</option>
+												<option value="">2%</option>
+												<option value="">3%</option>
+											</select>
+											<div class="rp">
+												<input type="text" />
+												<span>BTC</span>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>2순위</th>
+									<td>
+										<div class="input_wrap">
+											<div class="input_group">
+												<input type="text" style="width: 100%" />
+												<span class="qt_btn">
+													<a href="#n" class="input_minus"><i class="xi-minus-min"></i></a>
+													<a href="#n" class="input_plus"><i class="xi-plus-min"></i></a>
+												</span>
+											</div>
+											<select>
+												<option value="">오차율</option>
+												<option value="">1%</option>
+												<option value="">2%</option>
+												<option value="">3%</option>
+											</select>
+											<div class="rp">
+												<input type="text" />
+												<span>BTC</span>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>3순위</th>
+									<td>
+										<div class="input_wrap">
+											<div class="input_group">
+												<input type="text" style="width: 100%" />
+												<span class="qt_btn">
+													<a href="#n" class="input_minus"><i class="xi-minus-min"></i></a>
+													<a href="#n" class="input_plus"><i class="xi-plus-min"></i></a>
+												</span>
+											</div>
+											<select>
+												<option value="">오차율</option>
+												<option value="">1%</option>
+												<option value="">2%</option>
+												<option value="">3%</option>
+											</select>
+											<div class="rp">
+												<input type="text" />
+												<span>BTC</span>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<div class="btnBox">
+							<ul class="inlineStyle tab3">
+								<li><a href="#n" class="btn-r">자동거래설정</a></li>
+								<li><a href="#n" class="btn-d">초기화</a></li>
+								<li><a href="#n" class="btn-d">자동거래취소</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="autoTrade02" class="tabCon">
+						<h5>손절판매(BTC)</h5>
+						<div class="tooltip">
+							<i class="xi-help-o"></i>
+							<div>
+								<h6>손절판매 등록이란?</h6>
+								<ul class="listDot">
+									<li>손절판매의 경우 판매가 하락 시 손해를 최소화하기 위한 금액을 설정합니다.</li>
+									<li>미체결 최고 구매가보다 낮게 가격을 지정하면 해당 주문가격 도달 (오차범위 내) 시 마다 시장가로 체결됩니다.</li>
+									<li>주문수량보다 남아있는 수량이 적을 경우 남아있는 수량 만큼 체결됩니다.</li>
+									<li>[손절취소]버튼으로 취소가 가능합니다.</li>
+									<li>자동거래는 PC거래소가 로그인 되어있어야 체결이 가능합니다. 1순위 설정 금액부터 체결되고 설정되어 있는 동안은 설정금액 도달 시 계속 체결됩니다.</li>
+								</ul>
+							</div>
+						</div>			
+						<table class="atTb">
+							<colgroup>
+								<col width="25%">
+								<col width="75%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>1순위</th>
+									<td>
+										<div class="input_wrap">
+											<div class="input_group">
+												<input type="text" style="width: 100%" />
+												<span class="qt_btn">
+													<a href="#n" class="input_minus"><i class="xi-minus-min"></i></a>
+													<a href="#n" class="input_plus"><i class="xi-plus-min"></i></a>
+												</span>
+											</div>
+											<select>
+												<option value="">오차율</option>
+												<option value="">1%</option>
+												<option value="">2%</option>
+												<option value="">3%</option>
+											</select>
+											<div class="rp">
+												<input type="text" />
+												<span>BTC</span>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>2순위</th>
+									<td>
+										<div class="input_wrap">
+											<div class="input_group">
+												<input type="text" style="width: 100%" />
+												<span class="qt_btn">
+													<a href="#n" class="input_minus"><i class="xi-minus-min"></i></a>
+													<a href="#n" class="input_plus"><i class="xi-plus-min"></i></a>
+												</span>
+											</div>
+											<select>
+												<option value="">오차율</option>
+												<option value="">1%</option>
+												<option value="">2%</option>
+												<option value="">3%</option>
+											</select>
+											<div class="rp">
+												<input type="text" />
+												<span>BTC</span>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>3순위</th>
+									<td>
+										<div class="input_wrap">
+											<div class="input_group">
+												<input type="text" style="width: 100%" />
+												<span class="qt_btn">
+													<a href="#n" class="input_minus"><i class="xi-minus-min"></i></a>
+													<a href="#n" class="input_plus"><i class="xi-plus-min"></i></a>
+												</span>
+											</div>
+											<select>
+												<option value="">오차율</option>
+												<option value="">1%</option>
+												<option value="">2%</option>
+												<option value="">3%</option>
+											</select>
+											<div class="rp">
+												<input type="text" />
+												<span>BTC</span>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="btnBox">
+							<ul class="inlineStyle tab3">
+								<li><a href="#n" class="btn-r">손절설정</a></li>
+								<li><a href="#n" class="btn-d">초기화</a></li>
+								<li><a href="#n" class="btn-d">손절취소</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="autoTrade03" class="tabCon">
+						<div class="toCover02">
+							<table class="deTb">
+							<colgroup>
+								<col width="11%" />
+								<col width="11%" />
+								<col width="11%" />
+								<col width="11%" />
+								<col width="11%" />
+								<col width="11%" />
+								<col width="11%" />
+								<col width="11%" />
+								<col width="12%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>코인</th>
+									<th>종류</th>
+									<th>구분</th>
+									<th>순위</th>
+									<th>금액</th>
+									<th>오차율</th>
+									<th>하한가</th>
+									<th>상한가</th>
+									<th>수량</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+								<tr>
+									<td>BTC</td>
+									<td>판매</td>
+									<td>손절판매</td>
+									<td>2</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">10%</td>
+									<td class="txt-r">5,000</td>
+									<td class="txt-r">5,500</td>
+									<td class="txt-r">1.1245678</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<a href="" class="btn-more">더보기 <i class="xi-arrow-right"></i></a>
+					</div>
+				</div>		
+				<div class="tabCn02_3 tabCn02">
+					<div class="toCover03">
+						<table class="deTb">
+						<colgroup>
+							<col width="12.5%" />
+							<col width="12.5%" />
+							<col width="12.5%" />
+							<col width="12.5%" />
+							<col width="12.5%" />
+							<col width="12.5%" />
+							<col width="12.5%" />
+							<col width="12.5%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>종류</th>
+								<th>코인</th>
+								<th>주문시각</th>
+								<th>주문량</th>
+								<th>주문가</th>
+								<th>체결량</th>
+								<th>평균<br>체결가</th>
+								<th>취소</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="buy">
+								<td>구매</td>
+								<td>BTC</td>
+								<td>17-07-20<br>14:30:33</td>
+								<td class="txt-r">9.1354089</td>
+								<td class="txt-r">2,837,000</td>
+								<td class="txt-r">8.1354089</td>
+								<td class="txt-r">2,600.000</td>
+								<td><a href="#n" class="btn-cancel">취소</a></td>
+							</tr>
+							<tr class="sell">
+								<td>판매</td>
+								<td>BTC</td>
+								<td>17-07-20<br>14:30:33</td>
+								<td class="txt-r">9.1354089</td>
+								<td class="txt-r">2,837,000</td>
+								<td class="txt-r">8.1354089</td>
+								<td class="txt-r">2,600.000</td>
+								<td><a href="#n" class="btn-cancel">취소</a></td>
+							</tr>
+							<tr class="sell">
+								<td>판매</td>
+								<td>BTC</td>
+								<td>17-07-20<br>14:30:33</td>
+								<td class="txt-r">9.1354089</td>
+								<td class="txt-r">2,837,000</td>
+								<td class="txt-r">8.1354089</td>
+								<td class="txt-r">2,600.000</td>
+								<td><a href="#n" class="btn-cancel">취소</a></td>
+							</tr>
+							<tr class="sell">
+								<td>판매</td>
+								<td>BTC</td>
+								<td>17-07-20<br>14:30:33</td>
+								<td class="txt-r">9.1354089</td>
+								<td class="txt-r">2,837,000</td>
+								<td class="txt-r">8.1354089</td>
+								<td class="txt-r">2,600.000</td>
+								<td><a href="#n" class="btn-cancel">취소</a></td>
+							</tr>
+							<tr class="sell">
+								<td>판매</td>
+								<td>BTC</td>
+								<td>17-07-20<br>14:30:33</td>
+								<td class="txt-r">9.1354089</td>
+								<td class="txt-r">2,837,000</td>
+								<td class="txt-r">8.1354089</td>
+								<td class="txt-r">2,600.000</td>
+								<td><a href="#n" class="btn-cancel">취소</a></td>
+							</tr>
+							<tr class="sell">
+								<td>판매</td>
+								<td>BTC</td>
+								<td>17-07-20<br>14:30:33</td>
+								<td class="txt-r">9.1354089</td>
+								<td class="txt-r">2,837,000</td>
+								<td class="txt-r">8.1354089</td>
+								<td class="txt-r">2,600.000</td>
+								<td><a href="#n" class="btn-cancel">취소</a></td>
+							</tr>
+							<tr class="sell">
+								<td>판매</td>
+								<td>BTC</td>
+								<td>17-07-20<br>14:30:33</td>
+								<td class="txt-r">9.1354089</td>
+								<td class="txt-r">2,837,000</td>
+								<td class="txt-r">8.1354089</td>
+								<td class="txt-r">2,600.000</td>
+								<td><a href="#n" class="btn-cancel">취소</a></td>
+							</tr>
+							<tr class="sell">
+								<td>판매</td>
+								<td>BTC</td>
+								<td>17-07-20<br>14:30:33</td>
+								<td class="txt-r">9.1354089</td>
+								<td class="txt-r">2,837,000</td>
+								<td class="txt-r">8.1354089</td>
+								<td class="txt-r">2,600.000</td>
+								<td><a href="#n" class="btn-cancel">취소</a></td>
+							</tr>
+							<tr class="sell">
+								<td>판매</td>
+								<td>BTC</td>
+								<td>17-07-20<br>14:30:33</td>
+								<td class="txt-r">9.1354089</td>
+								<td class="txt-r">2,837,000</td>
+								<td class="txt-r">8.1354089</td>
+								<td class="txt-r">2,600.000</td>
+								<td><a href="#n" class="btn-cancel">취소</a></td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+					<a href="" class="btn-more">더보기 <i class="xi-arrow-right"></i></a>
+				</div>
+				<div class="tabCn02_4 tabCn02">
+					<div class="toCover03">
+						<table class="deTb">
+						<colgroup>
+							<col width="12.5%" />
+							<col width="12.5%" />
+							<col width="15%" />
+							<col width="15%" />
+							<col width="15%" />
+							<col width="15%" />
+							<col width="15%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>종류</th>
+								<th>코인</th>
+								<th>체결시각</th>
+								<th>체결량</th>
+								<th>체결가</th>
+								<th>체결금액</th>
+								<th>수수료</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="buy">
+								<td>구매</td>
+								<td>BTC</td>
+								<td>17-07-20<br>14:30:33</td>
+								<td class="txt-r">9.1354089</td>
+								<td class="txt-r">2,837,000</td>
+								<td class="txt-r">8.1354089</td>
+								<td class="txt-r">0.0198 <span>BTC</span></td>
+							</tr>
+							<tr class="sell">
+								<td>판매</td>
+								<td>BTC</td>
+								<td>17-07-20<br>14:30:33</td>
+								<td class="txt-r">1.0000000</td>
+								<td class="txt-r">2,844,000</td>
+								<td class="txt-r">0.1354089</td>
+								<td class="txt-r">0.12 <span>KRW</span></td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+					<a href="" class="btn-more">더보기 <i class="xi-arrow-right"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="allTrade">
+			<ul class="tab_ui sub_tabmenu03 tab2">
+				<li><a href="#n" data-tab="1" class="current" >BTC/KRW 전체 미체결</a></li>
+				<li><a href="#n" data-tab="2">전체 체결내역</a></li>
+			</ul>
+			<div class="tabCn03_1 tabCn03">
+				<table class="crTb">
+					<thead>
+						<tr>
+							<th>체결시각</th>
+							<th>1코인가격</th>
+							<th>체결수량</th>
+							<th>금액</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="sell">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="sell">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="sell">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="sell">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="sell">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="sell">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						<tr class="buy">
+							<td>18/03/08 18:18:06</td>
+							<td>14,100.000</td>
+							<td>0.06741843</td>
+							<td>141.000</td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</div>
+			<div class="tabCn03_2 tabCn03">
+				<table class="price_board">
+					<colgroup>
+						<col width="33.33333333%" />
+						<col width="33.33333333%" />
+						<col width="33.33333333%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th style="width:33%;">판매가(매도) 전체 미체결</th>
+							<th style="width:33%;">호가</th>
+							<th style="width:33%;">구매가(매수) 주문량</th>
+						</tr>
+					</thead>
+					<tbody class="downBoard">
+						<tr>
+							<td class="graph tr">
+								<span class="ui_graph_down g60"></span>
+								<span class="graph_amount">0.23944238</span>
+							</td>
+							<td class="asking up"><strong>7,526,173</strong><span>+0.09%</span></td>
+							<td class="selling" rowspan="16">
+								<ul>
+									<li>
+										<span class="pri_t">현재 시가</span>
+										<span class="pri_m down"><strong>4,051,000</strong>(-3.89%<span class="arrow"></span>)</span>
+									</li>
+									<li>
+										<span class="pri_t">전일 종가</span>
+										<span class="pri_m up"><strong>4,215,000</strong>(4.05%<span class="arrow"></span>)</span>
+									</li>
+									<li>
+										<span class="pri_t">당일 최고가</span>
+										<span class="pri_m up"><strong>4,121,000</strong>(1,73%<span class="arrow"></span>)</span>
+									</li>
+									<li>
+										<span class="pri_t">당일 최저가</span>
+										<span class="pri_m"><strong>4,051,000</strong>(0%)</span>
+									</li>
+									<li>
+										<span class="pri_t">거래량</span>
+										<span class="pri_m">0</span>
+									</li>
+								</ul>
+								<a href="#n" class="btnChart btnPopNum1">거래소 일별시세</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g60"></span><span class="graph_amount">0.19119168</span></td>
+							<td class="asking up"><strong>7,525,824</strong><span>+0.08%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g10"></span><span class="graph_amount">0.00768730</span></td>
+							<td class="asking up"><strong>7,519,157</strong><span>+0.01%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g90"></span><span class="graph_amount">0.30504557</span></td>
+							<td class="asking up"><strong>7,540,748</strong><span>+1.25%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g40"></span><span class="graph_amount">0.21086820</span></td>
+							<td class="asking down"><strong>7,500,748</strong><span>-0.26%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g10"></span><span class="graph_amount">0.00768730</span></td>
+							<td class="asking up"><strong>7,519,157</strong><span>+0.01%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g90"></span><span class="graph_amount">0.30504557</span></td>
+							<td class="asking up"><strong>7,540,748</strong><span>+1.25%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g40"></span><span class="graph_amount">0.21086820</span></td>
+							<td class="asking down"><strong>7,500,748</strong><span>-0.26%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g40"></span><span class="graph_amount">0.21086820</span></td>
+							<td class="asking down"><strong>7,500,748</strong><span>-0.26%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g10"></span><span class="graph_amount">0.00768730</span></td>
+							<td class="asking up"><strong>7,519,157</strong><span>+0.01%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g90"></span><span class="graph_amount">0.30504557</span></td>
+							<td class="asking up"><strong>7,540,748</strong><span>+10.25%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g40"></span><span class="graph_amount">0.21086820</span></td>
+							<td class="asking down"><strong>7,500,748</strong><span>-0.26%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g40"></span><span class="graph_amount">0.21086820</span></td>
+							<td class="asking down"><strong>7,500,748</strong><span>-0.26%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g10"></span><span class="graph_amount">0.00768730</span></td>
+							<td class="asking up"><strong>7,519,157</strong><span>+0.01%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g90"></span><span class="graph_amount">0.30504557</span></td>
+							<td class="asking up"><strong>7,540,748</strong><span>+1.25%</span></td>
+						</tr>
+						<tr>
+							<td class="graph tr"><span class="ui_graph_down g40"></span><span class="graph_amount">0.21086820</span></td>
+							<td class="asking down"><strong>7,500,748</strong><span>-0.26%</span></td>
+						</tr>
+					</tbody>
+					<tbody class="upBoard">
+						<tr>
+							<td class="buying" rowspan="16">
+								<table class="trade_list">
+									<colgroup>
+										<col width="50%" />
+										<col width="50%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th class="txtLeft">체결가</th>
+											<th class="txtRight">거래량</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="up">7,497,480</td>
+											<td class="up">0.19185552</td>
+										</tr>
+										<tr>
+											<td class="down">7,497,537</td>
+											<td class="down">0,08254430</td>
+										</tr>
+										<tr>
+											<td class="up">7,497,702</td>
+											<td class="up">0.03333448</td>
+										</tr>
+										<tr>
+											<td class="up">7,497,722</td>
+											<td class="up">0.05367243</td>
+										</tr>
+										<tr>
+											<td class="down">7,497,757</td>
+											<td class="down">0,00074662</td>
+										</tr>
+										<tr>
+											<td class="up">7,497,480</td>
+											<td class="up">0.19185552</td>
+										</tr>
+										<tr>
+											<td class="down">7,497,537</td>
+											<td class="down">0,08254430</td>
+										</tr>
+										<tr>
+											<td class="up">7,497,702</td>
+											<td class="up">0.03333448</td>
+										</tr>
+										<tr>
+											<td class="up">7,497,722</td>
+											<td class="up">0.05367243</td>
+										</tr>
+										<tr>
+											<td class="down">7,497,757</td>
+											<td class="down">0,00074662</td>
+										</tr>
+										<tr>
+											<td class="up">7,497,480</td>
+											<td class="up">0.19185552</td>
+										</tr>
+										<tr>
+											<td class="down">7,497,537</td>
+											<td class="down">0,08254430</td>
+										</tr>
+										<tr>
+											<td class="up">7,497,702</td>
+											<td class="up">0.03333448</td>
+										</tr>
+										<tr>
+											<td class="up">7,497,722</td>
+											<td class="up">0.05367243</td>
+										</tr>
+										<tr>
+											<td class="down">7,497,757</td>
+											<td class="down">0,00074662</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+							<td class="asking down"><strong>7,497,480</strong><span>-0.29%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g00"></span><span class="graph_amount">0.00155345</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,464</strong><span>-0.29%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g10"></span><span class="graph_amount">0.12462280</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,423</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g30"></span><span class="graph_amount">0.25747180</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,414</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g10"></span><span class="graph_amount">0.02584854</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,018</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g10"></span><span class="graph_amount">0.09789732</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,423</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g30"></span><span class="graph_amount">0.25747180</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,414</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g10"></span><span class="graph_amount">0.02584854</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,018</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g10"></span><span class="graph_amount">0.09789732</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,018</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g10"></span><span class="graph_amount">0.09789732</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,423</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g30"></span><span class="graph_amount">0.25747180</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,414</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g10"></span><span class="graph_amount">0.02584854</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,018</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g10"></span><span class="graph_amount">0.09789732</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,018</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g10"></span><span class="graph_amount">0.09789732</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,423</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g30"></span><span class="graph_amount">0.25747180</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,414</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g10"></span><span class="graph_amount">0.02584854</span></td>
+						</tr>
+						<tr>
+							<td class="asking down"><strong>7,497,018</strong><span>-0.30%</span></td>
+							<td class="graph tl"><span class="ui_graph_up g10"></span><span class="graph_amount">0.09789732</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<link rel="stylesheet" href="css/front/jquery.mCustomScrollbar.css">
+			<script type="text/javascript" src="js/front/jquery.mCustomScrollbar.min.js"></script>			
+		</div>
+	</div>
+</div>
+<script>
+	$(function() {
+		$(".tradeCover, .toCover, .toCover02, .toCover03").mCustomScrollbar({theme:"minimal-dark"});
+	});
+</script>			
+
+
+<!-- alert -->
+<div class="popup_wrap mkPrice popNum1">
+  <div class="alert_inner">
+		<div class="innerHead">
+			<h3>거래소 일별시세(BTC/KRW)</h3>
+			<a href="#n" class="btn_popClose"><i class="xi-close-thin"></i></a>
+		</div>
+		<div class="innerMid">
+			<div class="inquiry_wrap">
+					<label>날짜조회</label>
+					<span class="inputCover"><input type="text" /></span> - <span class="inputCover"><input type="text" /></span>
+				<ul class="btn_sorting">
+					<li><a href="#n">전체</a></li>
+					<li><a href="#n">오늘</a></li>
+					<li><a href="#n">7일</a></li>
+					<li><a href="#n">15일</a></li>
+					<li><a href="#n">1개월</a></li>
+					<li><a href="#n">3개월</a></li>
+				</ul>
+				<a href="#n" class="btn-submit">검색</a>
+			</div>
+			<table class="normal_table">
+				<colgroup>
+					<col width="12.5%" />
+					<col width="15%" />
+					<col width="15%" />
+					<col width="15%" />
+					<col width="15%" />
+					<col width="12.5%" />
+					<col width="15%" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>일자</th>
+						<th>오픈가</th>
+						<th>최저가</th>
+						<th>최고가</th>
+						<th>종가</th>
+						<th>전일대비</th>
+						<th>거래량</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2018.12.28</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>-3.89%</td>
+						<td>0.01124216</td>
+					</tr>
+					<tr>
+						<td>2018.12.28</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>-3.89%</td>
+						<td>0.01124216</td>
+					</tr>
+					<tr>
+						<td>2018.12.28</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>-3.89%</td>
+						<td>0.01124216</td>
+					</tr>
+					<tr>
+						<td>2018.12.28</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>-3.89%</td>
+						<td>0.01124216</td>
+					</tr>
+					<tr>
+						<td>2018.12.28</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>-3.89%</td>
+						<td>0.01124216</td>
+					</tr>
+					<tr>
+						<td>2018.12.28</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>-3.89%</td>
+						<td>0.01124216</td>
+					</tr>
+					<tr>
+						<td>2018.12.28</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>-3.89%</td>
+						<td>0.01124216</td>
+					</tr>
+					<tr>
+						<td>2018.12.28</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>-3.89%</td>
+						<td>0.01124216</td>
+					</tr>
+					<tr>
+						<td>2018.12.28</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>-3.89%</td>
+						<td>0.01124216</td>
+					</tr>
+					<tr>
+						<td>2018.12.28</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>4,121,000.000</td>
+						<td>4,051,000.000</td>
+						<td>-3.89%</td>
+						<td>0.01124216</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="pagination">
+				<div class="pagination_wrap">
+					<ul>
+						<li><a href="#" class="on">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#">8</a></li>
+						<li><a href="#">9</a></li>
+						<li><a href="#">10</a></li>
+					</ul>
+					<a href="#" class="prev xi-angle-left"><span>이전</span></a>
+					<a href="#" class="next xi-angle-right"><span>다음</span></a>
+				</div>
+			</div>				
+		</div>
+  </div>
+</div>
+
+	<footer>
+		<div class="inner">
+			<div class="foot_info">
+				<div class="foot_logo_wrap">
+					<img src="images/front/global/common/logo_gray.png" alt="planbit" />
+				</div>
+				<ul class="info">
+					<li><strong>(주)팩트비트</strong></li>
+					<li>주소 : <strong>서울 강남구 언주로</strong></li>
+					<li>대표 : <strong>홍길동</strong></li>
+					<li>사업자등록번호 : <strong>123-44-56789</strong></li>
+					<li>고객센터 : <strong>1234-5678</strong></li>
+					<li>Email : <strong>help@pactbit.io</strong></li>
+					<li>운영시간 : <strong>10:00 ~ 17:00(주말 및 공휴일 제외)</strong></li>
+				</ul>
+				<ul class="cert_mark">
+					<li>
+						<img src="images/front/global/common/img_ios.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_google.png">
+					</li>
+					<li>
+						<img src="images/front/global/common/img_ssl.png">
+					</li>
+				</ul>
+			</div>
+			<p class="copy">Copyright ⓒ 2018 pactbit. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+<a href="#0" class="cd-top js-cd-top">Top</a>
+<!-- 로그인 -->
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<a href="#0" class="cd-popup-close img-replace"></a>
+		<h3><img src="images/front/global/common/logo.png" alt="pactbit" /></h3>
+		<ul class="formBox">
+			<li><input type="email" placeholder="이메일을 입력해 주세요." /></li>
+			<li><input type="password" placeholder="비밀번호를 입력해 주세요."></li>
+		</ul>
+		<div class="formOp">
+			<span class="saveId"><input type="checkbox" id="saveId" class="iCheck" /><label for="saveId">ID저장</label></span>
+			<span class="findPw"><a href="#">비밀번호찾기</a></span>
+		</div>
+		<a href="#" class="submit">로그인</a>
+	</div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+</body>
+</html>
+
